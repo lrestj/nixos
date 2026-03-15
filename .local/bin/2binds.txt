@@ -1,0 +1,29 @@
+
+Okna:
+Rozložení oken  ALT + TAB  
+Zvětšit okno   + F  
+Okno na celou ocrazovku   ALT + F   
+Vycentrovat plovoucí okno  ALT + Q  
+Plovoucí On/Off  CTRL ALT + F 
+Minimalizovat okno   ALT + S 
+Otevřít minim. okno   + S 
+Fokus oken   + H,J,K,L 
+Pohyb oken   ALT + H,J,K,L  
+Pohyb okna   + Myš L  
+Změna velikosti okna   + Myš P  
+Zavřít okno   + Q  
+
+Snímek obrazovky:
+Snímek aktivního okna   + Insert/PrtScr  
+Snímek výběru  ALT + Insert/PrtScr  
+Snímek monitoru  CTRL ALT + Insert/PrtScr  
+
+Plochy:
+Přepnout na plochu 1-6  ALT + 1-6  
+Přesunout okno na plochu 1-6   ALT + 1-6  
+Přesunout okno bez fokusu  SHIFT + 1-6  
+Rolovat mezi plochami  CTRL + TAB 
+Rolovat mezi plochami   + Myš kolecko  
+
+[ Kliknutím zde zavři ]
+

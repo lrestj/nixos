@@ -1,0 +1,3 @@
+#!/bin/bash
+
+waybar -c ~/.config/waybar/config-sway.jsonc -s /home/libor/.config/waybar/style-sway.css

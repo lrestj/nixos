@@ -1,0 +1,33 @@
+
+Spuštění aplikací:
+Nápověda základní   + N 
+Ukaž datum a čas   + D 
+Menu aplikací   + Y
+Menu emoji  Alt + Y 
+Foot terminal   + A 
+Alacritty terminal  ALT + F12 
+Brave prohlížeč  CTRL SHIFT + B 
+Soubory  CTRL SHIFT + F 
+Yazi správce souborů  CTRL SHIFT + Y 
+Vim editor  CTRL SHIFT + E 
+Skener  CTRL SHIFT + S 
+Touchpad On/Off   SHIFT + T 
+Geany editor  CTRL SHIFT + G 
+Kalkulačka  CTRL SHIFT + K 
+Waypaper  CTRL SHIFT + W 
+T-mux  CTRL SHIFT + T 
+Web zkratky  CTRL SHIFT + I 
+Waybar horní panel On/Off   + Enter 
+Taskbar pravý panel On/Off   ALT + Enter 
+Menu    + Y 
+Schránka   + C 
+OneDrive a Google Disk   + M
+
+Vypnutí:
+Menu vypnutí   + X 
+Odhlásit   + Delete 
+Restart   ALT + Delete 
+Zamknout  CTRL ALT + Delete 
+
+[ Kliknutím zde zavři ]
+

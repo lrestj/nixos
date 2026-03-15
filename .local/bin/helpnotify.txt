@@ -1,0 +1,8 @@
+
+Zavřít aktivní okno: +Q
+Okno na celou obrazovku: +F
+Menu aplikací: +Y 
+Menu emoji: ALT+Y
+Všechny zkratky:  ALT+N
+
+[kliknutím na mě zavři]
