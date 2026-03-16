@@ -22,8 +22,8 @@
     focus_follows_mouse no
 
 ### Cursor theme
-    seat seat0 xcursor_theme Banana 32
-    # seat seat0 xcursor_theme Bibata-Modern-Classic 24
+    # seat seat0 xcursor_theme Banana 32
+    seat seat0 xcursor_theme Bibata-Modern-Classic 28
 
 ### Status Bar:
     bar {
