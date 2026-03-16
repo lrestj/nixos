@@ -110,7 +110,7 @@
    "custom/browser": {
         "format":"      ",
         "tooltip-format": "Internet",
-        "on-click": "vivaldi"
+        "on-click": "brave"
     },
 
     "idle_inhibitor": {

@@ -23,12 +23,12 @@
   
     environment.systemPackages =
         (with pkgs; [
-            vivaldi
             audacity
             banana-cursor
             baobab
             bemoji
             bibata-cursors
+            brave
             brightnessctl
             btop
             cliphist

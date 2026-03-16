@@ -205,17 +205,17 @@
   };
 
   # NFS Synology shares:
-  fileSystems."/nas/FilmyNas" = {
+  fileSystems."/nfs/FilmyNas" = {
       device = "192.168.77.18:/volume1/Filmy";
       fsType = "nfs";
       options = [ "nfsvers=4" "x-systemd.automount" "noauto" "x-systemd.iddle-timeout=450" ];
   };
-  fileSystems."/nas/DataNas" = {
+  fileSystems."/nfs/Nas" = {
       device = "192.168.77.18:/volume1/Rodinas";
       fsType = "nfs";
       options = [ "nfsvers=4" "x-systemd.automount" "noauto" "x-systemd.iddle-timeout=450" ];
   };
-  fileSystems."/nas/HudbaNas" = {
+  fileSystems."/nfs/HudbaNas" = {
       device = "192.168.77.18:/volume1/Hudba";
       fsType = "nfs";
       options = [ "nfsvers=4" "x-systemd.automount" "noauto" "x-systemd.iddle-timeout=450"  ];

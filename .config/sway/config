@@ -9,7 +9,7 @@
         tap enabled
         natural_scroll disabled
         middle_emulation enabled
-        pointer_accel 0.4
+        pointer_accel 0.3
     }
     input type:keyboard {
         xkb_layout "cz"
@@ -38,7 +38,7 @@
     set $ma Mod4+Alt
     set $ms Mod4+Shift
     set $editor $TERMINAL --app-id vim -e vim
-    set $browser vivaldi
+    set $browser brave
     set $menu fuzzel
     set $filemgr thunar
 
