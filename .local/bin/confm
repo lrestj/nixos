@@ -24,23 +24,23 @@ ji="\0icon\x1fadd"
 selected=$(echo -e "1\t$e$ei\n2v\t$a$ai\n3y\t$b$bi\n4w\t$c$ci\n5m\t$d$di\n6s\t$f$fi\n7c\t$g$gi\n8f\t$h$hi\n9p\t$i$ii\n0a\t$j$ji" | fuzzel --match-nth 1 --with-nth 2 --accept-nth 2 --lines 17 --auto-select -d )
 case $selected in
     "$a")
-        $TERMINAL -e vim ~/.config/vim/vimrc;;
+        $EDITOR ~/.config/vim/vimrc;;
     "$b")
-        $TERMINAL -e vim ~/.config/yazi/keymap.toml;;
+        $EDITOR ~/.config/yazi/keymap.toml;;
     "$c")
-        $TERMINAL -e vim ~/.config/waybar/config-sway.jsonc;;
+        $EDITOR ~/.config/waybar/config-sway.jsonc;;
     "$d")
-        $TERMINAL -e vim ~/.config/mako/config;;
+        $EDITOR ~/.config/mako/config;;
     "$e")
-        $TERMINAL -e vim ~/.config/sway/config;;
+        $EDITOR ~/.config/sway/config;;
     "$f")
-        $TERMINAL -e vim ~/.dotfiles/other/stuff2remember.txt;;
+        $EDITOR ~/.dotfiles/other/stuff2remember.txt;;
     "$g")
-        $TERMINAL -e vim ~/.dotfiles/nixos/hosts/zbook/configuration.nix;;
+        $EDITOR ~/.dotfiles/nixos/hosts/zbook/configuration.nix;;
     "$h")
-        $TERMINAL -e vim ~/.dotfiles/nixos/flake.nix;;
+        $EDITOR ~/.dotfiles/nixos/flake.nix;;
     "$i")
-        $TERMINAL -e vim ~/.dotfiles/nixos/modules/pkgs.nix;;
+        $EDITOR ~/.dotfiles/nixos/modules/pkgs.nix;;
     "$j")
         addnew
 esac

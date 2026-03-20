@@ -27,7 +27,10 @@
   environment = {
       localBinInPath = true;
       variables = {
-          # kalk = "galculator";
+          EDITOR = "alacritty --class vim -e vim";
+          BROWSER = "brave";
+          TERMINAL = "foot";
+          kalk = "galculator";
       };
       sessionVariables = {
           NIXOS_OZONE_WL = "1";
@@ -222,7 +225,7 @@
   };
   
   # Release version of the first install of this system
-  system.stateVersion = "25.05";
+  system.stateVersion = "25.11";
 
 }
 

@@ -8,11 +8,11 @@
   
   fonts.packages = with pkgs; [
       font-awesome
+      jetbrains-mono
       corefonts vista-fonts
       noto-fonts
       source-code-pro 
       nerd-fonts.hack
-      nerd-fonts.jetbrains-mono
       nerd-fonts.symbols-only
   ];
   
@@ -23,6 +23,7 @@
   
     environment.systemPackages =
         (with pkgs; [
+            alacritty
             audacity
             banana-cursor
             baobab
