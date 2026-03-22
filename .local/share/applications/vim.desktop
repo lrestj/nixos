@@ -5,6 +5,6 @@ Version=9.1
 Type=Application
 NoDisplay=false
 Terminal=false
-Exec=alacritty --class vim -e vim
+Exec=foot --app-id vim bash -c "sleep 0.1;exec vim"
 Comment=Vim editor
 Icon=gvim

@@ -27,7 +27,7 @@
   environment = {
       localBinInPath = true;
       variables = {
-          EDITOR = "alacritty --class vim -e vim";
+          EDITOR = "vim";
           BROWSER = "brave";
           TERMINAL = "foot";
           kalk = "galculator";
