@@ -121,7 +121,7 @@ window-rule {
 
 binds {
     Mod+Shift+comma { show-hotkey-overlay; }
-    Mod+X hotkey-overlay-title="PowerMenu" { spawn "powercenterniri"; }
+    Mod+X hotkey-overlay-title="PowerMenu" { spawn "powercenter"; }
     Mod+N hotkey-overlay-title="Config menu" { spawn "confm"; }
     Mod+T hotkey-overlay-title="Open a Thunar" { spawn "thunar"; }
     Mod+K hotkey-overlay-title="Open a Galculator" { spawn "galculator"; }
