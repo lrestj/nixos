@@ -118,6 +118,7 @@
         ]);
   
   programs = {
+      niri.enable = true;
       xfconf.enable = true;
       dconf.enable = true;  
       gnome-disks.enable = true;

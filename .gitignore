@@ -89,3 +89,5 @@ local/bin/etc/
 .nvidia-settings-rc
 .viminfx.tmp
 .local/icons/
+voidsway/
+.local/share/keyrings/

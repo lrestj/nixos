@@ -5,7 +5,6 @@
   console.enable = true;
   services.kmscon = {
       enable = true;
-      autologinUser = "libor";
       fonts = [ { name = "Hack Nerd Font"; package = pkgs.nerd-fonts.hack; } ];
       hwRender = true;
       useXkbConfig = true;
