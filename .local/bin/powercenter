@@ -14,7 +14,7 @@ case $selected in
     "$a")
         lockscreen;;
     "$b")
-        sleep 1; swaymsg exit;;
+        sleep 1; niri msg action quit --skip-confirmation;;
     "$c")
         sleep 1; systemctl reboot;;
     "$d")
