@@ -1,7 +1,7 @@
 #!/bin/bash
 
 a=" Vimrc"
-b="Yazi.toml"
+b="Niri conf"
 c="Waybar config"
 d="Mako config"
 e="Sway config"
@@ -11,7 +11,7 @@ h="Flake.nix"
 i="Pkgs"
 j="Add new script"
 ai="\0icon\x1fvim"
-bi="\0icon\x1fsystem-file-manager"
+bi="\0icon\x1fniri"
 ci="\0icon\x1fwayland"
 di="\0icon\x1fnotion"
 ei="\0icon\x1fdesktop-effects"
@@ -24,23 +24,24 @@ ji="\0icon\x1fadd"
 selected=$(echo -e "1\t$e$ei\n2v\t$a$ai\n3y\t$b$bi\n4w\t$c$ci\n5m\t$d$di\n6s\t$f$fi\n7c\t$g$gi\n8f\t$h$hi\n9p\t$i$ii\n0a\t$j$ji" | fuzzel --match-nth 1 --with-nth 2 --accept-nth 2 --lines 17 --auto-select -d )
 case $selected in
     "$a")
-        $EDITOR ~/.config/vim/vimrc;;
+        foot --app-id vim bash -c "sleep 0.1; exec vim ~/.config/vim/vimrc";;
     "$b")
-        $EDITOR ~/.config/yazi/keymap.toml;;
+        foot --app-id vim bash -c "sleep 0.1; exec vim ~/.config/niri/config.kdl";;
     "$c")
-        $EDITOR ~/.config/waybar/config-sway.jsonc;;
+        foot --app-id vim bash -c "sleep 0.1; exec vim ~/.config/waybar/config-sway.jsonc";;
     "$d")
-        $EDITOR ~/.config/mako/config;;
+        foot --app-id vim bash -c "sleep 0.1; exec vim ~/.config/mako/config";;
     "$e")
-        $EDITOR ~/.config/sway/config;;
+        foot --app-id vim bash -c "sleep 0.1; exec vim ~/.config/sway/config";;
     "$f")
-        $EDITOR ~/.dotfiles/other/stuff2remember.txt;;
+        foot --app-id vim bash -c "sleep 0.1; exec vim ~/.dotfiles/other/stuff2remember.txt";;
     "$g")
-        $EDITOR ~/.dotfiles/nixos/hosts/zbook/configuration.nix;;
+        $TERMINAL -e vim ~/.dotfiles/nixos/hosts/zbook/configuration.nix;;
     "$h")
-        $EDITOR ~/.dotfiles/nixos/flake.nix;;
+        $TERMINAL -e vim ~/.dotfiles/nixos/flake.nix;;
     "$i")
-        $EDITOR ~/.dotfiles/nixos/modules/pkgs.nix;;
+        $TERMINAL -e vim ~/.dotfiles/nixos/modules/pkgs.nix;;
     "$j")
         addnew
 esac
+

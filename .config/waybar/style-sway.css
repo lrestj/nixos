@@ -178,7 +178,7 @@ button:hover {
 
 #custom-scan{
     font-size: 17px;
-    background-image: url('/home/libor/.dotfiles/icons/skener.png');
+    background-image: url('/home/libor/.local/share/icons/skener.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -187,7 +187,7 @@ button:hover {
     
 #custom-office{
     font-size: 18px;
-    background-image: url('/home/libor/.dotfiles/icons/libreoffice.png');
+    background-image: url('/home/libor/.local/share/icons/libreoffice.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -195,14 +195,14 @@ button:hover {
 
 #custom-kalk{
     font-size: 18px;
-    background-image: url('/home/libor/.dotfiles/icons/galculator.svg');
+    background-image: url('/home/libor/.local/share/icons/galculator.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 #custom-text{
     font-size: 20px;
-    background-image: url('/home/libor/.dotfiles/icons/notes.png');
+    background-image: url('/home/libor/.local/share/icons/notes.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -211,7 +211,7 @@ button:hover {
 
 #custom-fm{
     font-size: 18px;
-    background-image: url('/home/libor/.dotfiles/icons/fm.png');
+    background-image: url('/home/libor/.local/share/icons/fm.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -219,7 +219,7 @@ button:hover {
 
 #custom-browser{
     font-size: 19px;
-    background-image: url('/home/libor/.dotfiles/icons/brave.png');
+    background-image: url('/home/libor/.local/share/icons/brave.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
