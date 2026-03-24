@@ -65,6 +65,7 @@ layout {
 }
 
 // Startup list:
+spawn-sh-at-startup "brightnessctl s 80%"
 spawn-sh-at-startup "/home/libor/.local/bin/niri_tile.py &"
 spawn-at-startup "swaybg" "-i" "/home/libor/.dotfiles/wallpapers/wallpaper4.jpg" "-m" "fill"
 spawn-sh-at-startup "waybar-niri"
@@ -122,7 +123,7 @@ window-rule {
 binds {
     Mod+Shift+comma { show-hotkey-overlay; }
     Alt+B hotkey-overlay-title="Btop" { spawn-sh "foot --app-id btop btop"; }
-    Mod+X hotkey-overlay-title="PowerMenu" { spawn "powercenter"; }
+    Mod+X hotkey-overlay-title="PowerMenu" { spawn "powercenterniri"; }
     Mod+N hotkey-overlay-title="Config menu" { spawn "confm"; }
     Mod+T hotkey-overlay-title="Open a Thunar" { spawn "thunar"; }
     Mod+K hotkey-overlay-title="Open a Galculator" { spawn "galculator"; }

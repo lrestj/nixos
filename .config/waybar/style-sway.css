@@ -331,7 +331,7 @@ label:focus {
     padding-left: 15px;
     margin-left: 12px;
     font-size: 15px;
-    background-image: url('/home/libor/.dotfiles/icons/power.png');
+    background-image: url('/home/libor/.local/share/icons/power.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
