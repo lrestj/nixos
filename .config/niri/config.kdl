@@ -121,6 +121,7 @@ window-rule {
 
 binds {
     Mod+Shift+comma { show-hotkey-overlay; }
+    Alt+B hotkey-overlay-title="Btop" { spawn-sh "foot --app-id btop btop"; }
     Mod+X hotkey-overlay-title="PowerMenu" { spawn "powercenter"; }
     Mod+N hotkey-overlay-title="Config menu" { spawn "confm"; }
     Mod+T hotkey-overlay-title="Open a Thunar" { spawn "thunar"; }

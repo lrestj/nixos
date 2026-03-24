@@ -4,6 +4,7 @@
     tuigreet = "${pkgs.tuigreet}/bin/tuigreet";
     hyprland-session = "${pkgs.hyprland}/bin/Hyprland";
     sway-session = "sway-run";
+    niri-session = "niri-session";
   in
  
 {
@@ -12,7 +13,7 @@
       enable = true;
       settings = {
           initial_session = {
-              command = "${sway-session}";
+              command = "${niri-session}";
               user = "libor";
           };
           default_session = {

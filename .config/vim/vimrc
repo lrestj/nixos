@@ -20,7 +20,7 @@ nnoremap <A-s> :FzfLines<CR>
 nnoremap <A-d> :FzfFiles<CR>
 nnoremap <A-f> :FzfHistory<CR>
 nnoremap <A-g> :FzfRg<CR>
-nnoremap <A-b> :FzfBuffers<CR>
+nnoremap <A-u> :FzfBuffers<CR>
 nnoremap <A-c> :FzfChanges<CR>
 nnoremap <A-m> :FzfMarks<CR>
 nnoremap <A-j> :FzfJumps<CR>

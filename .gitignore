@@ -91,3 +91,4 @@ local/bin/etc/
 .local/icons/
 voidsway/
 .local/share/keyrings/
+*.tmp
