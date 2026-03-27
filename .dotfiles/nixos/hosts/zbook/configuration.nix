@@ -153,6 +153,9 @@
   };
 
   services = {
+      logind.settings.Login = {
+          HandlePowerKey="ignore";
+      };
       power-profiles-daemon.enable = true;
       envfs.enable = true;
       gvfs.enable = true;

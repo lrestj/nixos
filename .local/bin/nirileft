@@ -1,0 +1,9 @@
+#!/bin/bash
+# Run this script to listen for new windows
+niri msg --json event-stream | jq -r --unbuffered '
+  select(.WindowOpenedOrChanged != null) |
+  .WindowOpenedOrChanged.window.id
+' | while read -r window_id; do
+    niri msg action move-column-left
+    # Run other niri msg actions here
+done

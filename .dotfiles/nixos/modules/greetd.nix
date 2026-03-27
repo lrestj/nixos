@@ -13,7 +13,7 @@
       enable = true;
       settings = {
           initial_session = {
-              command = "${niri-session}";
+              command = "${sway-session}";
               user = "libor";
           };
           default_session = {

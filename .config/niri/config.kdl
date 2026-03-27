@@ -65,8 +65,10 @@ layout {
 }
 
 // Startup list:
+
+spawn-sh-at-startup "nirileft"
 spawn-sh-at-startup "brightnessctl s 80%"
-spawn-sh-at-startup "/home/libor/.local/bin/niri_tile.py &"
+// spawn-sh-at-startup "/home/libor/.local/bin/niri_tile.py &"
 spawn-at-startup "swaybg" "-i" "/home/libor/.dotfiles/wallpapers/wallpaper4.jpg" "-m" "fill"
 spawn-sh-at-startup "waybar-niri"
 spawn-sh-at-startup "swayidle -w"
@@ -147,12 +149,12 @@ binds {
     XF86AudioMicMute     allow-when-locked=true { spawn-sh "micmute"; }
     XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessup"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessdown"; }
-
+    
     // Open/close the Overview: a zoomed-out view of workspaces and windows.
     // You can also move the mouse into the top-left hot corner,
     // or do a four-finger swipe up on a touchpad.
     Mod+O repeat=false { toggle-overview; }
-
+    Mod+W { toggle-column-tabbed-display; }
     Mod+Q repeat=false { close-window; }
 
     Mod+Left  { focus-column-left; }
@@ -222,6 +224,8 @@ binds {
     Mod+Comma  { consume-window-into-column; }
     // Expel the bottom window from the focused column to the right.
     Mod+Period { expel-window-from-column; }
+    Ctrl+left  { consume-or-expel-window-left; }
+    Ctrl+right { consume-or-expel-window-right; }
 
     Mod+R { switch-preset-column-width; }
     // Cycling through the presets in reverse order is also possible.
@@ -235,7 +239,7 @@ binds {
     // Makes the column "fill the rest of the space".
     Mod+Ctrl+F { expand-column-to-available-width; }
 
-    Mod+Alt+C { center-column; }
+    Mod+KP_Insert { center-column; }
 
     // Center all fully visible columns on screen.
     Mod+KP_0 { center-visible-columns; }
