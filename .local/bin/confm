@@ -4,7 +4,7 @@ a=" Vimrc"
 b="Niri conf"
 c="Waybar config"
 d="Mako config"
-e="Sway config"
+e="Wallpaper"
 f="Stuff2remember"
 g="Configuration.nix"
 h="Flake.nix"
@@ -32,7 +32,7 @@ case $selected in
     "$d")
         foot --app-id vim bash -c "sleep 0.1; exec vim ~/.config/mako/config";;
     "$e")
-        foot --app-id vim bash -c "sleep 0.1; exec vim ~/.config/sway/config";;
+        waypaper;;
     "$f")
         foot --app-id vim bash -c "sleep 0.1; exec vim ~/.dotfiles/other/stuff2remember.txt";;
     "$g")
