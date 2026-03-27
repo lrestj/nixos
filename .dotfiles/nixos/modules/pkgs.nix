@@ -49,6 +49,7 @@
             # galculator
             geany
             glib util-linux
+            gparted
             mesa-demos
             hunspellDicts.cs_CZ
             hunspellDicts.en_US
@@ -72,6 +73,7 @@
             papirus-icon-theme
             pavucontrol
             pdfarranger
+            python3Minimal
             rclone
             reaper  
             reaper-reapack-extension
