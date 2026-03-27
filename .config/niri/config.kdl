@@ -1,4 +1,4 @@
-workspace "special"
+workspace "NixOS"
 
 input {
     keyboard {
@@ -138,7 +138,7 @@ binds {
     Mod+C hotkey-overlay-title="Clipboard" { spawn-sh "pkill fuzzel || cliphist-fuzzel-img"; }
     Mod+Return hotkey-overlay-title="Waybar toggle" { spawn-sh "pkill waybar || waybar-niri"; }
     Mod+Alt+Return hotkey-overlay-title="Taskbar toggle" { spawn-sh "pkill waybar && waybar --config ~/.config/waybar/config-taskbar"; }
-    Mod+S { spawn-sh "niri msg workspaces | grep \"\\*.*special\" && niri msg action focus-workspace-previous || niri msg action focus-workspace special"; }
+    Mod+S { spawn-sh "niri msg workspaces | grep \"\\*.*NixOS\" && niri msg action focus-workspace-previous || niri msg action focus-workspace NixOS"; }
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
 
@@ -204,7 +204,7 @@ binds {
     Alt+down { focus-workspace 3; }
     Alt+up { focus-workspace 4; }
 
-    Mod+Alt+S { move-column-to-workspace "special" focus=false; }
+    Mod+Alt+S { move-column-to-workspace "NixOS" focus=false; }
     Mod+Alt+left { move-column-to-workspace 1; }
     Mod+Alt+right { move-column-to-workspace 2; }
     Mod+Alt+down { move-column-to-workspace 3; }
