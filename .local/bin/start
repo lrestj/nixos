@@ -1,0 +1,32 @@
+#!/bin/bash
+
+echo "##############################"
+echo "#                            #"
+echo "#  HOLA, VYBER SEZENÍ:       #"
+echo "#  n) NixOS Niri             #"
+echo "#  r) RESTARTOVAT            #"
+echo "#  x) VYPNOUT                #"
+echo "#                            #"
+echo "##############################"
+read -t 15 -n 1 -s wm_choice
+case $wm_choice in
+n)
+exec niri-session
+;;
+x)
+echo "Vypínání..."
+exec systemctl poweroff
+sleep 1
+;;
+r)
+echo "Restart..."
+sleep 1
+exec systemctl reboot
+;;
+*)
+echo "NEZVOLENO, SPOUŠTÍM NixOS Niri"
+sleep 1
+exec niri-session
+;;
+esac
+
