@@ -23,7 +23,6 @@
   
     environment.systemPackages =
         (with pkgs; [
-            alacritty
             audacity
             banana-cursor
             baobab
@@ -86,6 +85,15 @@
             unzip
             vim-full
             vlc
+            grim
+            swaybg
+            swaylock
+            swayidle
+            sway-contrib.grimshot
+            wlprop
+            waybar
+            wl-color-picker
+            waypaper
             wget
             whitesur-icon-theme
             wl-clipboard
@@ -129,22 +137,6 @@
           plugins = with pkgs; [ 
               thunar-archive-plugin
               thunar-volman
-          ];
-      };
-      sway = {
-          enable = true;
-          wrapperFeatures.gtk = true;
-          xwayland.enable = true;
-          extraPackages = with pkgs; [
-              grim
-              swaybg
-              swaylock
-              swayidle
-              sway-contrib.grimshot
-              wlprop
-              wl-color-picker
-              waybar
-              waypaper
           ];
       };
       git = {
