@@ -65,7 +65,8 @@
             lshw
             mako
             mpv
-            nemo-with-extensions
+            # nemo-with-extensions
+            nemo
             networkmanagerapplet
             nwg-look
             pamixer
