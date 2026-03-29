@@ -32,7 +32,6 @@ let &t_SI = "\e[6 q"
 let &t_SR = "\e[3 q"
 let &t_EI = "\e[2 q"
 let &t_ut=''
-"set noxtermcodes
 
 "My settings
 set background=dark   
@@ -47,9 +46,6 @@ set ignorecase smartcase incsearch
 set mouse=a scrolloff=5
 set spelllang=cs,en
 set softtabstop=4 shiftwidth=4 expandtab
-set undofile undolevels=5000
-set undodir=~/.config/vim/undodir
-command! -nargs=0 CleanUpUndoFiles !find ~/.vim/tmp/undo -type f -mtime +100d -delete
 
 "Statusline and custom background    
 hi StatusLine ctermbg=0 ctermfg=22

@@ -68,7 +68,6 @@ spawn-sh-at-startup "waybar-niri"
 spawn-sh-at-startup "swayidle -w"
 spawn-at-startup "niri" "msg" "action" "focus-workspace" "2"
 spawn-sh-at-startup "nm-applet --indicator &"
-spawn-sh-at-startup "/usr/libexec/xfce-polkit &"
 spawn-sh-at-startup "wl-paste --watch cliphist store"
 spawn-sh-at-startup "udiskie -t"
 spawn-sh-at-startup "battery-check"
@@ -96,7 +95,7 @@ binds {
     Alt+B hotkey-overlay-title="Btop" { spawn-sh "foot --app-id btop btop"; }
     Mod+X hotkey-overlay-title="PowerMenu" { spawn "powercenterniri"; }
     Mod+N hotkey-overlay-title="Config menu" { spawn "confm"; }
-    Mod+T hotkey-overlay-title="Open a Thunar" { spawn "thunar"; }
+    Mod+T hotkey-overlay-title="Open a FileMgr" { spawn "nautilus"; }
     Mod+K hotkey-overlay-title="Open a Galculator" { spawn "galculator"; }
     Mod+A hotkey-overlay-title="Open a Terminal" { spawn "foot"; }
     Mod+Backslash hotkey-overlay-title="Run a menu" { spawn-sh "pkill fuzzel || exec fuzzel"; }

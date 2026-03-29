@@ -28,7 +28,7 @@ case $selected in
     "$b")
         foot --app-id vim bash -c "sleep 0.1; exec vim ~/.config/niri/config.kdl";;
     "$c")
-        foot --app-id vim bash -c "sleep 0.1; exec vim ~/.config/waybar/config-sway.jsonc";;
+        foot --app-id vim bash -c "sleep 0.1; exec vim ~/.config/waybar/config-niri.jsonc";;
     "$d")
         foot --app-id vim bash -c "sleep 0.1; exec vim ~/.config/mako/config";;
     "$e")

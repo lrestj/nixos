@@ -63,15 +63,16 @@
             libreoffice-fresh
             libva-utils
             lshw
-            lxqt.lxqt-policykit
             mako
             mpv
+            nautilus
             networkmanagerapplet
             nwg-look
             pamixer
             papirus-icon-theme
             pavucontrol
             pdfarranger
+            polkit_gnome
             python3Minimal
             rclone
             reaper  
@@ -128,17 +129,21 @@
         ]);
   
   programs = {
-      niri.enable = true;
+      niri = {
+          enable = true;
+          useNautilus = true;
+      };
+      nautilus-open-any-terminal.enable = true;
       xfconf.enable = true;
       dconf.enable = true;  
       gnome-disks.enable = true;
-      thunar = {
-          enable = true;
-          plugins = with pkgs; [ 
-              thunar-archive-plugin
-              thunar-volman
-          ];
-      };
+      # thunar = {
+      #     enable = true;
+      #     plugins = with pkgs; [ 
+      #         thunar-archive-plugin
+      #         thunar-volman
+      #     ];
+      # };
       git = {
           enable = true;
           config = {
