@@ -24,6 +24,7 @@
     environment.systemPackages =
         (with pkgs; [
             audacity
+            gnome-terminal
             banana-cursor
             baobab
             bemoji
@@ -32,7 +33,6 @@
             brightnessctl
             btop
             cliphist
-            cmake
             dconf-editor
             efibootmgr
             evince
@@ -65,7 +65,7 @@
             lshw
             mako
             mpv
-            nautilus
+            nemo
             networkmanagerapplet
             nwg-look
             pamixer
@@ -129,14 +129,7 @@
         ]);
   
   programs = {
-      niri = {
-          enable = true;
-          useNautilus = true;
-      };
-      nautilus-open-any-terminal = { 
-          enable = true;
-          terminal = "foot";
-      };
+      niri.enable = true;
       xfconf.enable = true;
       dconf.enable = true;  
       gnome-disks.enable = true;

@@ -101,7 +101,7 @@
    "custom/fm": {
         "format":"        ",
         "tooltip-format": "Soubory",
-        "on-click": "pkill nautilus || nautilus"
+        "on-click": "pkill nemo || nemo"
     },
 
    "custom/browser": {
