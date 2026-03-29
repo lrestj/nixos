@@ -18,8 +18,9 @@
           xdg-desktop-portal-gnome
           xdg-desktop-portal-gtk
       ];
-      config = {
-         common.default = [ "wlr" ]; 
+      config.common = {
+         default = [ "gtk" ]; 
+         "org.freedesktop.impl.portal.FileChooser"= [ "gtk" ];
       };
   };
   documentation.man.cache.enable = false;
