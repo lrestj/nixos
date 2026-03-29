@@ -133,7 +133,10 @@
           enable = true;
           useNautilus = true;
       };
-      nautilus-open-any-terminal.enable = true;
+      nautilus-open-any-terminal = { 
+          enable = true;
+          terminal = "foot";
+      };
       xfconf.enable = true;
       dconf.enable = true;  
       gnome-disks.enable = true;
