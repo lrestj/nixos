@@ -24,7 +24,6 @@
     environment.systemPackages =
         (with pkgs; [
             audacity
-            gnome-terminal
             banana-cursor
             baobab
             bemoji
@@ -65,7 +64,6 @@
             lshw
             mako
             mpv
-            # nemo-with-extensions
             nemo
             networkmanagerapplet
             nwg-look
