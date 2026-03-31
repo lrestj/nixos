@@ -9,7 +9,7 @@
         ./hardware-configuration.nix
         ../../modules/pkgs.nix
         ../../modules/greetd.nix
-        ../../modules/console.nix
+        # ../../modules/console.nix
       ];
 
   xdg.portal = {
@@ -152,8 +152,13 @@
       };
   };
 
-  # Locale settings
-  console.useXkbConfig = true;
+  # Locale + console settings
+  console = {
+    earlySetup = true;
+    font = "${pkgs.terminus_font}/share/consolefonts/ter-222b.psf.gz";
+    packages = with pkgs; [ terminus_font ];
+    keyMap = "cz-qwertz";
+  };
   time.timeZone = "Europe/Prague";
   i18n.defaultLocale = "cs_CZ.UTF-8";
   i18n.extraLocaleSettings = {
