@@ -75,6 +75,11 @@ spawn-sh-at-startup "wlsunset -l 50.1 -L 16.2 -t 4700 -T 5000"
 
 // Window rules
 window-rule {
+    match title="Předvolby správy souborů"
+    default-column-width { fixed 1080; }
+    default-window-height { fixed 860; }
+}
+window-rule {
     match app-id="galculator"
     open-floating true
 }
