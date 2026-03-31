@@ -17,7 +17,7 @@
               user = "libor";
           };
           default_session = {
-              command = "${tuigreet} --greeting 'Vítejte v NixOS!' --asterisks --time --time-format %c --remember --remember-session --sessions ${sway-session}";
+              command = "${tuigreet} --greeting 'Vítejte v NixOS!' --asterisks --time --time-format '%A, %d. %B %Y • %H:%M:%S'  --remember --remember-session --sessions ${sway-session}";
               user = "greeter";
           };
       };

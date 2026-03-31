@@ -9,7 +9,6 @@
         ./hardware-configuration.nix
         ../../modules/pkgs.nix
         ../../modules/greetd.nix
-        # ../../modules/console.nix
       ];
 
   xdg.portal = {
@@ -155,7 +154,7 @@
   # Locale + console settings
   console = {
     earlySetup = true;
-    font = "${pkgs.terminus_font}/share/consolefonts/ter-222b.psf.gz";
+    font = "${pkgs.terminus_font}/share/consolefonts/ter-220b.psf.gz";
     packages = with pkgs; [ terminus_font ];
     keyMap = "cz-qwertz";
   };
