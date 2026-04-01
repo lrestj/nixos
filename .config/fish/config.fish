@@ -10,7 +10,7 @@ abbr !! --position anywhere --function last_history_item
 abbr sudo "sudo"
 abbr ls "ls --color=auto"
 abbr grep "grep --color=auto"
-abbr yay "sudo nix flake update --flake ~/.dotfiles/nixos/"
+abbr yay "nh os switch --update"
 abbr yup "ya pack -u"
 abbr se "nh search --limit 7"
 abbr clean "nh clean all --keep 3 && nh os switch"
