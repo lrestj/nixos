@@ -11,7 +11,6 @@
       jetbrains-mono
       corefonts vista-fonts
       noto-fonts
-      source-code-pro 
       nerd-fonts.hack
       nerd-fonts.symbols-only
   ];
@@ -132,13 +131,13 @@
       xfconf.enable = true;
       dconf.enable = true;  
       gnome-disks.enable = true;
-      # thunar = {
-      #     enable = true;
-      #     plugins = with pkgs; [ 
-      #         thunar-archive-plugin
-      #         thunar-volman
-      #     ];
-      # };
+      nh = {
+          enable = true;
+          clean.enable = true;
+          clean.extraArgs = "--keep-since 7d --keep 3";
+          flake = "/home/libor/.dotfiles/nixos/";
+      };
+
       git = {
           enable = true;
           config = {

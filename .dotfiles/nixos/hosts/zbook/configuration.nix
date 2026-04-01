@@ -75,7 +75,7 @@
           download-buffer-size = 125829120;
       };
       gc = {
-          automatic = true;
+          automatic = false;
           dates = "weekly";
           options = "--delete-older-than 14d";
       };
