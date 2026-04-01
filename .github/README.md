@@ -3,7 +3,7 @@
 
 ##### ✌ Welcome to my repo. Feel free to look inside for an inspiration or just for fun. 
 This is still work in progress.  
-For now my primary focus is Sway WM.
+For now my primary focus is Niri WM.
 
 ## ⚙️ Init a git bare repo
 ```
