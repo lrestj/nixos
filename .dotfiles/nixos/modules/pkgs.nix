@@ -56,7 +56,6 @@
             kdePackages.qtsvg
             kdePackages.qtwayland
             killall
-            kitty
             libnotify
             libreoffice-fresh
             libva-utils
@@ -102,6 +101,7 @@
             xnviewmp
             xeyes
             xournalpp
+            xwayland-satellite
             yazi
             ytdownloader
             zip
