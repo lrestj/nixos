@@ -9,7 +9,7 @@
               finegrained = true;
           };
           nvidiaSettings = true;
-          package = config.boot.kernelPackages.nvidiaPackages.stable;
+          package = config.boot.kernelPackages.nvidiaPackages.beta;
           open = false;
           prime = {
               intelBusId = "PCI:0:2:0";

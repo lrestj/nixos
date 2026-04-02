@@ -9,6 +9,7 @@
         ./hardware-configuration.nix
         ../../modules/pkgs.nix
         ../../modules/greetd.nix
+        ../../modules/nvidia.nix
       ];
 
   xdg.portal = {
@@ -92,7 +93,7 @@
   users.users.libor = {
       isNormalUser = true;
       description = "libor";
-      extraGroups = [ "networkmanager" "wheel" "scanners" "lp" "input" ];
+      extraGroups = [ "networkmanager" "video" "wheel" "scanners" "lp" "input" ];
   };
 
   boot = {
