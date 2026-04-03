@@ -1,0 +1,20 @@
+{
+  description = "Minimal NixOS installation media";
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
+  outputs = { self, nixpkgs }: {
+    nixosConfigurations = {
+      exampleIso = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          ({ pkgs, modulesPath, ... }: {
+            imports = [ (modulesPath + "/installer/cd-dvd/installation-cd-graphical-calamares-gnome.nix") ];
+            environment.systemPackages = with pkgs; [ 
+                vim-full
+                git
+            ];
+          })
+        ];
+      };
+    };
+  };
+}
