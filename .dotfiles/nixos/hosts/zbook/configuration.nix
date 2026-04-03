@@ -97,7 +97,7 @@
   };
 
   boot = {
-      kernelPackages = pkgs.linuxPackages_latest;
+      kernelPackages = pkgs.linuxPackages;
       kernel.sysctl."vm.swappiness" = 10;
       # initrd.kernelModules = [ "i915" ];
       loader = {
