@@ -80,6 +80,7 @@
             simple-scan
             slurp
             udiskie
+            udisks
             unzip
             vim-full
             vlc

@@ -1,6 +1,6 @@
 hostname,derivation name,utc time,build seconds
 ,NVIDIA-Linux-x86_64-580.142.run,2026-04-03 08:23:45,8
-,X-Restart-Triggers-dbus,2026-04-02 14:44:47,0
+,X-Reload-Triggers-polkit,2026-04-04 09:12:26,0
 ,X-Restart-Triggers-dbus,2026-04-02 15:02:30,0
 ,X-Restart-Triggers-dbus,2026-04-02 15:12:29,0
 ,X-Restart-Triggers-dbus,2026-04-02 15:24:13,0
@@ -10,7 +10,7 @@ hostname,derivation name,utc time,build seconds
 ,X-Restart-Triggers-dbus,2026-04-02 17:37:09,0
 ,X-Restart-Triggers-dbus,2026-04-03 08:26:36,0
 ,X-Restart-Triggers-dbus,2026-04-03 10:13:05,0
-,X-Restart-Triggers-polkit,2026-04-02 14:44:46,0
+,X-Restart-Triggers-dbus,2026-04-04 09:01:43,0
 ,X-Restart-Triggers-polkit,2026-04-02 15:02:29,0
 ,X-Restart-Triggers-polkit,2026-04-02 15:12:28,0
 ,X-Restart-Triggers-polkit,2026-04-02 15:24:13,0
@@ -20,6 +20,7 @@ hostname,derivation name,utc time,build seconds
 ,X-Restart-Triggers-polkit,2026-04-02 17:37:08,0
 ,X-Restart-Triggers-polkit,2026-04-03 08:26:35,0
 ,X-Restart-Triggers-polkit,2026-04-03 10:13:05,0
+,X-Restart-Triggers-polkit,2026-04-04 09:01:43,0
 ,X-Restart-Triggers-sshd,2026-04-02 13:50:15,0
 ,X-Restart-Triggers-systemd-modules-load,2026-04-02 13:50:15,0
 ,X-Restart-Triggers-systemd-modules-load,2026-04-02 14:38:42,0
@@ -32,8 +33,6 @@ hostname,derivation name,utc time,build seconds
 ,X-Restart-Triggers-systemd-udevd,2026-04-02 13:28:37,0
 ,X-Restart-Triggers-systemd-udevd,2026-04-02 13:50:16,0
 ,XnView_MP-1.10.5.glibc2.17-x86_64.AppImage,2026-04-02 15:01:57,10
-,activate,2026-04-02 14:46:03,0
-,activate,2026-04-02 15:02:33,0
 ,activate,2026-04-02 15:12:32,0
 ,activate,2026-04-02 15:24:16,0
 ,activate,2026-04-02 16:55:42,0
@@ -42,6 +41,8 @@ hostname,derivation name,utc time,build seconds
 ,activate,2026-04-02 17:37:11,0
 ,activate,2026-04-03 08:26:41,0
 ,activate,2026-04-03 10:13:08,0
+,activate,2026-04-04 09:01:46,0
+,activate,2026-04-04 09:12:28,0
 ,app-xnsoft-360.webp,2026-04-02 15:01:49,2
 ,appimage-exec.sh,2026-04-02 15:01:43,0
 ,boot.json,2026-04-02 13:50:15,0
@@ -71,7 +72,6 @@ hostname,derivation name,utc time,build seconds
 ,closure-info,2026-04-03 10:12:55,0
 ,cups-files.conf,2026-04-02 15:01:51,0
 ,cups-progs,2026-04-02 15:01:51,0
-,dbus,2026-04-02 14:44:46,0
 ,dbus,2026-04-02 15:02:30,0
 ,dbus,2026-04-02 15:12:29,0
 ,dbus,2026-04-02 15:24:13,0
@@ -81,12 +81,11 @@ hostname,derivation name,utc time,build seconds
 ,dbus,2026-04-02 17:37:08,0
 ,dbus,2026-04-03 08:26:36,0
 ,dbus,2026-04-03 10:13:05,0
+,dbus,2026-04-04 09:01:43,0
 ,dry-activate,2026-04-01 10:32:11,0
 ,dry-activate,2026-04-02 13:28:35,0
 ,dry-activate,2026-04-02 14:16:08,0
 ,dry-activate,2026-04-03 08:23:30,0
-,etc,2026-04-02 14:46:03,0
-,etc,2026-04-02 15:02:33,0
 ,etc,2026-04-02 15:12:31,0
 ,etc,2026-04-02 15:24:16,0
 ,etc,2026-04-02 16:55:42,0
@@ -95,6 +94,8 @@ hostname,derivation name,utc time,build seconds
 ,etc,2026-04-02 17:37:11,0
 ,etc,2026-04-03 08:26:40,0
 ,etc,2026-04-03 10:13:08,0
+,etc,2026-04-04 09:01:46,0
+,etc,2026-04-04 09:12:28,0
 ,etc-modprobe.d-firmware.conf,2026-04-02 13:28:37,0
 ,etc-modprobe.d-firmware.conf,2026-04-02 16:55:18,0
 ,etc-modprobe.d-firmware.conf,2026-04-02 17:31:26,0
@@ -105,6 +106,7 @@ hostname,derivation name,utc time,build seconds
 ,etc-nix-registry.json,2026-04-02 15:01:41,0
 ,etc-os-release,2026-04-02 15:01:41,0
 ,etc-pam-environment,2026-04-02 15:01:56,0
+,etc-polkit-1-rules.d-10-nixos.rules,2026-04-04 09:12:26,0
 ,etc-profile,2026-04-02 13:50:16,0
 ,etc-profile,2026-04-02 15:01:56,0
 ,etc-profile,2026-04-02 15:24:09,0
@@ -202,8 +204,6 @@ hostname,derivation name,utc time,build seconds
 ,nixos-system-nixos-26.05.20260328.8110df,2026-04-02 14:38:55,0
 ,nixos-system-nixos-26.05.20260328.8110df,2026-04-02 14:44:50,0
 ,nixos-system-nixos-26.05.20260328.8110df,2026-04-02 14:46:04,0
-,nixos-system-nixos-26.05.20260401.6201e,2026-04-02 15:02:33,0
-,nixos-system-nixos-26.05.20260401.6201e,2026-04-02 15:12:32,0
 ,nixos-system-nixos-26.05.20260401.6201e,2026-04-02 15:24:16,0
 ,nixos-system-nixos-26.05.20260401.6201e,2026-04-02 15:27:41,0
 ,nixos-system-nixos-26.05.20260401.6201e,2026-04-02 16:55:42,0
@@ -212,6 +212,8 @@ hostname,derivation name,utc time,build seconds
 ,nixos-system-nixos-26.05.20260401.6201e,2026-04-02 17:37:12,0
 ,nixos-system-nixos-26.05.20260401.6201e,2026-04-03 08:26:41,0
 ,nixos-system-nixos-26.05.20260401.6201e,2026-04-03 10:13:08,0
+,nixos-system-nixos-26.05.20260401.6201e,2026-04-04 09:01:47,0
+,nixos-system-nixos-26.05.20260401.6201e,2026-04-04 09:12:28,0
 ,nixos-tmpfiles.d,2026-04-02 13:28:35,0
 ,nixos-version,2026-04-02 15:01:41,0
 ,nixos.conf,2026-04-02 13:50:15,0
@@ -249,7 +251,6 @@ hostname,derivation name,utc time,build seconds
 ,system-generators,2026-04-02 13:28:35,0
 ,system-generators,2026-04-02 15:01:56,0
 ,system-generators,2026-04-02 16:40:09,0
-,system-path,2026-04-02 14:44:46,2
 ,system-path,2026-04-02 15:02:29,2
 ,system-path,2026-04-02 15:12:28,2
 ,system-path,2026-04-02 15:24:13,3
@@ -259,11 +260,10 @@ hostname,derivation name,utc time,build seconds
 ,system-path,2026-04-02 17:37:08,4
 ,system-path,2026-04-03 08:26:35,3
 ,system-path,2026-04-03 10:13:04,4
+,system-path,2026-04-04 09:01:43,4
 ,system-shutdown,2026-04-02 13:28:36,0
 ,system-shutdown,2026-04-02 15:01:56,0
 ,system-shutdown,2026-04-02 16:40:09,0
-,system-units,2026-04-02 14:46:02,1
-,system-units,2026-04-02 15:02:32,1
 ,system-units,2026-04-02 15:12:30,1
 ,system-units,2026-04-02 15:24:15,1
 ,system-units,2026-04-02 16:55:41,1
@@ -272,6 +272,8 @@ hostname,derivation name,utc time,build seconds
 ,system-units,2026-04-02 17:37:10,1
 ,system-units,2026-04-03 08:26:40,2
 ,system-units,2026-04-03 10:13:07,1
+,system-units,2026-04-04 09:01:45,1
+,system-units,2026-04-04 09:12:27,1
 ,tmpfiles.d,2026-04-02 13:28:37,0
 ,tmpfiles.d,2026-04-02 16:55:18,0
 ,tmpfiles.d,2026-04-02 17:31:26,0
@@ -289,8 +291,6 @@ hostname,derivation name,utc time,build seconds
 ,unit-console-getty.service-disabled,2026-04-02 13:28:36,0
 ,unit-console-getty.service-disabled,2026-04-03 08:23:30,0
 ,unit-cups.service,2026-04-02 15:01:52,0
-,unit-dbus.service,2026-04-02 15:02:31,0
-,unit-dbus.service,2026-04-02 15:12:29,0
 ,unit-dbus.service,2026-04-02 15:24:14,0
 ,unit-dbus.service,2026-04-02 16:55:40,0
 ,unit-dbus.service,2026-04-02 17:23:31,0
@@ -299,6 +299,7 @@ hostname,derivation name,utc time,build seconds
 ,unit-dbus.service,2026-04-03 08:26:36,0
 ,unit-dbus.service,2026-04-03 10:13:05,0
 ,unit-dbus.service,2026-04-03 10:13:06,0
+,unit-dbus.service,2026-04-04 09:01:44,0
 ,unit-generate-shutdown-ramfs.service,2026-04-02 15:01:41,0
 ,unit-nfs-mountd.service-disabled,2026-04-01 11:19:19,0
 ,unit-nfs-mountd.service-disabled,2026-04-02 13:28:36,0
@@ -319,8 +320,6 @@ hostname,derivation name,utc time,build seconds
 ,unit-pipewire.socket-disabled,2026-04-01 11:19:19,0
 ,unit-pipewire.socket-disabled,2026-04-02 13:28:37,0
 ,unit-pipewire.socket-disabled,2026-04-03 08:23:34,3
-,unit-polkit.service,2026-04-02 14:44:47,0
-,unit-polkit.service,2026-04-02 15:02:30,0
 ,unit-polkit.service,2026-04-02 15:12:29,0
 ,unit-polkit.service,2026-04-02 15:24:13,0
 ,unit-polkit.service,2026-04-02 16:55:39,0
@@ -329,6 +328,8 @@ hostname,derivation name,utc time,build seconds
 ,unit-polkit.service,2026-04-02 17:37:09,0
 ,unit-polkit.service,2026-04-03 08:26:36,0
 ,unit-polkit.service,2026-04-03 10:13:05,0
+,unit-polkit.service,2026-04-04 09:01:43,0
+,unit-polkit.service,2026-04-04 09:12:26,0
 ,unit-script-cups-pre-start,2026-04-02 15:01:51,0
 ,unit-script-nh-clean-start,2026-04-01 11:19:19,0
 ,unit-sshd.service,2026-04-02 13:50:16,0
@@ -348,7 +349,6 @@ hostname,derivation name,utc time,build seconds
 ,user-generators,2026-04-02 13:28:37,0
 ,user-generators,2026-04-02 15:01:56,0
 ,user-generators,2026-04-02 16:40:09,0
-,user-units,2026-04-02 14:46:02,0
 ,user-units,2026-04-02 15:02:31,0
 ,user-units,2026-04-02 15:12:30,0
 ,user-units,2026-04-02 15:24:14,0
@@ -358,6 +358,7 @@ hostname,derivation name,utc time,build seconds
 ,user-units,2026-04-02 17:37:09,0
 ,user-units,2026-04-03 08:26:37,0
 ,user-units,2026-04-03 10:13:06,0
+,user-units,2026-04-04 09:01:44,0
 ,users-groups.json,2026-04-02 14:16:08,0
 ,xkb-validated,2026-04-02 13:50:15,0
 ,xkb-validated,2026-04-03 08:23:34,0
