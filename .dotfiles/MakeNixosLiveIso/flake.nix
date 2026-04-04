@@ -11,6 +11,8 @@
             environment.systemPackages = with pkgs; [ 
                 vim-full
                 git
+                yazi
+                tmux
             ];
           })
         ];
