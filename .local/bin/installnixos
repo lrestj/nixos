@@ -1,0 +1,58 @@
+#!/bin/bash
+
+echo "############################"
+echo "#                          #"
+echo "#  Spouštím instalaci...   #"
+echo "#                          #"
+echo "############################"
+echo ".cfg.git" >> .gitignore &&
+
+echo "################################"
+echo "#                              #"
+echo "#  Kopírování z repozitáře...  #"
+echo "#                              #"
+echo "################################"
+git clone --bare https://github.com/lrestj/nixos.git /home/libor/.cfg.git
+
+echo "###########################"
+echo "#                         #"
+echo "#  Přesun konfigurace...  #"
+echo "#                         #"
+echo "###########################"
+git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME checkout -f &&
+
+cp -fv /etc/nixos/hardware-configuration.nix /home/libor/.dotfiles/nixos/hosts/zbook/ && 
+
+echo "####################################"
+echo "#                                  #"
+echo "#  Probíhá konfigurace systému...  #"
+echo "#                                  #"
+echo "####################################"
+sudo nixos-rebuild switch --flake /home/libor/.dotfiles/nixos &&
+
+echo "###################################"
+echo "#                                 #"
+echo "#  Nyní lze smazat adresář nixos  #"
+echo "#      #sudo rm -r /etc/nixos     #"
+echo "#                                 #"
+echo "###################################"
+
+echo "###################################"
+echo "#                                 #"
+echo "#  Konfigurace git repozitáře...  #"
+echo "#                                 #"
+echo "###################################"
+git config --global user.email "rest@seznam.cz"
+git config --global user.name "LrestJ"
+git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote remove origin
+git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add github git@github.com:lrestj/nixos.git
+git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add gitlab git@gitlab.com:lrestj/nixos.git
+
+echo -e "\n"
+echo "#####################"
+echo "#                   #" 
+echo "#  Konec instalace  #" 
+echo "#                   #" 
+echo "#####################"
+
+##### END OF FILE #####

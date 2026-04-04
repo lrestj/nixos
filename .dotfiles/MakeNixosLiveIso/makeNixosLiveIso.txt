@@ -1,9 +1,0 @@
-1. cd to flake.nix folder
-git init
-git add flake.nix
-nix build .#nixosConfigurations.exampleIso.config.system.build.isoImage
-Iso is made into .result/iso directory
-
-Make live USB from iso image:
-sudo dd if=/home/libor/Templates/result/iso/nixos-gnome-25.11.20260401.bcd464c-x86_64-linux.iso of=/dev/sdb bs=4M status=progress oflag=direct conv=fsync
-
