@@ -14,7 +14,7 @@
       settings = {
           initial_session = {
               command = "${niri-session}";
-              user = "libor";
+              user = "mirek";
           };
           default_session = {
               command = "${tuigreet} --greeting 'Vítejte v NixOS!' --asterisks --time --time-format '%A, %d. %B %Y • %H:%M:%S'  --remember --remember-session --sessions ${niri-session}";

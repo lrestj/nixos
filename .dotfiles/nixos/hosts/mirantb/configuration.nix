@@ -8,7 +8,7 @@
       [ # Include hardware-configuration.nix
         ./hardware-configuration.nix
         ../../modules/pkgs.nix
-        ../../modules/greetd.nix
+        ../../modules/greetdmirek.nix
       ];
 
   xdg.portal = {
