@@ -33,7 +33,6 @@ hostname,derivation name,utc time,build seconds
 ,X-Restart-Triggers-systemd-udevd,2026-04-02 13:28:37,0
 ,X-Restart-Triggers-systemd-udevd,2026-04-02 13:50:16,0
 ,XnView_MP-1.10.5.glibc2.17-x86_64.AppImage,2026-04-02 15:01:57,10
-,activate,2026-04-02 15:12:32,0
 ,activate,2026-04-02 15:24:16,0
 ,activate,2026-04-02 16:55:42,0
 ,activate,2026-04-02 17:23:33,0
@@ -43,6 +42,7 @@ hostname,derivation name,utc time,build seconds
 ,activate,2026-04-03 10:13:08,0
 ,activate,2026-04-04 09:01:46,0
 ,activate,2026-04-04 09:12:28,0
+,activate,2026-04-05 20:25:35,0
 ,app-xnsoft-360.webp,2026-04-02 15:01:49,2
 ,appimage-exec.sh,2026-04-02 15:01:43,0
 ,boot.json,2026-04-02 13:50:15,0
@@ -86,7 +86,6 @@ hostname,derivation name,utc time,build seconds
 ,dry-activate,2026-04-02 13:28:35,0
 ,dry-activate,2026-04-02 14:16:08,0
 ,dry-activate,2026-04-03 08:23:30,0
-,etc,2026-04-02 15:12:31,0
 ,etc,2026-04-02 15:24:16,0
 ,etc,2026-04-02 16:55:42,0
 ,etc,2026-04-02 17:23:33,0
@@ -96,6 +95,8 @@ hostname,derivation name,utc time,build seconds
 ,etc,2026-04-03 10:13:08,0
 ,etc,2026-04-04 09:01:46,0
 ,etc,2026-04-04 09:12:28,0
+,etc,2026-04-05 20:25:35,0
+,etc-gitconfig,2026-04-05 20:25:32,0
 ,etc-modprobe.d-firmware.conf,2026-04-02 13:28:37,0
 ,etc-modprobe.d-firmware.conf,2026-04-02 16:55:18,0
 ,etc-modprobe.d-firmware.conf,2026-04-02 17:31:26,0
@@ -110,6 +111,7 @@ hostname,derivation name,utc time,build seconds
 ,etc-profile,2026-04-02 13:50:16,0
 ,etc-profile,2026-04-02 15:01:56,0
 ,etc-profile,2026-04-02 15:24:09,0
+,etc-profile,2026-04-05 20:25:32,0
 ,etc-ssh-ssh_config,2026-04-02 13:50:15,0
 ,exec,2026-04-01 10:32:11,0
 ,exec,2026-04-02 13:50:15,0
@@ -158,6 +160,7 @@ hostname,derivation name,utc time,build seconds
 ,graphics-drivers,2026-04-02 17:36:45,0
 ,graphics-drivers,2026-04-03 08:26:12,0
 ,graphics-drivers,2026-04-03 10:12:41,0
+,greetd.toml,2026-04-05 20:25:33,0
 ,hwdb.bin,2026-04-02 13:28:37,1
 ,hwdb.bin,2026-04-02 13:50:16,0
 ,initrd-fsinfo,2026-04-02 13:28:35,0
@@ -204,7 +207,6 @@ hostname,derivation name,utc time,build seconds
 ,nixos-system-nixos-26.05.20260328.8110df,2026-04-02 14:38:55,0
 ,nixos-system-nixos-26.05.20260328.8110df,2026-04-02 14:44:50,0
 ,nixos-system-nixos-26.05.20260328.8110df,2026-04-02 14:46:04,0
-,nixos-system-nixos-26.05.20260401.6201e,2026-04-02 15:24:16,0
 ,nixos-system-nixos-26.05.20260401.6201e,2026-04-02 15:27:41,0
 ,nixos-system-nixos-26.05.20260401.6201e,2026-04-02 16:55:42,0
 ,nixos-system-nixos-26.05.20260401.6201e,2026-04-02 17:23:34,0
@@ -214,6 +216,7 @@ hostname,derivation name,utc time,build seconds
 ,nixos-system-nixos-26.05.20260401.6201e,2026-04-03 10:13:08,0
 ,nixos-system-nixos-26.05.20260401.6201e,2026-04-04 09:01:47,0
 ,nixos-system-nixos-26.05.20260401.6201e,2026-04-04 09:12:28,0
+,nixos-system-nixos-26.05.20260401.6201e,2026-04-05 20:25:35,0
 ,nixos-tmpfiles.d,2026-04-02 13:28:35,0
 ,nixos-version,2026-04-02 15:01:41,0
 ,nixos.conf,2026-04-02 13:50:15,0
@@ -239,6 +242,7 @@ hostname,derivation name,utc time,build seconds
 ,set-environment,2026-04-02 13:50:15,0
 ,set-environment,2026-04-02 15:01:56,0
 ,set-environment,2026-04-02 15:24:09,0
+,set-environment,2026-04-05 20:25:32,0
 ,shutdown-ramfs-contents.json,2026-04-02 15:01:41,0
 ,sshd.conf-final,2026-04-02 13:50:15,0
 ,sshd.conf-settings,2026-04-02 13:50:15,0
@@ -264,7 +268,6 @@ hostname,derivation name,utc time,build seconds
 ,system-shutdown,2026-04-02 13:28:36,0
 ,system-shutdown,2026-04-02 15:01:56,0
 ,system-shutdown,2026-04-02 16:40:09,0
-,system-units,2026-04-02 15:12:30,1
 ,system-units,2026-04-02 15:24:15,1
 ,system-units,2026-04-02 16:55:41,1
 ,system-units,2026-04-02 17:23:32,1
@@ -274,6 +277,7 @@ hostname,derivation name,utc time,build seconds
 ,system-units,2026-04-03 10:13:07,1
 ,system-units,2026-04-04 09:01:45,1
 ,system-units,2026-04-04 09:12:27,1
+,system-units,2026-04-05 20:25:34,1
 ,tmpfiles.d,2026-04-02 13:28:37,0
 ,tmpfiles.d,2026-04-02 16:55:18,0
 ,tmpfiles.d,2026-04-02 17:31:26,0
@@ -301,6 +305,7 @@ hostname,derivation name,utc time,build seconds
 ,unit-dbus.service,2026-04-03 10:13:06,0
 ,unit-dbus.service,2026-04-04 09:01:44,0
 ,unit-generate-shutdown-ramfs.service,2026-04-02 15:01:41,0
+,unit-greetd.service,2026-04-05 20:25:33,0
 ,unit-nfs-mountd.service-disabled,2026-04-01 11:19:19,0
 ,unit-nfs-mountd.service-disabled,2026-04-02 13:28:36,0
 ,unit-nfs-mountd.service-disabled,2026-04-03 08:23:30,0
