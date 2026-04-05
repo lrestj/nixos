@@ -6,10 +6,6 @@
   inputs = {
       nixpkgs.url = "nixpkgs/nixos-unstable"; 
       nixpkgs-stable.url = "nixpkgs/nixos-25.11"; 
-      # waybar = {
-      #     url = "github:alexays/waybar";
-      #     inputs.nixpkgs.follows = "nixpkgs";
-      # };
   };
 
 
@@ -22,16 +18,18 @@
                   ./hosts/zbook/configuration.nix
               ];
           };
+          mirantb = nixpkgs.lib.nixosSystem {
+              system = "x86_64-linux";
+              specialArgs = { inherit inputs; };
+              modules = [
+                  ./hosts/mirantb/configuration.nix
+              ];
+          };
           probook = nixpkgs.lib.nixosSystem {
               system = "x86_64-linux";
               specialArgs = { inherit inputs; };
               modules = [
                   ./hosts/probook/configuration.nix
-                  # ({ pkgs, ... }: {
-                      # environment.systemPackages = [
-                        # inputs.waybar.packages.${pkgs.system}.waybar
-                      # ];
-                  # })
               ];
           };
       };

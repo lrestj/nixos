@@ -26,6 +26,7 @@ echo "##################################"
 echo "#  Na jaký počítač instalujete?  #"
 echo "#  Zbook = 1                     #"
 echo "#  Probook = 2                   #"
+echo "#  Mirantb = 3                   #"
 echo "##################################"
 
 while true; do
@@ -49,17 +50,19 @@ while true; do
                cp -fv /etc/nixos/hardware-configuration.nix /home/libor/.dotfiles/nixos/hosts/probook/ 
                sudo nixos-rebuild switch --flake /home/libor/.dotfiles/nixos#probook
                break;;
+        [2]* ) echo
+               echo "######################################"
+               echo "#                                    #"
+               echo "#  Probíhá konfigurace Mirantb...    #"
+               echo "#                                    #"
+               echo "######################################"
+               cp -fv /etc/nixos/hardware-configuration.nix /home/libor/.dotfiles/nixos/hosts/mirantb/ 
+               sudo nixos-rebuild switch --flake /home/libor/.dotfiles/nixos#mirantb
+               break;;
          * ) echo "Vyberte 1 nebo 2";;
      esac
 done
   
-echo "###################################"
-echo "#                                 #"
-echo "#  Nyní lze smazat adresář nixos  #"
-echo "#      #sudo rm -r /etc/nixos     #"
-echo "#                                 #"
-echo "###################################"
-
 echo "###################################"
 echo "#                                 #"
 echo "#  Konfigurace git repozitáře...  #"
@@ -72,10 +75,11 @@ git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add github gi
 git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add gitlab git@gitlab.com:lrestj/nixos.git
 
 echo -e "\n"
-echo "#####################"
-echo "#                   #" 
-echo "#  Konec instalace  #" 
-echo "#                   #" 
-echo "#####################"
+echo "############################"
+echo "#                          #" 
+echo "#  Konec instalace         #" 
+echo "#  Lze smazat /etc/nixos/  #" 
+echo "#                          #" 
+echo "############################"
 
 ##### END OF FILE #####
