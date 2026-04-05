@@ -63,6 +63,7 @@ while true; do
      esac
 done
   
+echo
 echo "###################################"
 echo "#                                 #"
 echo "#  Konfigurace git repozitáře...  #"
