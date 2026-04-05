@@ -50,7 +50,7 @@ while true; do
                cp -fv /etc/nixos/hardware-configuration.nix /home/libor/.dotfiles/nixos/hosts/probook/ 
                sudo nixos-rebuild switch --flake /home/libor/.dotfiles/nixos#probook
                break;;
-        [2]* ) echo
+        [3]* ) echo
                echo "######################################"
                echo "#                                    #"
                echo "#  Probíhá konfigurace Mirantb...    #"
@@ -59,7 +59,7 @@ while true; do
                cp -fv /etc/nixos/hardware-configuration.nix /home/libor/.dotfiles/nixos/hosts/mirantb/ 
                sudo nixos-rebuild switch --flake /home/libor/.dotfiles/nixos#mirantb
                break;;
-         * ) echo "Vyberte 1 nebo 2";;
+         * ) echo "Vyberte 1, 2, nebo 3";;
      esac
 done
   
