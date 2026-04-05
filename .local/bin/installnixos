@@ -12,7 +12,7 @@ echo "#                              #"
 echo "#  Kopírování z repozitáře...  #"
 echo "#                              #"
 echo "################################"
-git clone --bare https://github.com/lrestj/nixos.git /home/libor/.cfg.git
+git clone --bare https://github.com/lrestj/nixos.git $HOME/.cfg.git
 
 echo "###########################"
 echo "#                         #"
