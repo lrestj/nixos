@@ -98,9 +98,9 @@
       };    
   };
   
-  users.users.libor = {
+  users.users.mirek = {
       isNormalUser = true;
-      description = "libor";
+      description = "mirek";
       extraGroups = [ "networkmanager" "video" "wheel" "scanners" "lp" "input" ];
   };
 
@@ -177,7 +177,7 @@
           videoDrivers = [ "modesetting" ];
       };
       journald.extraConfig = "SystemMaxUse=50M";
-      getty.autologinUser = "libor";
+      getty.autologinUser = "mirek";
       pipewire = {
           enable = true;
           alsa = {

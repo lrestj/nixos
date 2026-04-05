@@ -136,13 +136,13 @@
           enable = true;
           clean.enable = true;
           clean.extraArgs = "--keep-since 7d --keep 3";
-          flake = "/home/libor/.dotfiles/nixos/";
+          flake = "$HOME/.dotfiles/nixos/";
       };
 
       git = {
           enable = true;
           config = {
-              safe.directory = "/home/libor/.dotfiles";
+              safe.directory = "$HOME/.dotfiles";
               init = {
                   defaultBranch = "main";
                   userName  = "libor";
