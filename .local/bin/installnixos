@@ -20,15 +20,37 @@ echo "#  Přesun konfigurace...  #"
 echo "#                         #"
 echo "###########################"
 git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME checkout -f &&
-cp -fv /etc/nixos/hardware-configuration.nix /home/libor/.dotfiles/nixos/hosts/zbook/ && 
 
-echo "####################################"
-echo "#                                  #"
-echo "#  Probíhá konfigurace systému...  #"
-echo "#                                  #"
-echo "####################################"
-sudo nixos-rebuild switch --flake /home/libor/.dotfiles/nixos#nixos &&
+echo
+echo "##################################"
+echo "#  Na jaký počítač instalujete?  #"
+echo "#  Zbook = 1                     #"
+echo "#  Probook = 2                   #"
+echo "##################################"
 
+while true; do
+    read -r -n 1 -p " Vyberte 1/2: " answer
+    case $answer in
+        [1]* ) echo "####################################"
+               echo "#                                  #"
+               echo "#  Probíhá konfigurace Zbook...    #"
+               echo "#                                  #"
+               echo "####################################"
+               cp -fv /etc/nixos/hardware-configuration.nix /home/libor/.dotfiles/nixos/hosts/zbook/ 
+               sudo nixos-rebuild switch --flake /home/libor/.dotfiles/nixos#nixos 
+               break;;
+        [2]* ) echo "######################################"
+               echo "#                                    #"
+               echo "#  Probíhá konfigurace Probook...    #"
+               echo "#                                    #"
+               echo "######################################"
+               cp -fv /etc/nixos/hardware-configuration.nix /home/libor/.dotfiles/nixos/hosts/probook/ 
+               sudo nixos-rebuild switch --flake /home/libor/.dotfiles/nixos#probook
+               break;;
+         * ) echo "Vyberte 1 nebo 2";;
+     esac
+done
+  
 echo "###################################"
 echo "#                                 #"
 echo "#  Nyní lze smazat adresář nixos  #"
