@@ -92,6 +92,7 @@ echo "#  Konec instalace         #"
 echo "#  Lze smazat /etc/nixos/  #" 
 echo "#                          #" 
 echo "############################"
+echo
 
 while true; do
     read -r -n 1 -p "Restartovat do nové konfigurace? (A/N): " answer
