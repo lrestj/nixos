@@ -1,2 +1,2 @@
 @bookmarks,0,1774821497258280,[{"on":"a","desc":"/home/libor/.local/share/applications/btop.desktop","is_parent":false,"path":"/home/libor/.local/share/applications/btop.desktop"},{"path":"/home/libor/.local/bin/1binds.txt","on":"b","desc":"/home/libor/.local/bin/1binds.txt","is_parent":false},{"path":"/home/libor/Public/OneDrive","is_parent":false,"on":"p","desc":"/home/libor/Public/OneDrive"},{"on":"u","desc":"/run/media/libor/Ventoy","is_parent":false,"path":"/run/media/libor/Ventoy"}]
-@bookmarks-last,0,1775469297169011,{"path":"/home/libor/.config/fish","is_parent":false,"desc":"/home/libor/.config/fish","on":"'"}
+@bookmarks-last,0,1775473057628180,{"desc":"/home/libor/.cache","is_parent":true,"path":"/home/libor/.cache","on":"'"}

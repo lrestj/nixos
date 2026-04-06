@@ -45,7 +45,7 @@ while true; do
                echo "#  Probíhá konfigurace Probook...    #"
                echo "#                                    #"
                echo "######################################"
-               git clone --bare https://github.com/lrestj/nixos.git $HOME/.cfg.git
+               git clone --bare https://github.com/lrestj/probook.git $HOME/.cfg.git
                git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME checkout -f &&
                cp -fv /etc/nixos/hardware-configuration.nix $HOME/.dotfiles/nixos/hosts/probook/ 
                sudo nixos-rebuild switch --flake $HOME/.dotfiles/nixos#probook
