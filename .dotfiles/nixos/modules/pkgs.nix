@@ -90,7 +90,7 @@
             swaylock
             swayidle
             sway-contrib.grimshot
-            qutebrowser
+            qutebrowser zenity
             wlprop
             waybar
             wl-color-picker
