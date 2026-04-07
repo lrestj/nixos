@@ -70,6 +70,7 @@
             pavucontrol
             pdfarranger
             polkit_gnome
+            python314Packages.beautifulsoup4
             python3Minimal
             rclone
             reaper  
@@ -89,6 +90,7 @@
             swaylock
             swayidle
             sway-contrib.grimshot
+            qutebrowser
             wlprop
             waybar
             wl-color-picker
