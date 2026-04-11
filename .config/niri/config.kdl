@@ -107,7 +107,8 @@ binds {
     Mod+A hotkey-overlay-title="Open a Terminal" { spawn "foot"; }
     Mod+Backslash hotkey-overlay-title="Run a menu" { spawn-sh "pkill fuzzel || exec fuzzel"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
-    Super+B hotkey-overlay-title="Qutebrowser" { spawn-sh "qutebrowser"; }
+    Super+V hotkey-overlay-title="Qutebrowser" { spawn-sh "qutebrowser"; }
+    Super+B hotkey-overlay-title="Browser" { spawn-sh "$BROWSER"; }
     Super+E hotkey-overlay-title="Vim" { spawn-sh "wrappedvim"; }
     Mod+Y hotkey-overlay-title="Open a Yazi" { spawn-sh "foot --app-id yazi -e yazi"; }
     Mod+C hotkey-overlay-title="Clipboard" { spawn-sh "pkill fuzzel || cliphist-fuzzel-img"; }
