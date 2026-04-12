@@ -85,6 +85,8 @@ while true; do
      esac
 done
   
+mkdir Dokumenty Videa Hudba Stažené Public Templates
+
 echo -e "\n"
 echo "############################"
 echo "#                          #" 
