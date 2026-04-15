@@ -97,3 +97,4 @@ Templates/
 .dbus/
 .local/share/qutebrowser
 .dotfiles/install/
+.inputrc
