@@ -81,6 +81,7 @@ window-rule {
 }
 window-rule {
     match app-id="galculator"
+    match app-id="mpv"
     open-floating true
 }
 window-rule {

@@ -22,7 +22,8 @@ c.colors.webpage.darkmode.policy.page = "always"
 c.colors.webpage.preferred_color_scheme = "dark"
 
 # Open video links in mpv — much lighter than in-browser playback
-config.bind(',m', 'hint links spawn mpv {hint-url}')
+config.bind(',m', 'spawn mpv {url}')
+config.bind(',M', 'hint links spawn mpv {hint-url}')
 
 # Force reload — bypass cache
 config.bind('R', 'reload -f')
