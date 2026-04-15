@@ -41,7 +41,7 @@ filetype plugin indent on
 set nu cul autoread hidden lz
 set title titlestring=%F
 set ruler rulerformat=%43(\ \ %v\ \ \ %l/%L\ \ %p%%%=\ \%)
-set directory=~/Public/
+set directory=$HOME
 set ignorecase smartcase incsearch
 set mouse=a scrolloff=5
 set spelllang=cs,en
