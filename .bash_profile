@@ -3,6 +3,6 @@
 # Get the aliases and functions
 [ -f $HOME/.bashrc ] && . $HOME/.bashrc
 
- # if [ "$(tty)" = "/dev/tty1" ]; then
- #     exec start
- # fi
+if [ "$(tty)" = "/dev/tty1" ]; then
+    exec start
+fi

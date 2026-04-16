@@ -8,25 +8,24 @@ echo "#  r) RESTARTOVAT            #"
 echo "#  x) VYPNOUT                #"
 echo "#                            #"
 echo "##############################"
-read -t 6 -n 1 -s wm_choice
-case $wm_choice in
-v)
-exec dbus-run-session /usr/bin/niri --session
-;;
-x)
-echo "Vypínání..."
-exec loginctl poweroff
-sleep 1
-;;
-r)
-echo "Restart..."
-sleep 1
-exec loginctl reboot
-;;
-*)
-echo "SPOUŠTÍM VOID Niri"
-sleep 1
-exec dbus-run-session niri --session
-;;
-esac
 
+while true; do
+read -n 1 -s wm_choice
+    case $wm_choice in
+    v)
+    exec dbus-run-session /usr/bin/niri --session
+    break;;
+    x)
+    echo "Vypínání..."
+    sleep 1
+    exec loginctl poweroff
+    break;;
+    r)
+    echo "Restart..."
+    sleep 1
+    exec loginctl reboot
+    break;;
+    *)
+    echo "Vyberte jednu z možností";;
+    esac
+done
