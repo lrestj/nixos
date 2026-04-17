@@ -29,4 +29,11 @@
     endw
     set timeout ttimeoutlen=50
 
+### Authentication error:
+1 install xhost pkg
+2 run in terminal ╰─>$ xhost + local:
+
+### Default terminal for Nemo
+gsettings set org.cinnamon.desktop.default-applications.terminal exec foot
+
 #### END OF FILE ##### 
