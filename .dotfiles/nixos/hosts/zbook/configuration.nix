@@ -7,10 +7,10 @@
   imports =
       [ # Include hardware-configuration.nix
         ./hardware-configuration.nix
-        # ../../modules/greetd.nix
         ../../modules/pkgs.nix
-        # ../../modules/nvidia.nix
         ../../modules/disableNvidia
+        # ../../modules/nvidia.nix
+        # ../../modules/greetd.nix
       ];
 
   xdg.portal = {
