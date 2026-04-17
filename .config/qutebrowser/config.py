@@ -14,7 +14,7 @@ c.content.dns_prefetch = False
 # Vzhled
 c.fonts.default_family = "JetBrains Mono"
 c.fonts.default_size = "11pt"
-c.zoom.default = "90%"
+c.zoom.default = "100%"
 
 # Dark mode
 c.colors.webpage.darkmode.enabled = True
