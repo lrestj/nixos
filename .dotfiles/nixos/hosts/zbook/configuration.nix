@@ -7,9 +7,10 @@
   imports =
       [ # Include hardware-configuration.nix
         ./hardware-configuration.nix
-        ../../modules/greetd.nix
+        # ../../modules/greetd.nix
         ../../modules/pkgs.nix
-        ../../modules/nvidia.nix
+        # ../../modules/nvidia.nix
+        ../../modules/disableNvidia
       ];
 
   xdg.portal = {
@@ -26,6 +27,11 @@
   documentation.man.cache.enable = false;
   nixpkgs.config.allowUnfree = true;
   environment = {
+      loginShellInit = ''
+            if [ "$(tty)" = "/dev/tty1" ]; then
+            exec start
+            fi
+      '';
       localBinInPath = true;
       variables = {
           EDITOR = "vim";
@@ -173,7 +179,8 @@
       tumbler.enable = true;
       udisks2.enable = true;
       xserver = {
-          # enable = true;
+          displayManager.lightdm.enable = false;
+          enable = false;
           xkb.layout = "cz";
           videoDrivers = [ "modesetting" ];
       };
