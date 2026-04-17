@@ -8,9 +8,7 @@
       [ # Include hardware-configuration.nix
         ./hardware-configuration.nix
         ../../modules/pkgs.nix
-        ../../modules/disableNvidia
-        # ../../modules/nvidia.nix
-        # ../../modules/greetd.nix
+        ../../modules/disableNvidia.nix
       ];
 
   xdg.portal = {
@@ -114,7 +112,6 @@
   boot = {
       kernelPackages = pkgs.linuxPackages;
       kernel.sysctl."vm.swappiness" = 10;
-      # initrd.kernelModules = [ "i915" ];
       loader = {
           timeout = 2;
           systemd-boot = {
@@ -125,10 +122,6 @@
                       title Void linux
                       efi /EFI/void_grub/grubx64.efi
                   '';
-                  # "Siduction.conf" = ''
-                  #     title openSUSE Tumbleweed
-                  #     efi /EFI/opensuse/shim.efi
-                  # '';
               };
           };
           efi = {
@@ -204,8 +197,6 @@
           };
       };
 
-      # To add the printer run:
-      # NIXPKGS_ALLOW_UNFREE=1 nix-shell -p hplipWithPlugin --run 'sudo -E hp-setup'
       printing = {
           enable = true;
           drivers = [ pkgs.hplip ];
