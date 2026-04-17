@@ -179,7 +179,6 @@
       tumbler.enable = true;
       udisks2.enable = true;
       xserver = {
-          displayManager.lightdm.enable = false;
           enable = false;
           xkb.layout = "cz";
           videoDrivers = [ "modesetting" ];
