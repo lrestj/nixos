@@ -130,6 +130,13 @@
         ]);
   
   programs = {
+    # bash = {
+    #   loginShellInit = ''
+    #       if [ "$(tty)" = "/dev/tty2" ]; then
+    #           exec start
+    #       fi
+    #   '';
+    # };
       niri.enable = true;
       xfconf.enable = true;
       dconf.enable = true;  
