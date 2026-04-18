@@ -7,6 +7,7 @@
   imports =
       [ # Include hardware-configuration.nix
         ./hardware-configuration.nix
+        ../../modules/greetd.nix
         ../../modules/pkgs.nix
         ../../modules/disableNvidia.nix
       ];
@@ -25,11 +26,11 @@
   documentation.man.cache.enable = false;
   nixpkgs.config.allowUnfree = true;
   environment = {
-      loginShellInit = ''
-            if [ "$(tty)" = "/dev/tty1" ]; then
-            exec start
-            fi
-      '';
+      # loginShellInit = ''
+      #       if [ "$(tty)" = "/dev/tty1" ]; then
+      #       exec start
+      #       fi
+      # '';
       localBinInPath = true;
       variables = {
           EDITOR = "vim";
