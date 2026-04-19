@@ -1,0 +1,8 @@
+#!/bin/bash
+
+sudo cp -rv $HOME/.dotfiles/agetty-autologin-tty1 /etc/sv/
+sudo ln -s /etc/sv/agetty-autologin-tty1/ /var/service/
+sudo rm /var/service/agetty-tty1
+
+### END OF FILE ###
+
