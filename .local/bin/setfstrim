@@ -1,0 +1,6 @@
+#!/bin/bash
+
+sudo mkdir -p /etc/cron.weekly
+sudo cp -v $HOME/.dotfiles/fstrimset /etc/cron.weekly/
+sudo chmod +x /etc/cron.weekly/fstrimset
+sudo ln -s /etc/sv/snooze-weekly /var/service/

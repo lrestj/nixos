@@ -1,0 +1,5 @@
+#!/bin/bash
+
+fstrim /
+echo "Trimfs proveden $(date | cut -c 1-33)" >> $HOME/fstrim.log
+
