@@ -93,3 +93,4 @@ voidsway/
 .local/share/qutebrowser/adblock-cache.dat .local/share/qutebrowser/blocked-hosts .local/share/qutebrowser/cmd-history .local/share/qutebrowser/greasemonkey .local/share/qutebrowser/history.sqlite .local/share/qutebrowser/qutebrowser .local/share/qutebrowser/sessions .local/share/qutebrowser/state .local/share/qutebrowser/webengine
 .dotfiles/install/
 .sudo_as_admin_successful
+.config/btop/btop.log
