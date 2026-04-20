@@ -1,0 +1,6 @@
+[global]
+origin = "top-right"
+font = "JetBrains Mono 12"
+icon_theme = "Papirus"
+icon_path = /usr/share/icons/Papirus/16x16/apps:/home/libor/.local/share/icons
+timeout = 5
