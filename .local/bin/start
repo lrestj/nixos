@@ -4,7 +4,7 @@ echo "##############################"
 echo "#                            #"
 echo "#  HOLA, VYBER SEZENÍ:       #"
 echo "#                            #"
-echo "#  n) NixOS Niri             #"
+echo "#  d) DEBIAN Niri            #"
 echo "#  r) RESTARTOVAT            #"
 echo "#  x) VYPNOUT                #"
 echo "#                            #"
@@ -12,9 +12,9 @@ echo "##############################"
 while true; do
   read -n 1 -s wm_choice
     case $wm_choice in
-    n)
+    d)
     echo
-    echo "Spouštím NixOS..."
+    echo "Spouštím Debian..."
     exec niri-session -l
     ;;
     x)
