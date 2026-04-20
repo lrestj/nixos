@@ -1,0 +1,3 @@
+/nfs/Nas -fstype=nfs4,rw,hard 192.168.77.18:/volume1/Rodinas
+/nfs/HudbaNas -fstype=nfs4,rw,hard 192.168.77.18:/volume1/Hudba
+/nfs/FilmyNas -fstype=nfs4,rw,hard 192.168.77.18:/volume1/Filmy
