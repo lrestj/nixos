@@ -1,0 +1,21 @@
+#!/bin/bash
+
+sudo apt install git libxcb-cursor-dev rustup gcc clang \
+    libudev-dev libgbm-dev libxkbcommon-dev libegl1-mesa-dev \
+    libwayland-dev libinput-dev libdbus-1-dev libsystemd-dev \
+    libseat-dev libpipewire-0.3-dev libpango1.0-dev libdisplay-info-dev
+
+rustup default stable
+cargo install cargo-deb
+
+git clone https://github.com/YaLTeR/niri.git
+cd niri
+cargo deb
+
+sudo apt install ./target/debian/*.deb
+
+git clone https://github.com/Supreeeme/xwayland-satellite.git
+cd xwayland-satellite
+cargo deb
+sudo apt install ./target/debian/*.deb
+

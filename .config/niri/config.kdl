@@ -80,8 +80,8 @@ window-rule {
 window-rule {
     match app-id="btop"
     open-floating true
-    default-column-width { fixed 1390; }
-    default-window-height { fixed 900; }
+    default-column-width { fixed 1250; }
+    default-window-height { fixed 700; }
 }
 window-rule {
     geometry-corner-radius 12
