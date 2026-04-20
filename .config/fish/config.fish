@@ -13,7 +13,7 @@ abbr grep "grep --color=auto"
 abbr yay "sudo apt update && sudo apt upgrade"
 abbr yup "ya pack -u"
 abbr in "sudo apt install"
-abbr se "sudo apt remove"
+abbr rem "sudo apt remove"
 abbr se "apt search"
 abbr reb "systemctl reboot"
 
