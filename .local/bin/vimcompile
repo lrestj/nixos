@@ -1,1 +1,10 @@
 #!/bin/bash
+
+mkdir -p $HOME/.local/src
+cd $HOME/.local/src
+git clone --depth=1 https://github.com/vim/vim.git
+cd vim/src
+make distclean
+sudo make install
+
+#  END OF FILLE  #
