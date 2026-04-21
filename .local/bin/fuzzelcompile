@@ -8,7 +8,6 @@ sudo apt install \
     wayland-protocols \
     libwayland-dev \
     libfcft-dev \
-    # libpixman-1-dev \
     libcairo2-dev \
     libpng-dev \
     librsvg2-dev \
