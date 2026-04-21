@@ -1,0 +1,47 @@
+#!/bin/bash
+
+sudo apt update
+sudo apt install \
+    cmake \
+    meson \
+    ninja-build \
+    wayland-protocols \
+    libwayland-dev \
+    libfcft-dev \
+    # libpixman-1-dev \
+    libcairo2-dev \
+    libpng-dev \
+    librsvg2-dev \
+    libxkbcommon-dev \
+    scdoc \
+    libtllist-dev
+
+mkdir -p $HOME/.local/src
+cd $HOME/.local/src
+git clone https://gitlab.freedesktop.org/pixman/pixman.git
+cd pixman
+meson setup builddir --prefix=/usr/local
+meson compile -C builddir
+sudo meson install -C builddir
+
+# Clone the repository
+cd $HOME/.local/src
+git clone https://codeberg.org/dnkl/fuzzel.git
+cd fuzzel
+
+# Create a build directory
+mkdir -p build
+cd build
+
+# Configure the build with meson
+# --prefix=/usr ensures it installs to /usr/local/bin or /usr/bin
+meson --buildtype=release --prefix=$HOME/.local ..
+
+# Build using ninja
+ninja
+
+# Install the binary
+sudo ninja install
+
+#  END OF FILE  #
+

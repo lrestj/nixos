@@ -14,9 +14,9 @@ case $selected in
     "$a")
         lockscreen;;
     "$b")
-        sleep 1; swaymsg exit;;
+        sleep 0.5; niri msg action quit --skip-confirmation;;
     "$c")
-        sleep 1; systemctl reboot;;
+        sleep 0.5; systemctl reboot;;
     "$d")
-        sleep 1; systemctl poweroff;;
+        sleep 0.5; systemctl poweroff;;
 esac
