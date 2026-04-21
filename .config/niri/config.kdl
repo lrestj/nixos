@@ -46,6 +46,7 @@ layout {
 }
 
 // Startup list:
+spawn-sh-at-startup "lxqt-policykit-agent &"
 spawn-sh-at-startup "pipewire &"
 spawn-sh-at-startup "nirileft"
 spawn-sh-at-startup "brightnessctl s 80%"
@@ -73,6 +74,7 @@ window-rule {
     default-window-height { fixed 860; }
 }
 window-rule {
+    match app-id="lxqt-policykit-agent"
     match app-id="galculator"
     match app-id="mpv"
     open-floating true
