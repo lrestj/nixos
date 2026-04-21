@@ -1,3 +1,4 @@
 #!/bin/bash
 
+sudo apt install systemd-boot
 sudo dpkg -P --force-all grub-common grub-pc grub-pc-bin grub2-common grub-efi-amd64 grub-efi-amd64-bin os-prober grub-efi-amd64-unsigned grub-efi-amd64-signed

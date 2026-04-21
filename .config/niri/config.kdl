@@ -28,7 +28,7 @@ input {
 
 cursor {
     xcursor-theme "Bibata-Modern-Classic"
-    xcursor-size 28
+    xcursor-size 26
 }
 
 layout {

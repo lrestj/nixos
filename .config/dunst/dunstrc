@@ -1,6 +1,6 @@
 [global]
 origin = "top-right"
 font = "JetBrains Mono 12"
-icon_theme = "Papirus"
-icon_path =/usr/share/icons/Papirus/16x16/status:/usr/share/icons/Papirus/16x16/places:/usr/share/icons/Papirus/16x16/panel:/usr/share/icons/Papirus/16x16/emotes:/usr/share/icons/Papirus/16x16/emblems:/usr/share/icons/Papirus/16x16/devices:/usr/share/icons/Papirus/16x16/actions:/usr/share/icons/Papirus/16x16/apps:/home/libor/.local/share/icons
+icon_theme = "Papirus-Dark"
+icon_path =/usr/share/icons/Papirus-Dark/32x32/status:/usr/share/icons/Papirus-Dark/32x32/places:/usr/share/icons/Papirus-Dark/32x32/panel:/usr/share/icons/Papirus-Dark/32x32/emotes:/usr/share/icons/Papirus-Dark/32x32/emblems:/usr/share/icons/Papirus-Dark/32x32/devices:/usr/share/icons/Papirus-Dark/32x32/actions:/usr/share/icons/Papirus-Dark/32x32/apps:/home/libor/.local/share/icons
 timeout = 5
