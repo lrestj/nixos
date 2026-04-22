@@ -17,10 +17,8 @@
               user = "libor";
           };
           default_session = {
-              command = "start";
-              user = "libor";
-              # command = "${tuigreet} --greeting 'Vítejte v NixOS!' --asterisks --time --time-format '%A, %d. %B %Y • %H:%M:%S'  --remember --remember-session --sessions ${niri-session}";
-              # user = "greeter";
+              command = "${tuigreet} --greeting 'Vítejte v NixOS!' --asterisks --time --time-format '%A, %d. %B %Y • %H:%M:%S'  --remember --remember-session --sessions ${niri-session}";
+              user = "greeter";
           };
       };
   };
