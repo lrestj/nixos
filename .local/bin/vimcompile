@@ -9,7 +9,7 @@ sudo make install
 echo "######################"
 echo "#  Instalace fuzzel  #"
 echo "######################"
-sudo apt install \
+sudo apt -y install \
     cmake \
     meson \
     ninja-build \
