@@ -42,7 +42,7 @@ cd build
 
 # Configure the build with meson
 # --prefix=/usr ensures it installs to /usr/local/bin or /usr/bin
-meson --buildtype=release --prefix=$HOME/.local ..
+meson --buildtype=release --prefix=/usr ..
 
 # Build using ninja
 ninja
