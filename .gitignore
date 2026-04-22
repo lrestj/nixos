@@ -1,3 +1,5 @@
+.cargo/
+.rustup/
 .bash_history
 .cache/
 .cfg.git
