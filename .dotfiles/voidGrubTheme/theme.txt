@@ -15,9 +15,10 @@ terminal-border: "0"
   top = 45%
   width = 55%
   height = 65%
-  item_font = "Roboto Regular 16"
-  item_color = "green"
-  selected_item_color = "gray"
+  item_font = "JetBrains Mono Bold 19"
+  selected_item_font = "JetBrains Mono Bold 20"
+  item_color = "brown"
+  selected_item_color = "black"
   icon_width = 24
   icon_height = 24
   item_icon_space = 10
@@ -33,7 +34,7 @@ terminal-border: "0"
   top = 41%
   align = "center"
   id = "__timeout__"
-  text = "Selected OS will start in %d seconds"
+  text = "Vybraný OS se spustí za %d s"
   color = "gray"
   font = "Roboto Regular 14"
 }

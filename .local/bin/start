@@ -16,6 +16,9 @@ read -n 1 -s wm_choice
     s)
     exec dbus-run-session /usr/bin/niri --session
     break;;
+    "")
+    exec dbus-run-session /usr/bin/niri --session
+    break;;
     x)
     echo "Vypínání..."
     sleep 1
