@@ -4,7 +4,7 @@ echo "##############################"
 echo "#                            #"
 echo "#  HOLA, VYBER SEZENÍ:       #"
 echo "#                            #"
-echo "#  v) VOID Niri              #"
+echo "#  s) SPUSTIT VOID LINUX     #"
 echo "#  r) RESTARTOVAT            #"
 echo "#  x) VYPNOUT                #"
 echo "#                            #"
@@ -13,7 +13,7 @@ echo "##############################"
 while true; do
 read -n 1 -s wm_choice
     case $wm_choice in
-    v)
+    s)
     exec dbus-run-session /usr/bin/niri --session
     break;;
     x)
