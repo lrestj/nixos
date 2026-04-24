@@ -11,12 +11,12 @@ settings:
       normal:
         ',m': hint links spawn mpv {hint-url}
         R: reload -f
-        aa: cmd-set-text -s :quickmark-add {title}
+        aa: cmd-set-text -s :quickmark-add "{title}"
         td: config-cycle colors.webpage.darkmode.enabled
   colors.tabs.bar.bg:
     global: '#434444'
   colors.webpage.darkmode.enabled:
-    global: true
+    global: false
   content.headers.user_agent:
     https://accounts.google.com/*: Mozilla/5.0 ({os_info}; rv:135.0) Gecko/20100101
       Firefox/135
