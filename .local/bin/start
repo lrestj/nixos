@@ -1,18 +1,23 @@
 #!/bin/bash
 
-echo "##############################"
-echo "#                            #"
-echo "#  HOLA, VYBER SEZENÍ:       #"
-echo "#                            #"
-echo "#  d) DEBIAN Niri            #"
-echo "#  r) RESTARTOVAT            #"
-echo "#  x) VYPNOUT                #"
-echo "#                            #"
-echo "##############################"
+echo " ##############################"
+echo " #                            #"
+echo " #  HOLA, VYBER SEZENÍ:       #"
+echo " #                            #"
+echo " #  s) SPUSTIT DEBIAN         #"
+echo " #  r) RESTARTOVAT            #"
+echo " #  x) VYPNOUT                #"
+echo " #                            #"
+echo " ##############################"
 while true; do
   read -n 1 -s wm_choice
     case $wm_choice in
-    d)
+    "")
+    echo
+    echo "Spouštím Debian..."
+    exec niri-session -l
+    ;;
+    s)
     echo
     echo "Spouštím Debian..."
     exec niri-session -l
