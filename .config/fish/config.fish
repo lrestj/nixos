@@ -19,6 +19,7 @@ abbr cleanall "sudo nix-collect-garbage -d && nix-collect-garbage -d && sudo nix
 abbr reb "reboot"
 abbr nxs "nix-shell -p"
 abbr nrs "nh os switch -H zbook"
+abbr nrb "nh os boot -H zbook"
 # abbr nrs "sudo nixos-rebuild switch --flake ~/.dotfiles/nixos/"
 abbr test "nh os test"
 abbr nco "$EDITOR ~/.dotfiles/nixos/hosts/zbook/configuration.nix"
