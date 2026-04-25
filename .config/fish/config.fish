@@ -5,6 +5,7 @@ if status is-interactive
 fzf --fish | source
 
 abbr !! --position anywhere --function last_history_item
+abbr hp "hp-setup -i 192.168.77.5"
 abbr sudo "sudo"
 abbr ls "ls --color=auto"
 abbr grep "grep --color=auto"
