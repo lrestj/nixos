@@ -8,6 +8,7 @@ fzf --fish | source
 
 abbr !! --position anywhere --function last_history_item
 abbr sudo "sudo"
+abbr hp "sudo hp-setup -i 192.168.77.5"
 abbr ls "ls --color=auto"
 abbr grep "grep --color=auto"
 abbr yay "sudo apt update && sudo apt upgrade"
