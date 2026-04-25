@@ -7,6 +7,7 @@ mkShell {
     cmake
     wayland-protocols
     meson ninja
+    ncurses
     cairo
     libxkbcommon
     libpng
