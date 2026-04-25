@@ -27,7 +27,7 @@ abbr pco "$EDITOR ~/.dotfiles/nixos/hosts/probook/configuration.nix"
 abbr npk "$EDITOR ~/.dotfiles/nixos/modules/pkgs.nix"
 abbr nfl "$EDITOR ~/.dotfiles/nixos/flake.nix"
 
-abbr lspkg "nix-store --query --requisites /run/current-system | grep"
+abbr lspkg "nix-store --query --requisites /run/current-system | cut -c 45-77 | sort | less"
 abbr lsgen "nh os info"
 # abbr lsgen "sudo nix-env -p /nix/var/nix/profiles/system --list-generations"
 abbr lsdel ".dotfiles/scripts/genlist.sh"
