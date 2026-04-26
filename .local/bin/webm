@@ -16,15 +16,15 @@ fi="\0icon\x1ffonts"
 selected=$(echo -e "g\t$a$ai\nn\t$b$bi\np\t$c$ci\ns\t$d$di\nt\t$e$ei\nf\t$f$fi" | fuzzel --with-nth 2 --accept-nth 2 --match-nth 1 --auto-select -d )
 case $selected in
     "$a")
-        brave https://mail.google.com/mail/u/0/;;
+        $BROWSER https://mail.google.com/mail/u/0/;;
     "$b")
-        brave https://search.nixos.org/packages;;
+        $BROWSER https://search.nixos.org/packages;;
     "$c")
-        brave https://prehrajto.cz/;;
+        $BROWSER https://prehrajto.cz/;;
     "$d")
-        brave https://sdilej.cz/;;
+        $BROWSER https://sdilej.cz/;;
     "$e")
-        brave http://titulky.com/;;
+        $BROWSER http://titulky.com/;;
     "$f")
-        brave https://www.nerdfonts.com/cheat-sheet;;
+        $BROWSER https://www.nerdfonts.com/cheat-sheet;;
 esac
