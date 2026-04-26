@@ -121,11 +121,11 @@
 
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "Zvuk {volume}% {icon} {format_source}",
+        "format": "󰕾 {volume}%  {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
+        "format-source": " {volume}%",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
@@ -141,7 +141,7 @@
 
     "backlight": {
         // "device": "acpi_video1",
-        "format": " Jas {percent}% {icon} ",
+        "format": " 󰃟  {percent}%  ",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
         "on-click-right": "pkill foot || foot",
         "on-click": "pkill btop || foot -T btop -e btop"
@@ -155,7 +155,7 @@
     "clock": {
         "timezone": "Europe/Prague",
         "locale": "cs_CZ.UTF-8",
-        "format": "Čas:{:%H:%M } ",
+        "format": "  {:%H:%M }",
         "tooltip-format": "<big>{:L%e L%B %Y }</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:L%A %d.%m.%Y}"
     },
@@ -186,13 +186,6 @@
             "balanced": " ",
             "power-saver": " "
         }
-    },
-    "sway/language": {
-        "format": " {} ",
-        "min-length" : 4,
-        "format-cs": "🇨🇿",
-        "format-en": "🇺🇸",
-        "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
     },
 
     "custom/power": {
