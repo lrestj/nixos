@@ -173,6 +173,7 @@ binds {
     Mod+Shift+R { switch-preset-window-height; }
     Mod+Ctrl+R { reset-window-height; }
     Mod+F { maximize-column; }
+    Mod+M { maximize-window-to-edges; }
     Mod+Alt+F { fullscreen-window; }
     Mod+Ctrl+F { expand-column-to-available-width; }
     Mod+KP_Insert { center-column; }
