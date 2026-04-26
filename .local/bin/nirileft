@@ -1,9 +1,13 @@
 #!/bin/bash
-# Run this script to listen for new windows
-niri msg --json event-stream | jq -r --unbuffered '
-  select(.WindowOpenedOrChanged != null) |
-  .WindowOpenedOrChanged.window.id
-' | while read -r window_id; do
-    niri msg action move-column-left
-    # Run other niri msg actions here
-done
+# Run this script to listen for new tiled windows
+IS_FLOATING=$(niri msg focused-window | jq '.is_floating')
+
+if [ "$IS_FLOATING" = "false" ]; then
+    niri msg --json event-stream | jq -r --unbuffered '
+      select(.WindowOpenedOrChanged != null) |
+      .WindowOpenedOrChanged.window.id
+    ' | while read -r window_id; do
+        niri msg action move-column-left
+        # Run other niri msg actions here
+    done
+fi
