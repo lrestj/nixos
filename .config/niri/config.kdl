@@ -46,7 +46,7 @@ layout {
 }
 
 // Startup list:
-spawn-sh-at-startup "lxqt-policykit-agent &"
+spawn-sh-at-startup "/usr/libexec/xfce-polkit &"
 spawn-sh-at-startup "pipewire &"
 spawn-sh-at-startup "nirileft"
 spawn-sh-at-startup "brightnessctl s 80%"
