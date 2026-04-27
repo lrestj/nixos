@@ -51,6 +51,22 @@ ninja
 sudo ninja install
 
 echo
+echo "###########################"
+echo "#  Instalace xfce-polkit  #"
+echo "###########################"
+echo
+sudo apt install ninja-build libxfce4ui-2-dev libpolkit-agent-1-dev
+mkdir -p $HOME/.local/src/
+cd $HOME/.local/src
+git clone https://github.com/ncopa/xfce-polkit.git
+cd xfce-polkit
+mkdir build
+cd build
+meson --prefix=/usr ..
+ninja
+sudo ninja install
+
+echo
 echo "#####################"
 echo "#  Konec instalace  #"
 echo "#####################"

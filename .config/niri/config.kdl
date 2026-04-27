@@ -74,7 +74,7 @@ window-rule {
     default-window-height { fixed 860; }
 }
 window-rule {
-    match app-id="lxqt-policykit-agent"
+    match app-id="xfce-polkit"
     match app-id="galculator"
     match app-id="mpv"
     open-floating true
