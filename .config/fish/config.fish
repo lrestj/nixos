@@ -11,10 +11,7 @@ abbr ls "ls --color=auto"
 abbr grep "grep --color=auto"
 abbr yup "ya pack -u"
 abbr reb "loginctl reboot"
-abbr off "xfce4-session-logout -h"
 
-abbr cleanall "nix-collect-garbage -d"
-abbr nrs "nix-channel --update && nix-env -u '*'"
 abbr yay "sudo xbps-install -Su"
 abbr in "sudo xbps-install -S"
 abbr se "xbps-query -Rs"
@@ -34,4 +31,3 @@ abbr str "git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor log --pret
 abbr untrack "git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME update-index --skip-worktree"
 
 end
-
