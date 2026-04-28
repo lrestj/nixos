@@ -26,7 +26,7 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-export BROWSER=qutebrowser
+export BROWSER=brave-browser
 export TERMINAL=foot
 export kalk=galculator
 export EDITOR=vim
