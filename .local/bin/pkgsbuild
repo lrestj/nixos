@@ -15,17 +15,11 @@ echo "######################"
 echo "#  Instalace fuzzel  #"
 echo "######################"
 sudo apt -y install \
-    cmake \
-    meson \
-    ninja-build \
-    wayland-protocols \
-    libwayland-dev \
-    libfcft-dev \
-    libcairo2-dev \
-    libpng-dev \
-    librsvg2-dev \
-    libxkbcommon-dev \
-    scdoc \
+    cmake meson ninja-build \
+    wayland-protocols libwayland-dev \
+    libfcft-dev libcairo2-dev \
+    libpng-dev librsvg2-dev \
+    libxkbcommon-dev scdoc \
     libtllist-dev
 
 mkdir -p $HOME/.local/src
@@ -36,23 +30,13 @@ meson setup builddir --prefix=/usr/local
 meson compile -C builddir
 sudo meson install -C builddir
 
-# Clone the repository
 cd $HOME/.local/src
 git clone https://codeberg.org/dnkl/fuzzel.git
 cd fuzzel
-
-# Create a build directory
 mkdir -p build
 cd build
-
-# Configure the build with meson
-# --prefix=/usr ensures it installs to /usr/local/bin or /usr/bin
-meson --buildtype=release --prefix=/usr ..
-
-# Build using ninja
+meson setup --buildtype=release --prefix=/usr ..
 ninja
-
-# Install the binary
 sudo ninja install
 
 echo
@@ -67,7 +51,7 @@ git clone https://github.com/ncopa/xfce-polkit.git
 cd xfce-polkit
 mkdir build
 cd build
-meson --prefix=/usr ..
+meson setup --prefix=/usr ..
 ninja
 sudo ninja install
 
