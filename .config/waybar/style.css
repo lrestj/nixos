@@ -1,7 +1,7 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, Hack Nerd Fonts, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 11px;
+    font-size: 14px;
 }
 
 window#waybar {
@@ -45,7 +45,7 @@ button {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: inherit;
-    /* box-shadow: inset 0 -3px #ffffff; */
+    box-shadow: inset 0 -3px transparent;
 }
 
 /* you can set a style on hover for any module like this */
@@ -143,10 +143,10 @@ button:hover {
 
 #custom-menu,
 #memory,
+#idle_inhibitor,
 #pulseaudio,
 #backlight,
 #clock,
-#idle_inhibitor,
 #battery,
 #power-profiles-daemon {
     border-radius: 20px 20px 20px 20px;
@@ -154,6 +154,14 @@ button:hover {
     margin-right: 4px;
     margin-bottom: 4px;
 }
+/* #pulseaudio, */
+/* #clock { */
+/*     border-radius: 20px 20px 20px 20px; */
+/*     margin-top: 2px; */
+/*     margin-right: 4px; */
+/*     margin-bottom: 4px; */
+/*     padding-top: 0px; */
+/* } */
 #cpu {
     border-radius: 20px 0px 0px 20px;
     margin-top: 2px;
@@ -184,7 +192,7 @@ button:hover {
 }
 
 #custom-scan{
-    font-size: 13px;
+    font-size: 17px;
     background-image: url('/home/libor/.local/share/icons/skener.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -193,7 +201,7 @@ button:hover {
 }
     
 #custom-office{
-    font-size: 14px;
+    font-size: 18px;
     background-image: url('/home/libor/.local/share/icons/libreoffice.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -201,14 +209,14 @@ button:hover {
 }
 
 #custom-kalk{
-    font-size: 14px;
+    font-size: 18px;
     background-image: url('/home/libor/.local/share/icons/galculator.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 #custom-text{
-    font-size: 16px;
+    font-size: 20px;
     background-image: url('/home/libor/.local/share/icons/notes.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -217,7 +225,7 @@ button:hover {
 }
 
 #custom-fm{
-    font-size: 14px;
+    font-size: 18px;
     background-image: url('/home/libor/.local/share/icons/nautilus.svg');
     background-position: center;
     background-repeat: no-repeat;
@@ -225,7 +233,7 @@ button:hover {
 }
 
 #custom-browser{
-    font-size: 15px;
+    font-size: 19px;
     background-image: url('/home/libor/.local/share/icons/brave.png');
     background-position: center;
     background-repeat: no-repeat;
