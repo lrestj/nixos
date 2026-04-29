@@ -1,0 +1,29 @@
+#!/bin/bash
+
+#!/bin/bash
+
+# 1. Fetch the latest info from the remote without merging
+echo "Kontroluji aktualizace Vim..."
+cd $HOME/.local/src/vim
+git fetch origin
+
+# 2. Get the commit hashes for the local branch and its remote tracking branch
+LOCAL_HASH=$(git rev-parse HEAD)
+REMOTE_HASH=$(git rev-parse @{u}) # @{u} is shorthand for the upstream branch
+
+# 3. Compare the hashes
+if [ "$LOCAL_HASH" != "$REMOTE_HASH" ]; then
+    echo "Aktualizace k dispozici, provádím..."
+    git pull
+    cd src
+    make distclean
+    make
+    sudo make install
+
+    # Place your update commands here (e.g., build, restart services)
+    # ./your-update-script.sh
+    echo "Aktualizace Vim kompletní."
+else
+    echo -e "Žádné aktualizace k dispozici."
+fi
+
