@@ -122,6 +122,10 @@
                       title Void linux
                       efi /EFI/void_grub/grubx64.efi
                   '';
+                  "Debian.conf" = ''
+                      title Debian
+                      efi /EFI/debian/grubx64.efi
+                  '';
               };
           };
           efi = {

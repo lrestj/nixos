@@ -10,6 +10,7 @@ g="Configuration.nix"
 h="Flake.nix"
 i="Pkgs"
 j="Add new script"
+k="Odpojit..."
 ai="\0icon\x1fvim"
 bi="\0icon\x1fniri"
 ci="\0icon\x1fwayland"
@@ -20,8 +21,10 @@ gi="\0icon\x1fpreferences-system-services"
 hi="\0icon\x1fpreferences-system-services"
 ii="\0icon\x1fpreferences-system-services"
 ji="\0icon\x1fadd"
+ki="\0icon\x1funity-fallback-mount-helper"
 
-selected=$(echo -e "1\t$b$bi\n2v\t$a$ai\n3y\t$e$ei\n4w\t$c$ci\n5m\t$d$di\n6s\t$f$fi\n7c\t$g$gi\n8f\t$h$hi\n9p\t$i$ii\n0a\t$j$ji" | fuzzel --match-nth 1 --with-nth 2 --accept-nth 2 --lines 17 --auto-select -d )
+selected=$(echo -e "1\t$b$bi\n2v\t$a$ai\n3y\t$e$ei\n4w\t$c$ci\n5m\t$d$di\n6s\t$f$fi\n7c\t$g$gi\n8f\t$h$hi\n9p\t$i$ii\n0a\t$j$ji\no\t$k$ki" | fuzzel --match-nth 1 --with-nth 2 --accept-nth 2 --lines 18 --auto-select -d )
+
 case $selected in
     "$a")
         foot --app-id vim bash -c "sleep 0.1; exec vim ~/.config/vim/vimrc";;
@@ -42,6 +45,8 @@ case $selected in
     "$i")
         $TERMINAL -e vim ~/.dotfiles/nixos/modules/pkgs.nix;;
     "$j")
-        addnew
+        addnew;;
+    "$k")
+        fuzzel-umount
 esac
 
