@@ -138,7 +138,7 @@ binds {
     Mod+Ctrl+End  { move-column-to-last; }
 
     // Scratschpad
-    Mod+S { spawn-sh "niri msg workspaces | grep \"\\*.*NixOS\" && niri msg action focus-workspace-previous || niri msg action focus-workspace NixOS"; }
+    Mod+S { spawn-sh "niri msg workspaces | grep \"\\*.*Debian\" && niri msg action focus-workspace-previous || niri msg action focus-workspace Debian"; }
 
     // Workspaces:
     Alt+right { focus-workspace-down; }
@@ -150,7 +150,7 @@ binds {
     Mod+Shift+Page_Down { move-workspace-down; }
     Mod+Shift+Page_Up   { move-workspace-up; }
 
-    Mod+Alt+S { move-column-to-workspace "NixOS" focus=false; }
+    Mod+Alt+S { move-column-to-workspace "Debian" focus=false; }
     Mod+Alt+left { move-column-to-workspace 1; }
     Mod+Alt+right { move-column-to-workspace 2; }
     Mod+Alt+down { move-column-to-workspace 3; }
