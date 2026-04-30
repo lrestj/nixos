@@ -9,6 +9,7 @@ e="Fastfetch"
 f="Stuff2remember"
 g="Add new script"
 h="QuickMarks"
+k="Odpojit..."
 
 # Ikony
 ai="\0icon\x1fvim"
@@ -19,8 +20,10 @@ ei="\0icon\x1fdesktop-effects"
 fi="\0icon\x1fnotepad"
 gi="\0icon\x1ftext-x-script"
 hi="\0icon\x1fbookmarks"
+ki="\0icon\x1funity-fallback-mount-helper"
 
-selected=$(echo -e "$b$bi\n$a$ai\n$e$ei\n$c$ci\n$d$di\n$f$fi\n$g$gi\n$h$hi" | fuzzel --lines 14 --auto-select -d )
+
+selected=$(echo -e "$b$bi\n$a$ai\n$k$ki\n$e$ei\n$c$ci\n$d$di\n$f$fi\n$g$gi\n$h$hi" | fuzzel --lines 14 --auto-select -d )
 case $selected in
     "$a")
         foot --app-id vim bash -c "sleep 0.1; exec vim ~/.config/vim/vimrc";;
@@ -36,6 +39,8 @@ case $selected in
         foot --app-id vim bash -c "sleep 0.1; exec vim ~/.dotfiles/other/stuff2remember.txt";;
     "$g")
         addnew;;
+    "$k")
+        fuzzel-umount;;
     "$h")
         foot --app-id vim bash -c "sleep 0.1; exec vim ~/.config/qutebrowser/quickmarks";;
     *)
