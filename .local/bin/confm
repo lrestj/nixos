@@ -23,7 +23,7 @@ ii="\0icon\x1fpreferences-system-services"
 ji="\0icon\x1fadd"
 ki="\0icon\x1funity-fallback-mount-helper"
 
-selected=$(echo -e "$b$bi\n$a$ai\n$k$ki\n$e$ei\n$c$ci\n$d$di\n$f$fi\n$j$ji" | fuzzel --lines 7 --auto-select -d )
+selected=$(echo -e "$b$bi\n$a$ai\n$k$ki\n$e$ei\n$c$ci\n$d$di\n$f$fi\n$j$ji" | fuzzel --lines 15 --auto-select -d )
 case $selected in
     "$a")
         foot --app-id vim bash -c "sleep 0.1; exec vim ~/.config/vim/vimrc";;

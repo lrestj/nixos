@@ -47,6 +47,7 @@ layout {
 
 // Startup list:
 spawn-sh-at-startup "nirileft"
+spawn-sh-at-startup "clipse -listen"
 spawn-sh-at-startup "/usr/libexec/xfce-polkit &"
 spawn-sh-at-startup "brightnessctl s 80%"
 spawn-sh-at-startup "/home/libor/.local/bin/niri_tile.py &"
@@ -61,10 +62,16 @@ spawn-sh-at-startup "wlsunset -l 50.1 -L 16.2 -t 4700 -T 5000"
 
 // Window rules
 window-rule {
+   match app-id="clipse"
+   open-floating true
+   default-column-width { fixed 870; }
+   default-window-height { fixed 600; }
+}
+window-rule {
    match title="Ovládání hlasitosti"
    open-floating true
    default-column-width { fixed 650; }
-   default-window-height { fixed 360; }
+   default-window-height { fixed 440; }
    default-floating-position x=1270 y=8
 }
 window-rule {
@@ -105,7 +112,8 @@ binds {
     Super+B hotkey-overlay-title="Browser" { spawn-sh "$BROWSER"; }
     Super+E hotkey-overlay-title="Vim" { spawn-sh "wrappedvim"; }
     Mod+Y hotkey-overlay-title="Open a Yazi" { spawn-sh "foot --app-id yazi -e yazi"; }
-    Mod+C hotkey-overlay-title="Clipboard" { spawn-sh "pkill fuzzel || cliphist-fuzzel-img"; }
+    Mod+C hotkey-overlay-title="clipse clipboard" { spawn-sh "foot --app-id clipse -e clipse"; }
+    // Mod+C hotkey-overlay-title="Clipboard" { spawn-sh "pkill fuzzel || cliphist-fuzzel-img"; }
     Mod+Return hotkey-overlay-title="Waybar toggle" { spawn-sh "pkill waybar || waybar"; }
     Mod+Alt+Return hotkey-overlay-title="Taskbar toggle" { spawn-sh "pkill waybar && waybar --config ~/.config/waybar/config-taskbar"; }
 
