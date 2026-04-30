@@ -1,3 +1,9 @@
 [user]
 	email = rest@seznam.cz
 	name = LrestJ
+[safe]
+	directory = /nfs/Rodinas/.dotfiles.git/
+	directory = /nfs/Rodinas/.dotfiles.git/
+	directory = /nfs/Rodinas/.dotfiles.git/
+	directory = /nfs/Rodinas/.dotfiles.git/.git
+	directory = /nfs/Rodinas/.dotfiles.git/.git
