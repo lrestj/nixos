@@ -38,3 +38,5 @@
 2026/04/30 11:21:44 logger.go:29: INFO: CUSTOM THEME DISABLED
 2026/04/30 11:24:31 logger.go:29: INFO: CUSTOM THEME DISABLED
 2026/04/30 11:26:23 logger.go:29: INFO: CUSTOM THEME DISABLED
+2026/04/30 11:31:16 logger.go:37: WARN: Failed to get active window on Wayland: no suitable tool found (Hyprctl, Wlrctl)
+2026/04/30 11:33:07 logger.go:37: WARN: Failed to get active window on Wayland: no suitable tool found (Hyprctl, Wlrctl)
