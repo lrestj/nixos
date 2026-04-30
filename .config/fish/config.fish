@@ -17,6 +17,7 @@ abbr in "sudo apt install"
 abbr rem "sudo apt remove"
 abbr se "apt search"
 abbr reb "systemctl reboot"
+abbr sv "systemctl list-unit-files --state=enabled"
 
 
 abbr cfg "git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME"
