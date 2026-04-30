@@ -83,7 +83,7 @@
             udiskie
             udisks
             unzip
-            vim-full
+            vim
             vlc
             grim
             swaybg
