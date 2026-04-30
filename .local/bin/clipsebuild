@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -e
+sudo apt install golang
+go install github.com/savedra1/clipse@v1.2.1
+cp -f go/bin/clipse $HOME/.local/bin/
+sudo rm -r go/
+echo
+echo "#####################################"
+echo "#  Balík $(clipse -v) nainstalován  #"
+echo "#####################################"
