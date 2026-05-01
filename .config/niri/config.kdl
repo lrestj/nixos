@@ -174,10 +174,10 @@ binds {
     Mod+Alt+right { move-column-to-workspace 2; }
     Mod+Alt+down { move-column-to-workspace 3; }
     Mod+Alt+up { move-column-to-workspace 4; }
-    Shift+left { move-column-to-workspace 1 focus=false; }
-    Shift+right { move-column-to-workspace 2 focus=false; }
-    Shift+down { move-column-to-workspace 3 focus=false; }
-    Shift+up { move-column-to-workspace 4 focus=false; }
+    Alt+Shift+left { move-column-to-workspace 1 focus=false; }
+    Alt+Shift+right { move-column-to-workspace 2 focus=false; }
+    Alt+Shift+down { move-column-to-workspace 3 focus=false; }
+    Alt+Shift+up { move-column-to-workspace 4 focus=false; }
 
     // Move the focused window in and out of a column.
     Mod+Comma  { consume-window-into-column; }
