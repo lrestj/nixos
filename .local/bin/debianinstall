@@ -83,7 +83,7 @@ echo
 echo "###################"
 echo "#  Instalace Vim  #"
 echo "###################"
-exec $HOME/.local/bin/vimcompile
+exec $HOME/.local/bin/pkgsbuild
 
 echo
 echo "#####################"
