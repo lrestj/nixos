@@ -165,8 +165,8 @@ binds {
     // Move the focused window in and out of a column.
     Mod+Comma  { consume-window-into-column; }
     Mod+Period { expel-window-from-column; }
-    Ctrl+left  { consume-or-expel-window-left; }
-    Ctrl+right { consume-or-expel-window-right; }
+    Ctrl+Shift+left  { consume-or-expel-window-left; }
+    Ctrl+Shift+right { consume-or-expel-window-right; }
 
     // Column preset and size:
     Mod+R { switch-preset-column-width; }
