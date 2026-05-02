@@ -6,8 +6,9 @@ echo "#  Instalace vim     #"
 echo "######################"
 mkdir -p $HOME/.local/src
 cd $HOME/.local/src
-git clone --depth=1 https://github.com/vim/vim.git
+git clone --depth=222 https://github.com/vim/vim.git
 cd vim/src
+make
 sudo make install
 
 echo
@@ -55,23 +56,4 @@ meson setup --prefix=/usr ..
 ninja
 sudo ninja install
 
-echo
-echo "#####################"
-echo "#  Konec instalace  #"
-echo "#####################"
-echo
-echo "####################################"
-echo "#  Restartovat do nového systému?  #"
-echo "####################################"
-while true; do
-    read -r -n 1 -p "Vyberte (A/N): " answer
-    case $answer in
-        [Aa]* ) echo -e "\n Restartuji..."
-                sleep 1
-                sudo reboot; break;;
-        [Nn]* ) exit;;
-        * ) echo -e "\nVyberte A nebo N.";;
-    esac
-done
-
-#  END OF FILLE  #
+  END OF FILLE  #
