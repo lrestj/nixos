@@ -56,4 +56,4 @@ meson setup --prefix=/usr ..
 ninja
 sudo ninja install
 
-  END OF FILLE  #
+###  END OF FILE  ###
