@@ -50,7 +50,7 @@ mkdir -p $HOME/.local/src/
 cd $HOME/.local/src
 git clone https://github.com/ncopa/xfce-polkit.git
 cd xfce-polkit
-mkdir build
+mkdir -p build
 cd build
 meson setup --prefix=/usr ..
 ninja
