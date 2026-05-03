@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#!/bin/bash
-
 # 1. Fetch the latest info from the remote without merging
 cd $HOME/.local/src/vim
 git fetch origin
@@ -21,7 +19,7 @@ if [ "$LOCAL_HASH" != "$REMOTE_HASH" ]; then
 
     # Place your update commands here (e.g., build, restart services)
     # ./your-update-script.sh
-    echo "Aktualizace kompletní."
+    echo "Aktualizace vim kompletní."
 else
     echo "Žádné dostupné aktualizace."
 fi
