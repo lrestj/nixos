@@ -1,5 +1,5 @@
 #!/bin/bash
 
-fstrim /
+fstrim / &&
 echo "Trimfs proveden $(date | cut -c 1-29)" >> /home/libor/fstrim.log
 
