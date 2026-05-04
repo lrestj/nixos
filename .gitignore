@@ -97,3 +97,5 @@ voidsway/
 .sudo_as_admin_successful
 .config/btop/btop.log
 Templates
+.config/xnviewmp/Thumb.db .config/xnviewmp/XnView-2026_05_04_19_02_03.db .config/xnviewmp/XnView-2026_05_04_19_04_37.db .config/xnviewmp/XnView.db
+.config/xnviewmp/*.db
