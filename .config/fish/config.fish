@@ -6,6 +6,16 @@ if status is-interactive
 
 fzf --fish | source
 
+function y
+	set tmp (mktemp -t "yazi-cwd.XXXXXX")
+	command yazi $argv --cwd-file="$tmp"
+	if read -z cwd < "$tmp"; and [ "$cwd" != "$PWD" ]; and test -d "$cwd"
+		builtin cd -- "$cwd"
+	end
+	rm -f -- "$tmp"
+end
+
+
 abbr !! --position anywhere --function last_history_item
 abbr sudo "sudo"
 abbr hp "sudo hp-setup -i 192.168.77.5"
