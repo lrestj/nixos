@@ -44,6 +44,7 @@
             fuzzel
             fzf
             # galculator
+            gcolor3
             geany
             glib util-linux
             gparted
