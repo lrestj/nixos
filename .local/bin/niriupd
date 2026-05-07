@@ -1,5 +1,6 @@
 #!/bin/bash
 
+bash xwsupd
 cd /home/libor/.local/src/niri
 # 1. Fetch the latest info from the remote without merging
 git fetch origin
