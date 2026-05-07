@@ -21,6 +21,6 @@ if [ "$LOCAL_HASH" != "$REMOTE_HASH" ]; then
     # ./your-update-script.sh
     echo "Aktualizace vim kompletní."
 else
-    echo "Žádné dostupné aktualizace."
+    echo "Žádné dostupné Vim aktualizace."
 fi
 
