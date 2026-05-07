@@ -1,6 +1,7 @@
 with (import <nixpkgs> {});
 mkShell {
   buildInputs = [
+    gcc gnumake
     wayland
     wayland-scanner
     pkg-config
