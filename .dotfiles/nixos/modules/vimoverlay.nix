@@ -4,8 +4,8 @@
 
   nixpkgs.overlays = [
       (final: prev: {
-          vim-full = prev.vim-full.overrideAttrs (old: {
-              name = "vim-full-git";
+          vim = prev.vim.overrideAttrs (old: {
+              name = "vim-git";
               src = prev.fetchFromGitHub {
                   owner = "vim";
                   repo = "vim";
