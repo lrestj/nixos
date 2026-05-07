@@ -17,8 +17,8 @@ if [ "$LOCAL_HASH" != "$REMOTE_HASH" ]; then
     meson setup --prefix=/usr ..
     ninja
     sudo ninja install
-    echo "Aktualizace kompletní."
+    echo "Aktualizace xfce-polkit kompletní."
   else
-    echo "Žádné dostupné aktualizace."
+    echo "Žádné dostupné xfce-polkit aktualizace."
 fi
 

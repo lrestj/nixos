@@ -1,7 +1,7 @@
 #!/bin/bash
 
-cd /home/libor/.local/src/xwayland-satellite
 # 1. Fetch the latest info from the remote without merging
+cd $HOME/.local/src/pixman
 git fetch origin
 
 # 2. Get the commit hashes for the local branch and its remote tracking branch
@@ -12,11 +12,11 @@ REMOTE_HASH=$(git rev-parse @{u}) # @{u} is shorthand for the upstream branch
 if [ "$LOCAL_HASH" != "$REMOTE_HASH" ]; then
     echo "Aktualizace k dispozici, provádím..."
     git pull
-    cargo deb
-    sudo apt -y install ./target/debian/*.deb
-    echo "Aktualizováno na $(xwayland-satellite -version)"
-else
-    echo "Žádné dostupné xwayland-satellite aktualizace."
+    meson setup builddir --prefix=/usr/local
+    meson compile -C builddir
+    sudo meson install -C builddir
+    echo "Aktualizace pixman kompletní."
+  else
+    echo "Žádné dostupné pixman aktualizace."
 fi
 
-###  END OF FILE  ###
