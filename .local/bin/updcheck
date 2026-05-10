@@ -1,6 +1,5 @@
 #!/bin/bash
 
-cd /home/libor/.local/src/niri
 # 1. Fetch the latest info from the remote without merging
 git fetch origin
 
@@ -10,11 +9,7 @@ REMOTE_HASH=$(git rev-parse @{u}) # @{u} is shorthand for the upstream branch
 
 # 3. Compare the hashes
 if [ "$LOCAL_HASH" != "$REMOTE_HASH" ]; then
-    echo "Aktualizace k dispozici, provádím..."
-    git pull
-    cargo deb
-    sudo apt -y install ./target/debian/*.deb
-    echo "Aktualizováno na $(niri --version)"
+    echo "Aktualizace k dispozici"
 else
     echo "Žádné dostupné aktualizace."
 fi

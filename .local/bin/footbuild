@@ -1,0 +1,14 @@
+#!/bin/bash
+cd $HOME/.local/src
+git clone https://codeberg.org/dnkl/foot.git
+cd foot
+
+# Create a build directory
+mkdir -p build
+cd build
+
+export CFLAGS="$CFLAGS -O3"
+meson setup --buildtype=release --prefix=/home/libor/.local -Db_lto=true ..
+ninja
+ninja test
+ninja install

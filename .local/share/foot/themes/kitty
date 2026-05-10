@@ -1,6 +1,7 @@
 # -*- conf -*-
 
 [colors-dark]
+cursor=111111 cccccc
 foreground=dddddd
 background=000000
 regular0=000000  # black
