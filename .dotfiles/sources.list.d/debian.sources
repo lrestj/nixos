@@ -1,6 +1,6 @@
 Types: deb deb-src
 URIs: https://mirror.dkm.cz/debian
-Suites: trixie trixie-updates trixie-backports
+Suites: trixie trixie-updates trixie-backports sid
 Components: main contrib non-free non-free-firmware
 Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
 
