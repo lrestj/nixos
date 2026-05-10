@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Xeyes
+Comment=Follow the mouse X demo
+Exec=xeyes
+Icon=xeyes
+Terminal=false
+Type=Application
+Categories=Development;Debugger;
+

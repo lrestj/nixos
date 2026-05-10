@@ -84,6 +84,13 @@ window-rule {
     open-floating true
 }
 window-rule {
+    match title="xeyes"
+    open-floating true
+    default-column-width { fixed 256; }
+    default-window-height { fixed 148; }
+    default-floating-position x=1715 y=8
+}
+window-rule {
     match title="Ovládání hlasitosti"
     open-floating true
     default-column-width { fixed 650; }
