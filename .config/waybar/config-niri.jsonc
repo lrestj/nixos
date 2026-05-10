@@ -187,18 +187,11 @@
             "power-saver": " "
         }
     },
-    "sway/language": {
-        "format": " {} ",
-        "min-length" : 4,
-        "format-cs": "🇨🇿",
-        "format-en": "🇺🇸",
-        "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
-    },
 
     "custom/power": {
         "format" : "  ",
         "tooltip-format": "",
-        "on-click": "powerniri"
+        "on-click": "pkill fuzzel || powerniri"
     }
 }, 
 
