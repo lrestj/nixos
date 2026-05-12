@@ -1,7 +1,6 @@
-#:schema https://yazi-rs.github.io/schemas/keymap.json
-
 [mgr]
 ratio = [ 2, 4, 3 ]
 show_hidden = true
 
+### END OF FILE ###
 
