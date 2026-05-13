@@ -10,7 +10,10 @@ REMOTE_HASH=$(git rev-parse @{u}) # @{u} is shorthand for the upstream branch
 
 # 3. Compare the hashes
 if [ "$LOCAL_HASH" != "$REMOTE_HASH" ]; then
-    echo "Aktualizace k dispozici, provádím..."
+    echo "##########################################"
+    echo "#  Aktualizace k dispozici, provádím...  #"
+    echo "##########################################"
+    sleep 3
     git pull
     cd src
     make distclean
@@ -19,8 +22,12 @@ if [ "$LOCAL_HASH" != "$REMOTE_HASH" ]; then
 
     # Place your update commands here (e.g., build, restart services)
     # ./your-update-script.sh
-    echo "Aktualizace vim kompletní."
+    echo "################################"
+    echo "#  Aktualizace vim kompletní.  #"
+    echo "################################"
 else
-    echo "Žádné dostupné Vim aktualizace."
+    echo "#####################################"
+    echo "#  Žádné dostupné Vim aktualizace.  #"
+    echo "#####################################"
 fi
 
