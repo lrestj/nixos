@@ -1,6 +1,6 @@
 #!/bin/bash
 
-a=" Vimrc"
+a=" vimxrc"
 b="Niri conf"
 c="Waybar config"
 d="Mako config"
@@ -10,7 +10,7 @@ g="Configuration.nix"
 h="Flake.nix"
 i="Pkgs"
 j="Add new script"
-ai="\0icon\x1fvim"
+ai="\0icon\x1fvimx"
 bi="\0icon\x1fniri"
 ci="\0icon\x1fwayland"
 di="\0icon\x1fnotion"
@@ -24,23 +24,23 @@ ji="\0icon\x1fadd"
 selected=$(echo -e "$b$bi\n$a$ai\n$e$ei\n$c$ci\n$d$di\n$f$fi\n$j$ji" | fuzzel --lines 7 -d )
 case $selected in
     "$a")
-        foot --app-id vim bash -c "sleep 0.1; exec vim ~/.config/vim/vimrc";;
+        foot --app-id vimx bash -c "sleep 0.1; exec vimx ~/.config/vimx/vimxrc";;
     "$b")
-        foot --app-id vim bash -c "sleep 0.1; exec vim ~/.config/niri/config.kdl";;
+        foot --app-id vimx bash -c "sleep 0.1; exec vimx ~/.config/niri/config.kdl";;
     "$c")
-        foot --app-id vim bash -c "sleep 0.1; exec vim ~/.config/waybar/config.jsonc";;
+        foot --app-id vimx bash -c "sleep 0.1; exec vimx ~/.config/waybar/config.jsonc";;
     "$d")
-        foot --app-id vim bash -c "sleep 0.1; exec vim ~/.config/mako/config";;
+        foot --app-id vimx bash -c "sleep 0.1; exec vimx ~/.config/mako/config";;
     "$e")
         waypaper;;
     "$f")
-        foot --app-id vim bash -c "sleep 0.1; exec vim ~/.dotfiles/other/stuff2remember.txt";;
+        foot --app-id vimx bash -c "sleep 0.1; exec vimx ~/.dotfiles/other/stuff2remember.txt";;
     "$g")
-        $TERMINAL -e vim ~/.dotfiles/nixos/hosts/zbook/configuration.nix;;
+        $TERMINAL -e vimx ~/.dotfiles/nixos/hosts/zbook/configuration.nix;;
     "$h")
-        $TERMINAL -e vim ~/.dotfiles/nixos/flake.nix;;
+        $TERMINAL -e vimx ~/.dotfiles/nixos/flake.nix;;
     "$i")
-        $TERMINAL -e vim ~/.dotfiles/nixos/modules/pkgs.nix;;
+        $TERMINAL -e vimx ~/.dotfiles/nixos/modules/pkgs.nix;;
     "$j")
         addnew
 esac
