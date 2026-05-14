@@ -97,3 +97,6 @@ voidsway/
 .sudo_as_admin_successful
 .config/btop/btop.log
 Templates
+.config/Thunar/
+install/
+.config/sway

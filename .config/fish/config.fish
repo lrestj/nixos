@@ -13,9 +13,9 @@ abbr ls "ls --color=auto"
 abbr grep "grep --color=auto"
 abbr yay "sudo apt update && sudo apt upgrade"
 abbr yup "ya pack -u"
-abbr in "sudo apt install"
-abbr rem "sudo apt remove"
-abbr se "apt search"
+abbr in "sudo dnf install"
+abbr rem "sudo dnf remove"
+abbr se "sudo dnf search"
 abbr reb "systemctl reboot"
 
 
