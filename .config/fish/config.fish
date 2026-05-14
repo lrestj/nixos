@@ -17,6 +17,7 @@ abbr in "sudo dnf install"
 abbr rem "sudo dnf remove"
 abbr se "sudo dnf search"
 abbr reb "systemctl reboot"
+abbr update-grub "sudo grub2-mkconfig -o /boot/grub2/grub.cfg"
 
 
 abbr cfg "git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME"
