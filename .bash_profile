@@ -19,7 +19,7 @@ fi
 export BROWSER=qutebrowser
 export TERMINAL=foot
 export kalk=galculator
-export EDITOR=vimx
+export EDITOR=vim
 export GTK_THEME=Adwaita:dark
 export ADW_DISABLE_PORTAL=1
 export ADW_DEBUG_COLOR_SCHEME=prefer-dark
