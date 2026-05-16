@@ -15,12 +15,12 @@ while true; do
     case $wm_choice in
     "")
     echo
-    echo "Spouštím Debian..."
+    echo "Spouštím Fedora..."
     exec niri-session -l
     ;;
     s)
     echo
-    echo "Spouštím Debian..."
+    echo "Spouštím Fedora..."
     exec niri-session -l
     ;;
     [xv])
