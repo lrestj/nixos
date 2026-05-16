@@ -1,10 +1,11 @@
 #!/bin/bash
 
-sudoedit /etc/sources.list
 echo "###########################"
 echo "# Instaluji nvidia-driver #" 
 echo "###########################"
 sleep 10
+sudo cp -rf /home/libor/.dotfiles/sources.list.d /etc/apt/
+sudo rm /etc/apt/sources.list
 sudo apt update
 sudo apt install linux-headers-amd64
 sudo apt install nvidia-driver

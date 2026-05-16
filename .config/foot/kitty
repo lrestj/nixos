@@ -1,6 +1,6 @@
 # -*- conf -*-
 
-[colors-dark]
+[colors]
 foreground=dddddd
 background=000000
 regular0=000000  # black
