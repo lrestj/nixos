@@ -7,6 +7,10 @@
     border purple   #8000ff  rgba(128, 0, 255, 1)
     background      #2a2e32  rgba(42, 46, 50, 1)
 
+### wayland-client.h: No such file or directory error:
+    cd /usr/include
+    sudo ln -s wayland/* .
+
 ### Current script directory
     "$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
