@@ -6,4 +6,6 @@ sudo dnf clean all -y
 
 sudo dnf makecache -y
 
+sudo dnf up --refresh -y
+
 sudo dnf install -y akmod-nvidia-580xx xorg-x11-drv-nvidia-580xx
