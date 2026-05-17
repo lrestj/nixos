@@ -28,5 +28,6 @@ export QT_QPA_PLATFORM=wayland
 export GSK_RENDERER=ngl  # Mesa errors workaround
 
 if [ "$(tty)" = "/dev/tty1" ]; then
+    sleep 0.5
     exec start
 fi
