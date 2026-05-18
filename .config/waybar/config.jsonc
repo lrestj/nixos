@@ -5,7 +5,7 @@
 [{
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 29, // Waybar height (to be removed for auto height)
+    "height": 35, // Waybar height (to be removed for auto height)
     "autohide": true,
     "autohide-blocked": false,
     "margin-top": 3,
@@ -51,7 +51,7 @@
     },
 
     "memory": {
-        "format": "  Menu  RAM   {}% ",
+        "format": "  Menu  RAM   {}% ",
         "on-click": "pkill fuzzel || fuzzel --config ~/.config/fuzzel/menu.ini",
         "on-click-right": "wlogout -b 2 -T 10 -L 10 -R 980 -B 525 -s -c 5 -r 5 -l ~/.config/wlogout/menu"
     },
@@ -107,11 +107,11 @@
    "custom/browser": {
         "format":"      ",
         "tooltip-format": "Internet",
-        "on-click": "brave-browser"
+        "on-click": "$BROWSER"
     },
 
     "idle_inhibitor": {
-        "format": "{icon}",
+        "format": "{icon} ",
         "format-icons": {
             "activated": "",
             "deactivated": ""
@@ -121,7 +121,7 @@
 
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "󰕾 {volume}%  {format_source}",
+        "format": "󰕾  {volume}%  {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
@@ -168,7 +168,7 @@
         },
         "format": "{capacity}% {icon} ",
         "format-full": "{capacity}% {icon} ",
-        "format-charging": "{capacity}% {icon} ",
+        "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
@@ -187,10 +187,11 @@
             "power-saver": " "
         }
     },
+
     "custom/power": {
         "format" : "  ",
         "tooltip-format": "",
-        "on-click": "power"
+        "on-click": "pkill fuzzel || power"
     }
 }, 
 
@@ -217,3 +218,4 @@
 }]
 
 // END OF FILE
+
