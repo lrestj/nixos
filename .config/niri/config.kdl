@@ -28,7 +28,7 @@ input {
 
 cursor {
     xcursor-theme "Bibata-Modern-Classic"
-    xcursor-size 26
+    xcursor-size 28
 }
 
 layout {
@@ -81,9 +81,9 @@ window-rule {
 window-rule {
     match app-id="btop"
     open-floating true
-    default-column-width { fixed 1250; }
-    default-window-height { fixed 720; }
-    default-floating-position x=100 y=10
+    default-column-width { fixed 1390; }
+    default-window-height { fixed 900; }
+    default-floating-position x=300 y=50
 }
 window-rule {
     geometry-corner-radius 12
