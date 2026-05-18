@@ -4,6 +4,8 @@ echo
 echo "######################"
 echo "#  Instalace vim     #"
 echo "######################"
+cd /usr/include
+sudo ln -s wayland/* .
 mkdir -p $HOME/.local/src
 cd $HOME/.local/src
 git clone --depth=222 https://github.com/vim/vim.git
