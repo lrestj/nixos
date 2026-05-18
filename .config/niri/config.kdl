@@ -65,7 +65,7 @@ window-rule {
    open-floating true
    default-column-width { fixed 650; }
    default-window-height { fixed 360; }
-   default-floating-position x=710 y=8
+   default-floating-position x=1266 y=8
 }
 window-rule {
     match title="Předvolby správy souborů"
