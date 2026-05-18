@@ -113,8 +113,8 @@
     "idle_inhibitor": {
         "format": "{icon} ",
         "format-icons": {
-            "activated": "",
-            "deactivated": ""
+            "activated": " ",
+            "deactivated": " "
         },
         "on-click-right": "waybar --config ~/.config/waybar/config-taskbar"
     },
