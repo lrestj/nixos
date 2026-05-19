@@ -63,7 +63,7 @@ spawn-sh-at-startup "wlsunset -l 50.1 -L 16.2 -t 4700 -T 5000"
 window-rule {
    match title="Ovládání hlasitosti"
    open-floating true
-   default-column-width { fixed 650; }
+   default-column-width { fixed 670; }
    default-window-height { fixed 360; }
    default-floating-position x=1266 y=8
 }
