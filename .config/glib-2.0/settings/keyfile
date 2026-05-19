@@ -18,3 +18,8 @@ color-scheme='default'
 [org/gnome/desktop/sound]
 event-sounds=true
 input-feedback-sounds=false
+
+[org/nemo/window-state]
+sidebar-bookmark-breakpoint=4
+start-with-sidebar=true
+sidebar-width=243
