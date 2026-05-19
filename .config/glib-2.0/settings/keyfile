@@ -23,3 +23,7 @@ input-feedback-sounds=false
 sidebar-bookmark-breakpoint=4
 start-with-sidebar=true
 sidebar-width=243
+
+[org/gnome/baobab/ui]
+is-maximized=false
+window-size=(960, 600)
