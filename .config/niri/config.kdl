@@ -76,6 +76,7 @@ window-rule {
     match app-id="xfce-polkit"
     match app-id="galculator"
     match app-id="mpv"
+    match app-id="gp"
     open-floating true
 }
 window-rule {

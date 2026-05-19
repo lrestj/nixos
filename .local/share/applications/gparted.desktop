@@ -2,7 +2,7 @@
 Name[cs]=GParted
 GenericName[cs]=Editor oddílů
 Comment[cs]=Vytvářejte, přeuspořádávejte a odstraňujte diskové oddíly
-Exec=sudo -E sh -c "gparted &"
+Exec=--app-id gp sudo -E sh -c "gparted &"
 Icon=gparted
 Terminal=true
 Type=Application
