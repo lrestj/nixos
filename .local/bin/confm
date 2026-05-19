@@ -23,7 +23,17 @@ ii="\0icon\x1fpreferences-system-services"
 ji="\0icon\x1fadd"
 ki="\0icon\x1funity-fallback-mount-helper"
 
-selected=$(echo -e "$b$bi\n$a$ai\n$k$ki\n$e$ei\n$c$ci\n$d$di\n$f$fi\n$j$ji" | fuzzel --lines 7 -d )
+selected=$(echo -e "\
+$b$bi\n\
+$c$ci\n\
+$k$ki\n\
+$a$ai\n\
+$e$ei\n\
+$d$di\n\
+$f$fi\n\
+$j$ji\
+" | fuzzel --lines 8 -d )
+
 case $selected in
     "$a")
         foot --app-id vimx bash -c "sleep 0.1; exec $EDITOR ~/.config/vim/vimrc";;
