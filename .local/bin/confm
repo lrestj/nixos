@@ -4,13 +4,14 @@ a=" vimxrc"
 b="Niri conf"
 c="Waybar config"
 d="Mako config"
-e="Wallpaper"
+e="Plocha"
 f="Stuff2remember"
 g="Configuration.nix"
 h="Flake.nix"
 i="Pkgs"
 j="Add new script"
 k="Odpojit..."
+
 ai="\0icon\x1fgvim"
 bi="\0icon\x1fniri"
 ci="\0icon\x1fwayland"
@@ -24,15 +25,15 @@ ji="\0icon\x1fadd"
 ki="\0icon\x1funity-fallback-mount-helper"
 
 selected=$(echo -e "\
-$b$bi\n\
-$c$ci\n\
-$k$ki\n\
-$a$ai\n\
-$e$ei\n\
-$d$di\n\
-$f$fi\n\
-$j$ji\
-" | fuzzel --lines 8 -d )
+n\t$b$bi\n\
+w\t$c$ci\n\
+o\t$k$ki\n\
+v\t$a$ai\n\
+p\t$e$ei\n\
+m\t$d$di\n\
+s\t$f$fi\n\
+a\t$j$ji\
+" | fuzzel --with-nth 2 --accept-nth 2 --match-nth 1 --lines 8 --auto-select -d )
 
 case $selected in
     "$a")
