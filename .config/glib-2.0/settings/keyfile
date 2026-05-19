@@ -1,0 +1,20 @@
+[org/cinnamon/desktop/applications/terminal]
+exec='foot'
+
+[org/gnome/desktop/interface]
+gtk-theme='Adwaita'
+icon-theme='Papirus-Dark'
+cursor-theme='Adwaita'
+cursor-size=24
+font-name='Adwaita Sans 11'
+font-hinting='slight'
+font-antialiasing='grayscale'
+font-rgba-order='rgb'
+text-scaling-factor=1.0
+toolbar-style='both-horiz'
+toolbar-icons-size='large'
+color-scheme='default'
+
+[org/gnome/desktop/sound]
+event-sounds=true
+input-feedback-sounds=false
