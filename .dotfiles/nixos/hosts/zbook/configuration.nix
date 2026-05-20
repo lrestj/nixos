@@ -39,6 +39,10 @@
       };
       sessionVariables = {
           NIXOS_OZONE_WL = "1";
+          GTK_THEME= "Adwaita:dark";
+          QT_QPA_PLATFORMTHEME= "qt6ct";
+          QT_QPA_PLATFORM= "wayland";
+          ADW_DEBUG_COLOR_SCHEME= "prefer-dark";
       };
   };
   hardware = {
