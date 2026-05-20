@@ -4,8 +4,8 @@ exec='foot'
 [org/gnome/desktop/interface]
 gtk-theme='Adwaita'
 icon-theme='Papirus-Dark'
-cursor-theme='Adwaita'
-cursor-size=24
+cursor-theme='Bibata-Modern-Classic'
+cursor-size=28
 font-name='Adwaita Sans 11'
 font-hinting='slight'
 font-antialiasing='grayscale'
@@ -41,3 +41,7 @@ sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
+
+[org/gnome/nm-applet/eap/9e8fe474-6e82-4dd2-8475-94c7e2665869]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
