@@ -114,7 +114,7 @@
   };
 
   boot = {
-      kernelPackages = pkgs.linuxPackages;
+      kernelPackages = pkgs.linuxPackages_latest;
       kernel.sysctl."vm.swappiness" = 10;
       loader = {
           timeout = 2;
