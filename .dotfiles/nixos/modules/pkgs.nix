@@ -85,7 +85,7 @@
             udisks
             unzip
             (vim-full.overrideAttrs (oldAttrs: rec {
-                version = "9.2.0506";
+                version = "git-master";
                 src = fetchFromGitHub {
                     owner = "vim";
                     repo = "vim";
