@@ -84,7 +84,15 @@
             udiskie
             udisks
             unzip
-            vim-full
+            (vim-full.overrideAttrs (oldAttrs: rec {
+                version = "9.2.0506";
+                src = fetchFromGitHub {
+                    owner = "vim";
+                    repo = "vim";
+                    rev = "v${version}";
+                    hash = "sha256-qVEKW/F/w8uzgbL1ONXRHXqJzRRIojlE3k6obOQPQ/o="; 
+                };
+            }))
             vlc
             grim
             swaybg
