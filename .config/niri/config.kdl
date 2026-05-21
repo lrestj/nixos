@@ -1,5 +1,5 @@
 include "mouse.kdl"
-workspace "TMBLWD"
+workspace "Tmblwd"
 prefer-no-csd
 screenshot-path "~/Screenshot %Y-%m-%d %H-%M-%S.png"
 
