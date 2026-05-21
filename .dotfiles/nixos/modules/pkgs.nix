@@ -43,7 +43,7 @@
             foot
             fuzzel
             fzf
-            # galculator
+            galculator
             gcolor3
             geany
             glib util-linux
@@ -135,7 +135,7 @@
 
         (with pkgsStable; [
             # vim-full
-            galculator
+            # galculator
         ]);
   
   programs = {
