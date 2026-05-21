@@ -4,6 +4,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# Colors in pager
+export LESS="--use-color -Dd+r -Du+b"
 
 # BASH PROMPT LOOK	
    # Black:30  Blue:34  Cyan:36   Green:32   Purple:35   Red:31   White:37   Yellow:33
@@ -43,5 +45,4 @@ alias untrack='git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME update-index --sk
 
 alias config='git --git-dir=/home/libor/.cfg/ --work-tree=/home/libor'
 
- 
 #### # END OF FILE  #####
