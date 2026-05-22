@@ -85,12 +85,12 @@
             udisks
             unzip
             (vim-full.overrideAttrs (oldAttrs: rec {
-                version = "git-master";
+                version = "9.2.0509";
                 src = fetchFromGitHub {
                     owner = "vim";
                     repo = "vim";
                     rev = "v${version}";
-                    hash = "sha256-qVEKW/F/w8uzgbL1ONXRHXqJzRRIojlE3k6obOQPQ/o="; 
+                    hash = "sha256-NbpopBwnnfMTPM2dcfr6IOg5IP4rsYs3l+BYpdNA/50=";
                 };
             }))
             vlc

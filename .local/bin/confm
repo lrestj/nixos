@@ -11,6 +11,7 @@ h="Flake.nix"
 i="Pkgs"
 j="Add new script"
 k="Odpojit..."
+l="Update vim"
 ai="\0icon\x1fvim"
 bi="\0icon\x1fniri"
 ci="\0icon\x1fwayland"
@@ -23,7 +24,20 @@ ii="\0icon\x1fpreferences-system-services"
 ji="\0icon\x1fadd"
 ki="\0icon\x1funity-fallback-mount-helper"
 
-selected=$(echo -e "1\t$b$bi\n2v\t$a$ai\n3y\t$e$ei\n4w\t$c$ci\n5m\t$d$di\n6s\t$f$fi\n7c\t$g$gi\n8f\t$h$hi\n9p\t$i$ii\n0a\t$j$ji\no\t$k$ki" | fuzzel --match-nth 1 --with-nth 2 --accept-nth 2 --lines 18 --auto-select -d )
+selected=$(echo -e "\
+1\t$b$bi\n\
+2v\t$a$ai\n\
+3y\t$e$ei\n\
+4w\t$c$ci\n\
+5m\t$d$di\n\
+6s\t$f$fi\n\
+7c\t$g$gi\n\
+8f\t$h$hi\n\
+9p\t$i$ii\n\
+0a\t$j$ji\n\
+u\t$l$ai\n\
+o\t$k$ki\
+" | fuzzel --match-nth 1 --with-nth 2 --accept-nth 2 --lines 18 --auto-select -d )
 
 case $selected in
     "$a")
@@ -46,6 +60,8 @@ case $selected in
         $TERMINAL -e vim ~/.dotfiles/nixos/modules/pkgs.nix;;
     "$j")
         addnew;;
+    "$l")
+        vupdnx;;
     "$k")
         fuzzel-umount
 esac
