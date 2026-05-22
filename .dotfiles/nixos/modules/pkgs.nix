@@ -90,7 +90,7 @@
                     owner = "vim";
                     repo = "vim";
                     rev = "v${version}";
-                    hash = "sha256-NbpopBwnnfMTPM2dcfr6IOg5IP4rsYs3l+BYpdNA/50=";
+                  ash = "";
                 };
             }))
             vlc
