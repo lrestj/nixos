@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, pkgsStable, ... }:
+{ config, pkgs, lib, inputs, pkgsStable, ... }:
 
 {
 
@@ -85,12 +85,11 @@
             udisks
             unzip
             (vim-full.overrideAttrs (oldAttrs: rec {
-                version = "9.2.0509";
                 src = fetchFromGitHub {
                     owner = "vim";
                     repo = "vim";
-                    rev = "v${version}";
-                    hash = "sha256-NbpopBwnnfMTPM2dcfr6IOg5IP4rsYs3l+BYpdNA/50=";
+                    rev = "master";
+                    sha256 = "sha256-SzEEE9nmrmzlQK7+XcCstnQfeMfV6VMIaFeSFP7k2nU=";
                 };
             }))
             vlc
