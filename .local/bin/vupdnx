@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sed -i -e 's/sha256.*/sha256 = "";/g' .dotfiles/nixos/modules/pkgs.nix
+sed -i -e 's/sha256.*/sha256 = "";/g' /home/libor/.dotfiles/nixos/modules/vimoverlay.nix
 foot --app-id vim bash -c "sleep 0.1; exec vim /home/libor/.dotfiles/nixos/modules/pkgs.nix +93" &
 sleep 0.5
 exec foot

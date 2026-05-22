@@ -3,7 +3,7 @@
 {
 
   imports = [ 
-      # ./vimoverlay.nix
+      ./vimoverlay.nix
   ]; 
   
   fonts.packages = with pkgs; [
@@ -84,14 +84,6 @@
             udiskie
             udisks
             unzip
-            (vim-full.overrideAttrs (oldAttrs: rec {
-                src = fetchFromGitHub {
-                    owner = "vim";
-                    repo = "vim";
-                    rev = "master";
-                    sha256 = "sha256-SzEEE9nmrmzlQK7+XcCstnQfeMfV6VMIaFeSFP7k2nU=";
-                };
-            }))
             vlc
             grim
             swaybg
