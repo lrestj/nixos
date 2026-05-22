@@ -52,7 +52,6 @@
             hunspellDicts.cs_CZ
             hunspellDicts.en_US
             jq
-            kdePackages.breeze-icons
             kdePackages.qt6ct
             kdePackages.qtsvg
             kdePackages.qtwayland
