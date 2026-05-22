@@ -119,7 +119,6 @@ hostname,derivation name,utc time,build seconds
 ,arial32.exe,2026-04-25 09:18:46,5
 ,arialb32.exe,2026-04-25 09:18:42,1
 ,avahi-daemon.conf,2026-04-25 09:18:31,0
-,boot.json,2026-04-25 09:21:21,0
 ,boot.json,2026-04-28 09:52:06,0
 ,boot.json,2026-04-29 10:33:38,0
 ,boot.json,2026-05-02 20:28:41,0
@@ -129,7 +128,7 @@ hostname,derivation name,utc time,build seconds
 ,boot.json,2026-05-20 21:05:17,0
 ,boot.json,2026-05-21 12:35:58,0
 ,boot.json,2026-05-22 18:31:09,0
-,builder.pl,2026-04-15 10:07:09,0
+,boot.json,2026-05-22 20:50:39,0
 ,builder.pl,2026-04-18 09:35:18,0
 ,builder.pl,2026-04-23 16:34:40,0
 ,builder.pl,2026-04-25 09:18:32,1
@@ -139,8 +138,8 @@ hostname,derivation name,utc time,build seconds
 ,builder.pl,2026-05-17 18:14:31,0
 ,builder.pl,2026-05-20 21:05:17,0
 ,builder.pl,2026-05-22 18:31:09,0
+,builder.pl,2026-05-22 20:50:39,0
 ,check-mountpoints,2026-04-25 09:18:34,0
-,check-sshd-config,2026-04-15 10:07:09,0
 ,check-sshd-config,2026-04-18 09:35:18,0
 ,check-sshd-config,2026-04-23 16:34:44,0
 ,check-sshd-config,2026-04-25 09:18:47,0
@@ -150,6 +149,7 @@ hostname,derivation name,utc time,build seconds
 ,check-sshd-config,2026-05-17 18:14:31,0
 ,check-sshd-config,2026-05-20 21:05:17,0
 ,check-sshd-config,2026-05-22 18:31:09,0
+,check-sshd-config,2026-05-22 20:50:39,0
 ,chfn.pam,2026-04-07 12:24:17,0
 ,chfn.pam,2026-04-25 09:18:41,0
 ,chpasswd.pam,2026-04-07 12:24:17,0
@@ -198,7 +198,6 @@ hostname,derivation name,utc time,build seconds
 ,dbus,2026-05-22 20:43:27,0
 ,desktops,2026-04-15 10:07:14,0
 ,desktops,2026-04-18 09:35:18,0
-,dry-activate,2026-04-17 12:07:44,0
 ,dry-activate,2026-04-18 09:35:19,0
 ,dry-activate,2026-04-23 16:34:40,0
 ,dry-activate,2026-04-25 09:19:17,0
@@ -208,6 +207,7 @@ hostname,derivation name,utc time,build seconds
 ,dry-activate,2026-05-17 18:14:31,0
 ,dry-activate,2026-05-20 21:05:17,0
 ,dry-activate,2026-05-22 18:31:09,0
+,dry-activate,2026-05-22 20:50:39,0
 ,etc,2026-05-20 21:13:46,0
 ,etc,2026-05-20 21:20:56,0
 ,etc,2026-05-21 07:36:29,0
@@ -648,7 +648,6 @@ hostname,derivation name,utc time,build seconds
 ,mpv-with-scripts,2026-05-07 18:59:25,0
 ,mpv-with-scripts,2026-05-17 18:17:14,0
 ,nameservers,2026-04-25 09:18:41,0
-,net.conf,2026-04-07 11:57:02,0
 ,net.conf,2026-04-15 10:07:09,0
 ,net.conf,2026-04-18 09:35:18,0
 ,net.conf,2026-04-23 16:34:41,0
@@ -658,6 +657,7 @@ hostname,derivation name,utc time,build seconds
 ,net.conf,2026-05-17 18:14:32,0
 ,net.conf,2026-05-20 21:20:48,0
 ,net.conf,2026-05-22 18:31:09,0
+,net.conf,2026-05-22 20:50:39,0
 ,nfs.conf,2026-04-25 09:18:43,0
 ,nh,2026-04-23 16:34:42,0
 ,nh,2026-04-25 09:19:08,0
@@ -783,7 +783,6 @@ hostname,derivation name,utc time,build seconds
 ,other.pam,2026-04-25 09:18:44,0
 ,passwd.pam,2026-04-07 12:24:19,0
 ,passwd.pam,2026-04-25 09:18:44,0
-,perl-5.42.0-env,2026-04-18 09:35:22,4
 ,perl-5.42.0-env,2026-04-23 16:34:46,4
 ,perl-5.42.0-env,2026-04-25 09:19:16,8
 ,perl-5.42.0-env,2026-04-25 09:19:17,9
@@ -793,6 +792,7 @@ hostname,derivation name,utc time,build seconds
 ,perl-5.42.0-env,2026-05-17 18:14:38,5
 ,perl-5.42.0-env,2026-05-20 21:05:25,3
 ,perl-5.42.0-env,2026-05-22 18:33:36,3
+,perl-5.42.0-env,2026-05-22 20:50:48,3
 ,pipewire-configs,2026-04-25 09:18:45,0
 ,pipewire-extra-config,2026-04-25 09:18:44,0
 ,pipewire-ladspa-plugins,2026-04-17 17:20:26,0
@@ -843,9 +843,6 @@ hostname,derivation name,utc time,build seconds
 ,shutdown-ramfs-contents.json,2026-05-07 18:58:19,0
 ,shutdown-ramfs-contents.json,2026-05-17 18:14:33,0
 ,snmp.conf,2026-04-25 09:18:45,0
-,source,2026-05-22 09:27:54,8
-,source,2026-05-22 09:29:21,6
-,source,2026-05-22 09:34:44,6
 ,source,2026-05-22 16:22:22,8
 ,source,2026-05-22 18:31:19,8
 ,source,2026-05-22 18:48:42,13
@@ -853,6 +850,9 @@ hostname,derivation name,utc time,build seconds
 ,source,2026-05-22 19:04:51,13
 ,source,2026-05-22 19:21:20,10
 ,source,2026-05-22 20:26:47,8
+,source,2026-05-22 20:50:51,10
+,source,2026-05-22 20:51:40,6
+,source,2026-05-22 20:54:38,7
 ,ssh-root-provision.conf,2026-04-25 09:18:45,0
 ,sshd.conf-final,2026-04-02 13:50:15,0
 ,sshd.conf-final,2026-04-23 16:34:43,0
@@ -867,7 +867,6 @@ hostname,derivation name,utc time,build seconds
 ,stage-1-init.sh,2026-04-03 08:23:40,0
 ,stage-1-init.sh,2026-04-07 12:24:28,0
 ,stage-1-init.sh,2026-04-17 13:08:53,0
-,stage-2-init.sh,2026-04-15 10:07:09,0
 ,stage-2-init.sh,2026-04-18 09:35:18,0
 ,stage-2-init.sh,2026-04-23 16:34:43,0
 ,stage-2-init.sh,2026-04-25 09:18:46,0
@@ -877,6 +876,7 @@ hostname,derivation name,utc time,build seconds
 ,stage-2-init.sh,2026-05-17 18:14:33,0
 ,stage-2-init.sh,2026-05-20 21:05:17,0
 ,stage-2-init.sh,2026-05-22 18:31:09,0
+,stage-2-init.sh,2026-05-22 20:50:40,0
 ,string-hosts,2026-04-25 09:18:46,0
 ,su.pam,2026-04-07 12:24:19,0
 ,su.pam,2026-04-25 09:18:46,0
@@ -978,7 +978,6 @@ hostname,derivation name,utc time,build seconds
 ,unit-autovt-tty1.service-disabled,2026-04-18 09:35:18,0
 ,unit-avahi-daemon.service,2026-04-25 09:19:33,0
 ,unit-avahi-daemon.socket,2026-04-25 09:18:47,0
-,unit-console-getty.service-disabled,2026-04-07 11:57:02,0
 ,unit-console-getty.service-disabled,2026-04-15 10:07:09,0
 ,unit-console-getty.service-disabled,2026-04-18 09:35:18,0
 ,unit-console-getty.service-disabled,2026-04-23 16:34:43,0
@@ -988,6 +987,7 @@ hostname,derivation name,utc time,build seconds
 ,unit-console-getty.service-disabled,2026-05-17 18:14:33,0
 ,unit-console-getty.service-disabled,2026-05-20 21:20:49,0
 ,unit-console-getty.service-disabled,2026-05-22 18:31:09,0
+,unit-console-getty.service-disabled,2026-05-22 20:50:39,0
 ,unit-container-getty-.service,2026-04-25 09:19:33,0
 ,unit-container-getty-.service,2026-05-02 20:27:01,0
 ,unit-cups-browsed.service,2026-04-17 17:21:01,0
@@ -1107,7 +1107,6 @@ hostname,derivation name,utc time,build seconds
 ,unit-nfs-blkmap.service,2026-04-25 09:19:36,0
 ,unit-nfs-client.target,2026-04-25 09:18:49,0
 ,unit-nfs-idmapd.service,2026-04-25 09:19:36,0
-,unit-nfs-mountd.service-disabled,2026-04-07 11:57:02,0
 ,unit-nfs-mountd.service-disabled,2026-04-15 10:07:09,0
 ,unit-nfs-mountd.service-disabled,2026-04-18 09:35:18,0
 ,unit-nfs-mountd.service-disabled,2026-04-23 16:34:43,0
@@ -1117,7 +1116,7 @@ hostname,derivation name,utc time,build seconds
 ,unit-nfs-mountd.service-disabled,2026-05-17 18:14:34,0
 ,unit-nfs-mountd.service-disabled,2026-05-20 21:20:49,0
 ,unit-nfs-mountd.service-disabled,2026-05-22 18:31:09,0
-,unit-nfs-server.service-disabled,2026-04-07 11:57:02,0
+,unit-nfs-mountd.service-disabled,2026-05-22 20:50:39,0
 ,unit-nfs-server.service-disabled,2026-04-15 10:07:10,0
 ,unit-nfs-server.service-disabled,2026-04-18 09:35:18,0
 ,unit-nfs-server.service-disabled,2026-04-23 16:34:43,0
@@ -1127,6 +1126,7 @@ hostname,derivation name,utc time,build seconds
 ,unit-nfs-server.service-disabled,2026-05-17 18:14:34,0
 ,unit-nfs-server.service-disabled,2026-05-20 21:20:49,0
 ,unit-nfs-server.service-disabled,2026-05-22 18:31:09,0
+,unit-nfs-server.service-disabled,2026-05-22 20:50:39,0
 ,unit-nh-clean.service,2026-04-01 11:19:19,0
 ,unit-nh-clean.service,2026-04-07 12:24:42,0
 ,unit-nh-clean.service,2026-04-15 10:07:13,0
@@ -1174,7 +1174,6 @@ hostname,derivation name,utc time,build seconds
 ,unit-panic-on-fail.service,2026-05-17 18:14:34,0
 ,unit-panic-on-fail.service,2026-05-21 12:35:45,0
 ,unit-pipewire-pulse.service,2026-04-25 09:19:37,0
-,unit-pipewire-pulse.service-disabled,2026-04-07 11:57:02,0
 ,unit-pipewire-pulse.service-disabled,2026-04-15 10:07:10,0
 ,unit-pipewire-pulse.service-disabled,2026-04-18 09:35:18,0
 ,unit-pipewire-pulse.service-disabled,2026-04-23 16:34:44,0
@@ -1184,8 +1183,8 @@ hostname,derivation name,utc time,build seconds
 ,unit-pipewire-pulse.service-disabled,2026-05-17 18:14:35,0
 ,unit-pipewire-pulse.service-disabled,2026-05-20 21:20:49,0
 ,unit-pipewire-pulse.service-disabled,2026-05-22 18:31:09,0
+,unit-pipewire-pulse.service-disabled,2026-05-22 20:50:40,0
 ,unit-pipewire-pulse.socket,2026-04-25 09:18:51,1
-,unit-pipewire-pulse.socket-disabled,2026-04-07 11:57:02,0
 ,unit-pipewire-pulse.socket-disabled,2026-04-15 10:07:10,0
 ,unit-pipewire-pulse.socket-disabled,2026-04-18 09:35:18,0
 ,unit-pipewire-pulse.socket-disabled,2026-04-23 16:34:44,0
@@ -1195,9 +1194,9 @@ hostname,derivation name,utc time,build seconds
 ,unit-pipewire-pulse.socket-disabled,2026-05-17 18:14:35,0
 ,unit-pipewire-pulse.socket-disabled,2026-05-20 21:20:49,0
 ,unit-pipewire-pulse.socket-disabled,2026-05-22 18:31:09,0
+,unit-pipewire-pulse.socket-disabled,2026-05-22 20:50:40,0
 ,unit-pipewire.service,2026-04-17 17:20:26,0
 ,unit-pipewire.service,2026-04-25 09:19:37,0
-,unit-pipewire.service-disabled,2026-04-07 11:57:02,0
 ,unit-pipewire.service-disabled,2026-04-15 10:07:10,0
 ,unit-pipewire.service-disabled,2026-04-18 09:35:18,0
 ,unit-pipewire.service-disabled,2026-04-23 16:34:44,0
@@ -1207,8 +1206,8 @@ hostname,derivation name,utc time,build seconds
 ,unit-pipewire.service-disabled,2026-05-17 18:14:35,0
 ,unit-pipewire.service-disabled,2026-05-20 21:20:49,0
 ,unit-pipewire.service-disabled,2026-05-22 18:31:09,0
+,unit-pipewire.service-disabled,2026-05-22 20:50:40,0
 ,unit-pipewire.socket,2026-04-25 09:18:51,1
-,unit-pipewire.socket-disabled,2026-04-07 11:57:02,0
 ,unit-pipewire.socket-disabled,2026-04-15 10:07:10,0
 ,unit-pipewire.socket-disabled,2026-04-18 09:35:18,0
 ,unit-pipewire.socket-disabled,2026-04-23 16:34:44,0
@@ -1218,6 +1217,7 @@ hostname,derivation name,utc time,build seconds
 ,unit-pipewire.socket-disabled,2026-05-17 18:14:35,0
 ,unit-pipewire.socket-disabled,2026-05-20 21:20:49,0
 ,unit-pipewire.socket-disabled,2026-05-22 18:31:09,0
+,unit-pipewire.socket-disabled,2026-05-22 20:50:40,0
 ,unit-polkit-agent-helper-.service,2026-04-07 12:24:20,0
 ,unit-polkit-agent-helper-.service,2026-04-25 09:19:38,1
 ,unit-polkit-agent-helper.socket,2026-04-25 09:18:51,0
@@ -1389,7 +1389,6 @@ hostname,derivation name,utc time,build seconds
 ,unit-wireplumber.service,2026-04-17 17:20:27,0
 ,unit-wireplumber.service,2026-04-25 09:19:44,0
 ,unit-wireplumber.service,2026-05-07 18:58:20,0
-,unit-wireplumber.service-disabled,2026-04-07 11:57:02,0
 ,unit-wireplumber.service-disabled,2026-04-15 10:07:10,0
 ,unit-wireplumber.service-disabled,2026-04-18 09:35:19,0
 ,unit-wireplumber.service-disabled,2026-04-23 16:34:46,0
@@ -1399,6 +1398,7 @@ hostname,derivation name,utc time,build seconds
 ,unit-wireplumber.service-disabled,2026-05-17 18:14:36,0
 ,unit-wireplumber.service-disabled,2026-05-20 21:20:49,0
 ,unit-wireplumber.service-disabled,2026-05-22 18:31:10,0
+,unit-wireplumber.service-disabled,2026-05-22 20:50:40,0
 ,unit-wpa_supplicant.service,2026-04-25 09:19:44,0
 ,unit-xdg-autostart-if-no-desktop-manager.target,2026-04-25 09:18:54,0
 ,user-generators,2026-04-07 12:24:42,0
