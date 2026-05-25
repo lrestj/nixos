@@ -1,6 +1,6 @@
 include "mouse.kdl"
 workspace "Tmblwd"
-prefer-no-csd
+// prefer-no-csd
 screenshot-path "~/Screenshot %Y-%m-%d %H-%M-%S.png"
 
 hotkey-overlay {
@@ -61,6 +61,12 @@ spawn-sh-at-startup "battery-check"
 spawn-sh-at-startup "wlsunset -l 50.1 -L 16.2 -t 4700 -T 5000"
 
 // Window rules
+window-rule {
+    match app-id="foot"
+    match app-id="vim"
+    match app-id="yazi"
+    draw-border-with-background false
+}
 window-rule {
    match title="Ovládání hlasitosti"
    open-floating true
