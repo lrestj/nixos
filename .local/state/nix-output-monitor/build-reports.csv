@@ -124,7 +124,6 @@ hostname,derivation name,utc time,build seconds
 ,XnView_MP-1.11.2.glibc2.17-x86_64.AppImage,2026-05-07 18:59:23,40
 ,XnView_MP-1.11.2.glibc2.17-x86_64.AppImage,2026-05-23 07:27:12,20
 ,Xresources-Xft,2026-04-17 12:07:44,0
-,activate,2026-05-22 07:42:20,0
 ,activate,2026-05-22 18:35:20,0
 ,activate,2026-05-22 20:29:41,0
 ,activate,2026-05-22 20:43:30,0
@@ -134,6 +133,7 @@ hostname,derivation name,utc time,build seconds
 ,activate,2026-05-24 08:20:40,0
 ,activate,2026-05-25 08:53:24,0
 ,activate,2026-05-25 17:05:47,0
+,activate,2026-05-25 18:41:02,0
 ,andale32.exe,2026-04-25 09:18:44,3
 ,andale32.exe,2026-05-23 07:26:53,1
 ,app-xnsoft-360.webp,2026-04-02 15:01:49,2
@@ -256,7 +256,6 @@ hostname,derivation name,utc time,build seconds
 ,dry-activate,2026-05-23 07:26:53,0
 ,dry-activate,2026-05-23 17:05:55,0
 ,dry-activate,2026-05-25 08:50:46,0
-,etc,2026-05-22 07:42:20,0
 ,etc,2026-05-22 18:35:19,0
 ,etc,2026-05-22 20:29:41,0
 ,etc,2026-05-22 20:43:29,0
@@ -266,6 +265,7 @@ hostname,derivation name,utc time,build seconds
 ,etc,2026-05-24 08:20:40,0
 ,etc,2026-05-25 08:53:24,0
 ,etc,2026-05-25 17:05:47,0
+,etc,2026-05-25 18:41:01,0
 ,etc-X11-xorg.conf.d-00-keyboard.conf,2026-04-25 09:18:31,0
 ,etc-X11-xorg.conf.d-00-keyboard.conf,2026-05-23 07:25:49,0
 ,etc-alsa-conf.d-49-pipewire-modules.conf,2026-04-25 09:19:27,0
@@ -278,6 +278,7 @@ hostname,derivation name,utc time,build seconds
 ,etc-fstab,2026-04-25 09:18:32,0
 ,etc-fstab,2026-04-26 14:21:31,0
 ,etc-fstab,2026-05-23 07:25:50,0
+,etc-fstab,2026-05-25 18:41:01,0
 ,etc-fuse.conf,2026-04-25 09:18:32,0
 ,etc-fuse.conf,2026-05-23 07:25:50,0
 ,etc-gai.conf,2026-04-25 09:18:32,0
@@ -913,6 +914,7 @@ hostname,derivation name,utc time,build seconds
 ,nixos-system-nixos-26.05.20260521.f83fc3c,2026-05-24 08:20:41,0
 ,nixos-system-nixos-26.05.20260521.f83fc3c,2026-05-25 08:53:25,0
 ,nixos-system-nixos-26.05.20260523.64c08a,2026-05-25 17:05:47,0
+,nixos-system-nixos-26.05.20260523.64c08a,2026-05-25 18:41:02,0
 ,nixos-tmpfiles.d,2026-04-02 13:28:35,0
 ,nixos-tmpfiles.d,2026-04-17 12:07:44,0
 ,nixos-tmpfiles.d,2026-04-17 17:20:25,0
