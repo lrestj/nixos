@@ -1,6 +1,6 @@
 include "mouse.kdl"
 workspace "NixOS"
-prefer-no-csd
+// prefer-no-csd
 screenshot-path "~/Screenshot %Y-%m-%d %H-%M-%S.png"
 
 hotkey-overlay {
