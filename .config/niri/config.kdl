@@ -73,6 +73,12 @@ window-rule {
     default-window-height { fixed 860; }
 }
 window-rule {
+    match app-id="foot"
+    match app-id="yazi"
+    match app-id="vim"
+    draw-border-with-background false
+}
+window-rule {
     match app-id="galculator"
     match app-id="mpv"
     open-floating true

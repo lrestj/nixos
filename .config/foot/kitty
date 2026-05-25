@@ -2,7 +2,7 @@
 
 [colors-dark]
 foreground=b2b2b2
-background=1c1c1c
+background=000000
 regular0=000000  # black
 regular1=cc0403  # red
 regular2=19cb00  # green
