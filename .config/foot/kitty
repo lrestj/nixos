@@ -1,7 +1,7 @@
 # -*- conf -*-
 
 [colors-dark]
-foreground=ac9ca9
+foreground=b2b2b2
 background=1c1c1c
 regular0=000000  # black
 regular1=cc0403  # red
