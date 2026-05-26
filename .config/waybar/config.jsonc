@@ -3,8 +3,8 @@
 // WAYBAR AT THE TOP
 
 [{
-    // "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
     "height": 35, // Waybar height (to be removed for auto height)
     "autohide": true,
     "autohide-blocked": false,
@@ -27,6 +27,7 @@
         "custom/browser"
     ],
     "modules-center": [
+        "wlr/taskbar",
         "niri/window"
     ],
     "modules-right": [
@@ -38,7 +39,6 @@
         "clock",
         "battery",
         "power-profiles-daemon",
-        // "sway/language",
         "custom/power"
     ],
 
@@ -51,7 +51,7 @@
     },
 
     "memory": {
-        "format": "  Menu  RAM   {}% ",
+        "format": "  Menu  RAM   {}% ",
         "on-click": "pkill fuzzel || fuzzel --config ~/.config/fuzzel/menu.ini",
         "on-click-right": "wlogout -b 2 -T 10 -L 10 -R 980 -B 525 -s -c 5 -r 5 -l ~/.config/wlogout/menu"
     },
@@ -109,6 +109,15 @@
         "tooltip-format": "Internet",
         "on-click": "$BROWSER"
     },
+
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 25,
+        "tooltip": true,
+        "tooltip-format": "{app_id}",
+        "on-click": "activate",
+        "on-click-right": "close"
+    },    
 
     "idle_inhibitor": {
         "format": "{icon} ",
@@ -193,29 +202,29 @@
         "tooltip-format": "",
         "on-click": "pkill fuzzel || power"
     }
-}, 
+}] 
 
 
 // TASK BAR AT THE RIGHT
 
-{
-    "layer": "top", // Waybar at top layer
-    "position": "right", 
-    //"height": 30,
-    // "width": 1280,
-    "spacing": 4,
-    // Choose the order of the modules
-    "modules-center": ["wlr/taskbar"],
-    // Modules configuration
-    "wlr/taskbar": {
-        "format": "{icon}",
-        "icon-size": 38,
-        "tooltip": true,
-        "tooltip-format": "{app_id}",
-        "on-click": "activate",
-        "on-click-right": "close"
-    }
-}]
+//{
+//    "layer": "top", // Waybar at top layer
+//    "position": "right", 
+//    //"height": 30,
+//    // "width": 1280,
+//    "spacing": 4,
+//    // Choose the order of the modules
+//    "modules-center": ["wlr/taskbar"],
+//    // Modules configuration
+//    "wlr/taskbar": {
+//        "format": "{icon}",
+//        "icon-size": 38,
+//        "tooltip": true,
+//        "tooltip-format": "{app_id}",
+//        "on-click": "activate",
+//        "on-click-right": "close"
+//    }
+//}]
 
 // END OF FILE
 
