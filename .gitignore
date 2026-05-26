@@ -98,3 +98,4 @@ Templates/
 .local/share/qutebrowser
 .dotfiles/install/
 .inputrc
+.cargo/

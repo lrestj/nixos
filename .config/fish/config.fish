@@ -14,6 +14,8 @@ end
 # Set up fzf key bindings
 fzf --fish | source
 
+abbr pc "niri msg pick-color"
+abbr pw "niri msg pick-window"
 abbr !! --position anywhere --function last_history_item
 abbr hp "hp-setup -i 192.168.77.5"
 abbr sudo "sudo"
