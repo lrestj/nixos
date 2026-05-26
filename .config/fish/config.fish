@@ -17,6 +17,8 @@ abbr in "sudo zypper install"
 abbr rem "sudo zypper rm --clean-deps"
 abbr se "sudo zypper search"
 abbr reb "systemctl reboot"
+abbr pc "niri msg pick-color"
+abbr pw "niri msg pick-window"
 abbr update-grub "sudo grub2-mkconfig -o /boot/grub2/grub.cfg"
 
 
