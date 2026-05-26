@@ -16,6 +16,8 @@ function y
 end
 
 
+abbr pc "niri msg pick-color"
+abbr pw "niri msg pick-window"
 abbr !! --position anywhere --function last_history_item
 abbr sudo "sudo"
 abbr hp "sudo hp-setup -i 192.168.77.5"
