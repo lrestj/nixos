@@ -6,6 +6,8 @@ if status is-interactive
 
 fzf --fish | source
 
+abbr pw "niri msg pick-window"
+abbr pc "niri msg pick-color"
 abbr mkusb --set-cursor -- "sudo dd if=% of=/dev/sdb bs=4096 status=progress conv=fsync oflag=direct"
 abbr !! --position anywhere --function last_history_item
 abbr sudo "sudo"
