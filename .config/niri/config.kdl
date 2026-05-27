@@ -88,7 +88,7 @@ window-rule {
 window-rule {
     match app-id="btop"
     open-floating true
-    default-column-width { fixed 1390; }
+    default-column-width { fixed 1450; }
     default-window-height { fixed 900; }
     default-floating-position x=300 y=50
 }
