@@ -92,6 +92,6 @@ voidsway/
 .local/share/qutebrowser
 .local/share/qutebrowser/adblock-cache.dat .local/share/qutebrowser/blocked-hosts .local/share/qutebrowser/cmd-history .local/share/qutebrowser/greasemonkey .local/share/qutebrowser/history.sqlite .local/share/qutebrowser/qutebrowser .local/share/qutebrowser/sessions .local/share/qutebrowser/state .local/share/qutebrowser/webengine
 .dotfiles/install/
-.config/xnviewmp/XnView-2026_05_28_13_47_26.db .config/xnviewmp/XnView.db
-.config/xnviewmp/XnView-2026_05_28_13_47_26.db
-.local/share/applications/userapp-xnviewmp-77GZP3.desktop
+.config/xnviewmp/XnView-*.db 
+.config/xnviewmp/XnView.db
+.local/share/applications/userapp-xnviewmp-*.desktop
