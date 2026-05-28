@@ -1,0 +1,7 @@
+[Default Applications]
+application/pdf=org.gnome.Evince.desktop
+image/jpeg=org.xfce.ristretto.desktop
+
+[Added Associations]
+application/pdf=org.gnome.Evince.desktop;
+image/jpeg=org.xfce.ristretto.desktop;
