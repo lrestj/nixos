@@ -28,7 +28,7 @@ abbr yay "sudo xbps-install -Su"
 abbr in "sudo xbps-install -S"
 abbr se "xbps-query -Rs"
 abbr rem "sudo xbps-remove -R"
-abbr clean "sudo xbps-remove -Oo"
+abbr clean "sudo xbps-remove -o"
 
 abbr cfg "git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME"
 abbr ga "git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME add"
