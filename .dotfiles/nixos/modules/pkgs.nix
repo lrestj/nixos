@@ -24,7 +24,6 @@
     environment.systemPackages =
         (with pkgs; [
             audacity
-            banana-cursor
             baobab
             bemoji
             bibata-cursors
@@ -78,14 +77,12 @@
             reaper-reapack-extension
             reaper-sws-extension
             ripgrep
-            rofi
             simple-scan
             slurp
             udiskie
             udisks
             unzip
             vlc
-            grim
             swaybg
             swaylock
             swayidle
@@ -96,7 +93,6 @@
             wl-color-picker
             waypaper
             wget
-            whitesur-icon-theme
             wl-clipboard
             wlsunset
             xdg-user-dirs
@@ -125,15 +121,12 @@
         ++
 
         (with pkgsStable; [
-            # vim-full
             # galculator
         ]);
   
   programs = {
       niri.enable = true;
-      xfconf.enable = true;
       dconf.enable = true;  
-      gnome-disks.enable = true;
       nh = {
           enable = true;
           clean.enable = true;
