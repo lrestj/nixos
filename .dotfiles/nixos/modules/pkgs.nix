@@ -46,7 +46,6 @@
             galculator
             gcolor3
             geany
-            glib util-linux
             gparted
             mesa-demos
             hunspellDicts.cs_CZ
