@@ -101,7 +101,7 @@ box "Done \n"
 boxf "> Removing useless packages.."
 sleep 2
 sudo cp -v ./99-ignored-pkgs.conf /etc/xbps.d/99-ignored-pkgs.conf
-sudo xbps-remove -Fy mdadm linux-firmware-amd linux-firmware-broadcom mobile-broadband-provider-info ipw2200-firmware ipw2100-firmware
+sudo xbps-remove -Fy vim mdadm linux-firmware-amd linux-firmware-broadcom mobile-broadband-provider-info ipw2200-firmware ipw2100-firmware
 box "Done \n"
 
 
