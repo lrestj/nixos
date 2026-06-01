@@ -100,9 +100,9 @@ window-rule {
 window-rule {
     match title="Ovládání hlasitosti"
     open-floating true
-    default-column-width { fixed 650; }
+    default-column-width { fixed 746; }
     default-window-height { fixed 360; }
-    default-floating-position x=1270 y=8
+    default-floating-position x=1150 y=8
 }
 window-rule {
     match app-id="fastfetch"
