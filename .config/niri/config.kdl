@@ -82,6 +82,7 @@ window-rule {
     match app-id="foot"
     match app-id="vim"
     match app-id="yazi"
+    match app-id="fastfetch"
     draw-border-with-background false
 }
 window-rule {
@@ -106,13 +107,13 @@ window-rule {
 window-rule {
     match app-id="fastfetch"
     open-floating true
-    default-column-width { fixed 1560; }
-    default-window-height { fixed 828; }
+    default-column-width { fixed 1600; }
+    default-window-height { fixed 940; }
 }
 window-rule {
     match app-id="btop"
     open-floating true
-    default-column-width { fixed 1390; }
+    default-column-width { fixed 1450; }
     default-window-height { fixed 900; }
 }
 window-rule {
