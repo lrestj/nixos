@@ -1,0 +1,24 @@
+#!/bin/bash
+
+sudo cp -r /etc/sv/agetty-tty1 /etc/sv/agetty-autologin-tty1
+echo " EDIT: ...--noclear --autologin libor"
+sleep 5
+vim /etc/sv/agetty-autologin-tty1/conf
+sudo rm /var/service/agetty-tty1
+sudo ln -s /etc/sv/agetty-autologin-tty1 /var/service/
+
+echo "####################################"
+echo "#  Restartovat do nového systému?  #"
+echo "####################################"
+while true; do
+    read -r -n 1 -p "Vyberte (A/N): " answer
+    case $answer in
+        [Aa]* ) echo -e "\n Restartuji..."
+                sleep 1
+                sudo reboot; break;;
+        [Nn]* ) exit;;
+        * ) echo -e "\nVyberte A nebo N.";;
+    esac
+done
+
+#### END OF FILE #####
