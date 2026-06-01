@@ -23,7 +23,18 @@ hi="\0icon\x1fbookmarks"
 ki="\0icon\x1funity-fallback-mount-helper"
 
 
-selected=$(echo -e "$b$bi\n$a$ai\n$k$ki\n$e$ei\n$c$ci\n$d$di\n$f$fi\n$g$gi\n$h$hi" | fuzzel --lines 14 --auto-select -d )
+selected=$(echo -e "\
+n\t$b$bi\n\
+v\t$a$ai\n\
+o\t$k$ki\n\
+ff\t$e$ei\n\
+w\t$c$ci\n\
+fi\t$d$di\n\
+s\t$f$fi\n\
+a\t$g$gi\n\
+q\t$h$hi\
+" | fuzzel --lines 14 --with-nth 2 --accept-nth 2 --match-nth 1 --auto-select -d )
+
 case $selected in
     "$a")
         foot --app-id vim bash -c "sleep 0.1; exec vim ~/.config/vim/vimrc";;
@@ -36,7 +47,7 @@ case $selected in
     "$e")
         foot --app-id fastfetch bash -c "fastfetch; read";;
     "$f")
-        foot --app-id vim bash -c "sleep 0.1; exec vim ~/.dotfiles/other/stuff2remember.txt";;
+        foot --app-id vim bash -c "sleep 0.1; exec vim ~/.dotfiles/install/stuff2remember.txt";;
     "$g")
         addnew;;
     "$k")
