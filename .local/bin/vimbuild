@@ -12,7 +12,6 @@ if [ -d /home/libor/.local/src/vim ]; then
     git fetch origin
     LOCAL_HASH=$(git rev-parse HEAD)
     REMOTE_HASH=$(git rev-parse @{u}) # @{u} is shorthand for the upstream branch
-    
     if [ "$LOCAL_HASH" != "$REMOTE_HASH" ]; then
         echo "##########################################"
         echo "#  Aktualizace k dispozici, provádím...  #"
@@ -33,15 +32,14 @@ if [ -d /home/libor/.local/src/vim ]; then
         echo "#####################################"
         echo "#  Žádné dostupné Vim aktualizace.  #"
         echo "#####################################"
-        exit 1
     fi
-fi    
-
-mkdir -p $HOME/.local/src
-cd $HOME/.local/src
-git clone --depth 222 https://github.com/vim/vim.git
-cd vim/src
-make
-sudo make install
+else    
+    mkdir -p $HOME/.local/src
+    cd $HOME/.local/src
+    git clone --depth 222 https://github.com/vim/vim.git
+    cd vim/src
+    make
+    sudo make install
+fi
 
 ### END OF FILE ###
