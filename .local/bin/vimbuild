@@ -2,13 +2,13 @@
 
 set -e
 
-vimver="$(vim --version | head -1 | cut -d " " -f 5 )"
-vimpatch="$(vim --version | awk 'NR==2' | grep -oE '[0-9]+$')"
-
 echo
 echo "######################"
 echo "#  Instalace vim     #"
 echo "######################"
+
+vimver() { vim --version | head -1 | cut -d " " -f 5; }
+vimpatch() { vim --version | awk 'NR==2' | grep -oE '[0-9]+$'; }
 
 if [ -d /home/libor/.local/src/vim ]; then
     cd $HOME/.local/src/vim
@@ -20,22 +20,21 @@ if [ -d /home/libor/.local/src/vim ]; then
         echo "#  Aktualizace k dispozici, provádím...  #"
         echo "##########################################"
         sleep 3
-        git pull
+        git merge origin/master
         cd src
         make distclean
         make
         sudo make install
-    
         echo
         echo "##########################"
         echo " Aktualizováno na verzi: "
-        echo " $vimver.$vimpatch"  
+        echo " $(vimver).$(vimpatch)"  
         echo "##########################"
     else
         echo
         echo "####################################"
         echo "   Žádné dostupné aktualizace       "
-        echo "   pro VIM $vimver.$vimpatch        "  
+        echo "   pro VIM $(vimver).$(vimpatch)    "
         echo "####################################"
     fi
 else    
