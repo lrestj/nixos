@@ -1,13 +1,45 @@
 #!/bin/bash
 
+set -e
+
 echo
 echo "######################"
 echo "#  Instalace vim     #"
 echo "######################"
-mkdir -p $HOME/.local/src
-cd $HOME/.local/src
-git clone --depth 222 https://github.com/vim/vim.git
-cd vim/src
-make
-sudo make install
 
+if [ -d /home/libor/.local/src/vim ]; then
+    cd $HOME/.local/src/vim
+    git fetch origin
+    LOCAL_HASH=$(git rev-parse HEAD)
+    REMOTE_HASH=$(git rev-parse @{u}) # @{u} is shorthand for the upstream branch
+    if [ "$LOCAL_HASH" != "$REMOTE_HASH" ]; then
+        echo "##########################################"
+        echo "#  Aktualizace k dispozici, provádím...  #"
+        echo "##########################################"
+        sleep 3
+        git pull
+        cd src
+        make distclean
+        make
+        sudo make install
+    
+        echo
+        echo "################################"
+        echo "#  Aktualizace vim kompletní.  #"
+        echo "################################"
+    else
+        echo
+        echo "#####################################"
+        echo "#  Žádné dostupné Vim aktualizace.  #"
+        echo "#####################################"
+    fi
+else    
+    mkdir -p $HOME/.local/src
+    cd $HOME/.local/src
+    git clone --depth 222 https://github.com/vim/vim.git
+    cd vim/src
+    make
+    sudo make install
+fi
+
+### END OF FILE ###
