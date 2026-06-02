@@ -1,9 +1,9 @@
 #!/bin/bash
 
-set -euo pipefail
+set -e
 
-# vimver="$(vim --version | head -n 1 | cut -d " " -f 5 )"
-# vimpatch="$(vim --version | grep  záplaty | grep -oE '[0-9]+$')"
+vimver="$(vim --version | head -1 | cut -d " " -f 5 )"
+vimpatch="$(vim --version | awk 'NR==2' | grep -oE '[0-9]+$')"
 
 echo
 echo "######################"
@@ -25,17 +25,16 @@ if [ -d /home/libor/.local/src/vim ]; then
         make distclean
         make
         sudo make install
-    
         echo
         echo "##########################"
         echo " Aktualizováno na verzi: "
-        echo " $(vim --version | head -n 1 | cut -d " " -f 5 ).$(vim --version | awk 'NR==2' | grep -oE '[0-9]+$')"  
+        echo " $vimver.$vimpatch"  
         echo "##########################"
     else
         echo
         echo "####################################"
         echo "   Žádné dostupné aktualizace       "
-        echo "   pro VIM $(vim --version | head -1 | cut -d " " -f 5 ).$(vim --version | awk 'NR==2' | grep -oE '[0-9]+$')"
+        echo "   pro VIM $vimver.$vimpatch        "  
         echo "####################################"
     fi
 else    
