@@ -2,6 +2,8 @@
 
 set -e
 
+vimver="$(vim --version | grep -i --color=auto improved | cut -d " " -f 1,5 ; echo "patch $(vim --version | grep --color=auto záplaty | cut -d " " -f 3 | cut -c 3-6)")"
+
 echo
 echo "######################"
 echo "#  Instalace vim     #"
@@ -24,14 +26,15 @@ if [ -d /home/libor/.local/src/vim ]; then
         sudo make install
     
         echo
-        echo "################################"
-        echo "#  Aktualizace vim kompletní.  #"
-        echo "################################"
+        echo "########################"
+        echo "Aktualizováno na verzi: "
+        echo "$vimver"  
+        echo "########################"
     else
         echo
-        echo "#####################################"
-        echo "#  Žádné dostupné Vim aktualizace.  #"
-        echo "#####################################"
+        echo "####################################"
+        echo "#  Žádné dostupné aktualizace VIM  #"
+        echo "####################################"
     fi
 else    
     mkdir -p $HOME/.local/src
