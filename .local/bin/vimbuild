@@ -29,13 +29,13 @@ if [ -d /home/libor/.local/src/vim ]; then
         echo
         echo "##########################"
         echo " Aktualizováno na verzi: "
-        echo " $(vim --version | head -n 1 | cut -d " " -f 5 ).$(vim --version | grep -m 3 patches | grep -oE '[0-9]+$')"  
+        echo " $(vim --version | head -n 1 | cut -d " " -f 5 ).$(vim --version | awk 'NR==2' | grep -oE '[0-9]+$')"  
         echo "##########################"
     else
         echo
         echo "####################################"
         echo "   Žádné dostupné aktualizace       "
-        echo "   pro VIM $(vim --version | head -n 1 | cut -d " " -f 5 ).$(vim --version | grep -m 3 patches | grep -oE '[0-9]+$')"  
+        echo "   pro VIM $(vim --version | head -1 | cut -d " " -f 5 ).$(vim --version | awk 'NR==2' | grep -oE '[0-9]+$')"
         echo "####################################"
     fi
 else    
