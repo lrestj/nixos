@@ -1,6 +1,9 @@
 #!/bin/bash
 
-set -e
+set -euo pipefail
+
+# vimver="$(vim --version | head -n 1 | cut -d " " -f 5 )"
+# vimpatch="$(vim --version | grep  záplaty | grep -oE '[0-9]+$')"
 
 echo
 echo "######################"
@@ -24,14 +27,16 @@ if [ -d /home/libor/.local/src/vim ]; then
         sudo make install
     
         echo
-        echo "################################"
-        echo "#  Aktualizace vim kompletní.  #"
-        echo "################################"
+        echo "##########################"
+        echo " Aktualizováno na verzi: "
+        echo " $(vim --version | head -n 1 | cut -d " " -f 5 ).$(vim --version | grep -m 3 patches | grep -oE '[0-9]+$')"  
+        echo "##########################"
     else
         echo
-        echo "#####################################"
-        echo "#  Žádné dostupné Vim aktualizace.  #"
-        echo "#####################################"
+        echo "####################################"
+        echo "   Žádné dostupné aktualizace       "
+        echo "   pro VIM $(vim --version | head -n 1 | cut -d " " -f 5 ).$(vim --version | grep -m 3 patches | grep -oE '[0-9]+$')"  
+        echo "####################################"
     fi
 else    
     mkdir -p $HOME/.local/src
