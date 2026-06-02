@@ -1,8 +1,0 @@
-Package: *
-Pin: release a=trixie
-Pin-Priority: 900
-
-Package: *
-Pin: release a=unstable
-Pin-Priority: 10
-
