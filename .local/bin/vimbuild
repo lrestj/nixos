@@ -20,7 +20,7 @@ if [ -d /home/libor/.local/src/vim ]; then
         echo "#  Aktualizace k dispozici, provádím...  #"
         echo "##########################################"
         sleep 3
-        git pull
+        git merge origin/master
         cd src
         make distclean
         make
