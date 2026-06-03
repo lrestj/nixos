@@ -1,19 +1,12 @@
-// -*- mode: jsonc -*-
-
-// WAYBAR AT THE TOP
-
 [{
-    "layer": "top", // Waybar at top layer
-    "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 35, // Waybar height (to be removed for auto height)
+    "layer": "top",
+    "height": 35,
     "autohide": true,
     "autohide-blocked": false,
     "margin-top": 3,
     "margin-left": 8,
     "margin-right": 8,
-    // "width": 1280, // Waybar width
-    "spacing": 4, // Gaps between modules (4px)
-    // Choose the order of the modules
+    "spacing": 4,
     "modules-left": [
         "niri/workspaces",
         "memory",
@@ -26,10 +19,7 @@
         "custom/fm",
         "custom/browser"
     ],
-    "modules-center": [
-        "wlr/taskbar"
-        // "niri/window"
-    ],
+    "modules-center": [ "wlr/taskbar" ],
     "modules-right": [
         "idle_inhibitor",
         "tray",
@@ -52,16 +42,13 @@
 
     "memory": {
         "format": "  Menu  RAM   {}% ",
-        "on-click": "pkill fuzzel || fuzzel --config ~/.config/fuzzel/menu.ini",
-        "on-click-right": "wlogout -b 2 -T 10 -L 10 -R 980 -B 525 -s -c 5 -r 5 -l ~/.config/wlogout/menu"
+        "on-click": "pkill fuzzel || fuzzel --config ~/.config/fuzzel/menu.ini"
     },
 
     "cpu": {
         "format": "CPU   {usage}%",
         "tooltip": false,
-        "on-click": "pkill $TERMINAL || $TERMINAL",
-        "on-click-right": "",
-        "on-click-middle": ""
+        "on-click": "pkill $TERMINAL || $TERMINAL"
     },
 
     "temperature": {
@@ -69,8 +56,7 @@
         "critical-threshold": 80,
         "format": " {icon} {temperatureC} °C  ",
         "format-icons": ["", "", ""],
-        "on-click": "pkill btop || $TERMINAL --app-id btop -e btop",
-        "on-click-right": ""
+        "on-click": "pkill btop || $TERMINAL --app-id btop -e btop"
     },
 
    "custom/scan": {
@@ -124,12 +110,10 @@
         "format-icons": {
             "activated": "",
             "deactivated": ""
-        },
-        "on-click-right": "waybar --config ~/.config/waybar/config-taskbar"
+        }
     },
 
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
         "format": "󰕾  {volume}%  {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
@@ -149,7 +133,6 @@
     },
 
     "backlight": {
-        // "device": "acpi_video1",
         "format": " 󰃟  {percent}%  ",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
         "on-click-right": "pkill foot || foot",
@@ -157,7 +140,6 @@
     },
 
     "tray": {
-        // "icon-size": 21,
         "spacing": 10
     },
 
@@ -171,7 +153,6 @@
 
     "battery": {
         "states": {
-            // "good": 95,
             "warning": 30,
             "critical": 15
         },
@@ -180,8 +161,6 @@
         "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
         "format-icons": ["", "", "", "", ""]
     },
 
@@ -204,27 +183,4 @@
     }
 }] 
 
-
-// TASK BAR AT THE RIGHT
-
-//{
-//    "layer": "top", // Waybar at top layer
-//    "position": "right", 
-//    //"height": 30,
-//    // "width": 1280,
-//    "spacing": 4,
-//    // Choose the order of the modules
-//    "modules-center": ["wlr/taskbar"],
-//    // Modules configuration
-//    "wlr/taskbar": {
-//        "format": "{icon}",
-//        "icon-size": 38,
-//        "tooltip": true,
-//        "tooltip-format": "{app_id}",
-//        "on-click": "activate",
-//        "on-click-right": "close"
-//    }
-//}]
-
 // END OF FILE
-
