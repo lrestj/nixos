@@ -86,9 +86,7 @@
             swaylock
             swayidle
             qutebrowser zenity
-            wlprop
             waybar
-            wl-color-picker
             waypaper
             wget
             wl-clipboard
