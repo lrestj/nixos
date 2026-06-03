@@ -85,7 +85,6 @@
             swaybg
             swaylock
             swayidle
-            sway-contrib.grimshot
             qutebrowser zenity
             wlprop
             waybar
