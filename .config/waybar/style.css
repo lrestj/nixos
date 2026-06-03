@@ -120,15 +120,10 @@ button:hover {
 #memory,
 #pulseaudio,
 #backlight,
+#clock,
 #idle_inhibitor,
 #battery,
 #power-profiles-daemon {
-    border-radius: 20px 20px 20px 20px;
-    margin-top: 2px;
-    margin-right: 4px;
-    margin-bottom: 4px;
-}
-#clock {
     border-radius: 20px 20px 20px 20px;
     margin-top: 2px;
     margin-right: 4px;
@@ -230,10 +225,6 @@ button:hover {
     animation-direction: alternate;
 }
 
-#power-profiles-daemon {
-    padding-right: 0px;
-}
-
 #power-profiles-daemon.performance {
     padding: 0px 3px;
 }
@@ -281,7 +272,6 @@ label:focus {
     background-color: #f00a23;
     color: #000000;
 }
-
 
 #custom-power {
     padding-left: 15px;
