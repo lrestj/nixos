@@ -60,6 +60,9 @@ call plug#begin()
     Plug 'Konfekt/filepicker.vim'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
+    Plug 'junegunn/vim-peekaboo'
 call plug#end()
+
+let g:peekaboo_window='botright vertical 40new'
 
 """"" END OF FILE """""
