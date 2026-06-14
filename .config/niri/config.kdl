@@ -83,9 +83,11 @@ window-rule {
     match app-id="vim"
     match app-id="yazi"
     match app-id="fastfetch"
+    match app-id="update"
     draw-border-with-background false
 }
 window-rule {
+    match app-id="update"
     match app-id="xfce-polkit"
     match app-id="galculator"
     open-floating true
@@ -123,6 +125,7 @@ window-rule {
 
 binds {
     Mod+Shift+comma { show-hotkey-overlay; }
+    Mod+U hotkey-overlay-title="Update vim" { spawn-sh "foot --app-id update vimbuild"; }
     Alt+B hotkey-overlay-title="Btop" { spawn-sh "foot --app-id btop btop"; }
     Mod+X hotkey-overlay-title="PowerMenu" { spawn "powercenterniri"; }
     Mod+N hotkey-overlay-title="Config menu" { spawn "confm"; }

@@ -31,12 +31,14 @@ if [ -d /home/libor/.local/src/vim ]; then
         echo " Aktualizováno na verzi:  "
         echo " $(vimver).$(vimpatch)    "  
         echo "##########################"
+        sleep 3
     else
         echo
         echo "#################################"
         echo "  Žádné dostupné aktualizace     "
         echo "  pro VIM $(vimver).$(vimpatch)  "
         echo "#################################"
+        sleep 3
     fi
 else    
     mkdir -p $HOME/.local/src

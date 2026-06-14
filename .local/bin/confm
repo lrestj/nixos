@@ -33,7 +33,7 @@ fi\t$d$di\n\
 s\t$f$fi\n\
 a\t$g$gi\n\
 q\t$h$hi\
-" | fuzzel --lines 14 --with-nth 2 --accept-nth 2 --match-nth 1 --auto-select -d )
+" | fuzzel --lines 16 --with-nth 2 --accept-nth 2 --match-nth 1 --auto-select -d )
 
 case $selected in
     "$a")
