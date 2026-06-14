@@ -152,8 +152,8 @@ binds {
     Mod+S { spawn-sh "niri msg workspaces | grep \"\\*.*NixOS\" && niri msg action focus-workspace-previous || niri msg action focus-workspace NixOS"; }
 
     // Workspaces:
-    Alt+right { focus-workspace-down; }
-    Alt+left { focus-workspace-up; }
+    Alt+down { focus-workspace-down; }
+    Alt+up { focus-workspace-up; }
     Alt+Page_Down      { focus-workspace-down; }
     Alt+Page_Up        { focus-workspace-up; }
     Mod+Alt+Page_Down { move-column-to-workspace-down; }
