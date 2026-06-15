@@ -47,6 +47,12 @@ else
     cd vim/src
     make
     sudo make install
+    echo
+    echo "##########################"
+    echo " Naistalována verze:      "
+    echo " $(vimver).$(vimpatch)    "  
+    echo "##########################"
+    sleep 3
 fi
 
 ### END OF FILE ###
