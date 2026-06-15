@@ -11,6 +11,8 @@ h="Flake.nix"
 i="Pkgs"
 j="Add new script"
 k="Odpojit..."
+l="Update Vim"
+
 ai="\0icon\x1fvim"
 bi="\0icon\x1fniri"
 ci="\0icon\x1fwayland"
@@ -30,6 +32,7 @@ o\t$k$ki\n\
 p\t$e$ei\n\
 w\t$c$ci\n\
 m\t$d$di\n\
+u\t$l$ai\n\
 s\t$f$fi\n\
 a\t$j$ji\
 " | fuzzel --lines 15 --with-nth 2 --accept-nth 2 --match-nth 1 --auto-select -d )
@@ -53,6 +56,8 @@ case $selected in
         $TERMINAL -e vim ~/.dotfiles/nixos/flake.nix;;
     "$i")
         $TERMINAL -e vim ~/.dotfiles/nixos/modules/pkgs.nix;;
+    "$l")
+        foot vimbuild;;
     "$j")
         addnew;;
     "$k")
