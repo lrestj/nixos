@@ -42,7 +42,6 @@ hostname,derivation name,utc time,build seconds
 ,X-Restart-Triggers-dbus,2026-04-17 17:22:33,0
 ,X-Restart-Triggers-dbus,2026-04-18 09:35:22,0
 ,X-Restart-Triggers-dbus,2026-04-23 16:35:52,0
-,X-Restart-Triggers-dbus-broker,2026-05-30 22:19:47,0
 ,X-Restart-Triggers-dbus-broker,2026-05-30 22:27:16,0
 ,X-Restart-Triggers-dbus-broker,2026-06-01 07:12:15,0
 ,X-Restart-Triggers-dbus-broker,2026-06-01 21:04:21,0
@@ -52,6 +51,7 @@ hostname,derivation name,utc time,build seconds
 ,X-Restart-Triggers-dbus-broker,2026-06-03 09:46:52,0
 ,X-Restart-Triggers-dbus-broker,2026-06-13 12:51:53,0
 ,X-Restart-Triggers-dbus-broker,2026-06-13 12:56:06,0
+,X-Restart-Triggers-dbus-broker,2026-06-14 10:55:53,0
 ,X-Restart-Triggers-nfs-blkmap,2026-04-25 09:18:43,0
 ,X-Restart-Triggers-nfs-blkmap,2026-05-23 07:26:00,0
 ,X-Restart-Triggers-nfs-idmapd,2026-04-25 09:18:38,0
@@ -66,7 +66,6 @@ hostname,derivation name,utc time,build seconds
 ,X-Restart-Triggers-nix-daemon,2026-05-17 18:14:33,0
 ,X-Restart-Triggers-nix-daemon,2026-05-23 07:26:14,0
 ,X-Restart-Triggers-nix-daemon,2026-06-13 12:50:29,0
-,X-Restart-Triggers-polkit,2026-05-30 22:19:46,0
 ,X-Restart-Triggers-polkit,2026-05-30 22:27:16,0
 ,X-Restart-Triggers-polkit,2026-06-01 07:12:14,0
 ,X-Restart-Triggers-polkit,2026-06-01 21:04:20,0
@@ -76,6 +75,7 @@ hostname,derivation name,utc time,build seconds
 ,X-Restart-Triggers-polkit,2026-06-03 09:46:52,0
 ,X-Restart-Triggers-polkit,2026-06-13 12:51:52,0
 ,X-Restart-Triggers-polkit,2026-06-13 12:56:06,0
+,X-Restart-Triggers-polkit,2026-06-14 10:55:52,0
 ,X-Restart-Triggers-reload-systemd-vconsole-setup,2026-04-25 09:18:55,0
 ,X-Restart-Triggers-reload-systemd-vconsole-setup,2026-05-23 07:26:10,0
 ,X-Restart-Triggers-resolvconf,2026-04-25 09:18:35,0
@@ -128,7 +128,6 @@ hostname,derivation name,utc time,build seconds
 ,XnView_MP-1.11.2.glibc2.17-x86_64.AppImage,2026-05-07 18:59:23,40
 ,XnView_MP-1.11.2.glibc2.17-x86_64.AppImage,2026-05-23 07:27:12,20
 ,Xresources-Xft,2026-04-17 12:07:44,0
-,activate,2026-05-30 22:19:50,0
 ,activate,2026-05-30 22:27:19,0
 ,activate,2026-06-01 07:12:17,0
 ,activate,2026-06-01 21:04:23,0
@@ -138,6 +137,7 @@ hostname,derivation name,utc time,build seconds
 ,activate,2026-06-03 09:46:55,0
 ,activate,2026-06-13 12:51:55,0
 ,activate,2026-06-13 12:56:09,0
+,activate,2026-06-14 10:55:56,0
 ,andale32.exe,2026-04-25 09:18:44,3
 ,andale32.exe,2026-05-23 07:26:53,1
 ,app-xnsoft-360.webp,2026-04-02 15:01:49,2
@@ -244,7 +244,6 @@ hostname,derivation name,utc time,build seconds
 ,cups.pam,2026-05-23 07:25:58,0
 ,cupsd.conf,2026-04-25 09:18:31,0
 ,cupsd.conf,2026-05-23 07:25:48,0
-,dbus,2026-06-01 07:12:14,0
 ,dbus,2026-06-01 21:03:32,0
 ,dbus,2026-06-01 21:04:20,0
 ,dbus,2026-06-01 21:06:11,0
@@ -254,6 +253,7 @@ hostname,derivation name,utc time,build seconds
 ,dbus,2026-06-13 12:50:26,0
 ,dbus,2026-06-13 12:51:52,0
 ,dbus,2026-06-13 12:56:06,0
+,dbus,2026-06-14 10:55:53,0
 ,desktops,2026-04-15 10:07:14,0
 ,desktops,2026-04-18 09:35:18,0
 ,dry-activate,2026-05-22 18:31:09,0
@@ -266,7 +266,6 @@ hostname,derivation name,utc time,build seconds
 ,dry-activate,2026-06-01 21:03:32,0
 ,dry-activate,2026-06-03 09:33:53,0
 ,dry-activate,2026-06-13 12:50:26,0
-,etc,2026-05-30 22:19:49,0
 ,etc,2026-05-30 22:27:19,0
 ,etc,2026-06-01 07:12:17,0
 ,etc,2026-06-01 21:04:23,0
@@ -276,6 +275,7 @@ hostname,derivation name,utc time,build seconds
 ,etc,2026-06-03 09:46:54,0
 ,etc,2026-06-13 12:51:55,0
 ,etc,2026-06-13 12:56:09,0
+,etc,2026-06-14 10:55:55,0
 ,etc-X11-xorg.conf.d-00-keyboard.conf,2026-04-25 09:18:31,0
 ,etc-X11-xorg.conf.d-00-keyboard.conf,2026-05-23 07:25:49,0
 ,etc-alsa-conf.d-49-pipewire-modules.conf,2026-04-25 09:19:27,0
@@ -972,6 +972,7 @@ hostname,derivation name,utc time,build seconds
 ,nixos-system-nixos-26.11.20260531.331800d,2026-06-03 09:46:55,0
 ,nixos-system-nixos-26.11.20260610.9ae611a,2026-06-13 12:51:56,0
 ,nixos-system-nixos-26.11.20260610.9ae611a,2026-06-13 12:56:09,0
+,nixos-system-nixos-26.11.20260610.9ae611a,2026-06-14 10:55:56,0
 ,nixos-tmpfiles.d,2026-04-02 13:28:35,0
 ,nixos-tmpfiles.d,2026-04-17 12:07:44,0
 ,nixos-tmpfiles.d,2026-04-17 17:20:25,0
@@ -1098,7 +1099,6 @@ hostname,derivation name,utc time,build seconds
 ,shutdown-ramfs-contents.json,2026-06-13 12:50:28,0
 ,snmp.conf,2026-04-25 09:18:45,0
 ,snmp.conf,2026-05-23 07:26:02,0
-,source,2026-05-22 21:12:10,8
 ,source,2026-05-23 07:19:57,7
 ,source,2026-05-24 08:18:12,6
 ,source,2026-05-25 08:50:55,7
@@ -1108,6 +1108,7 @@ hostname,derivation name,utc time,build seconds
 ,source,2026-06-01 07:09:35,7
 ,source,2026-06-03 09:15:29,6
 ,source,2026-06-13 12:53:39,7
+,source,2026-06-14 10:53:24,8
 ,ssh-root-provision.conf,2026-04-25 09:18:45,0
 ,ssh-root-provision.conf,2026-05-23 07:26:02,0
 ,sshd.conf-final,2026-04-02 13:50:15,0
@@ -1157,7 +1158,6 @@ hostname,derivation name,utc time,build seconds
 ,system-generators,2026-06-01 21:03:51,0
 ,system-generators,2026-06-03 09:33:53,0
 ,system-generators,2026-06-13 12:50:41,0
-,system-path,2026-05-30 22:19:46,2
 ,system-path,2026-05-30 22:27:15,1
 ,system-path,2026-06-01 07:12:14,2
 ,system-path,2026-06-01 21:04:20,2
@@ -1167,6 +1167,7 @@ hostname,derivation name,utc time,build seconds
 ,system-path,2026-06-03 09:46:51,2
 ,system-path,2026-06-13 12:51:52,2
 ,system-path,2026-06-13 12:56:06,1
+,system-path,2026-06-14 10:55:52,2
 ,system-shutdown,2026-04-25 09:19:46,0
 ,system-shutdown,2026-04-29 10:33:43,0
 ,system-shutdown,2026-05-02 20:27:20,0
@@ -1177,7 +1178,6 @@ hostname,derivation name,utc time,build seconds
 ,system-shutdown,2026-06-01 21:03:51,0
 ,system-shutdown,2026-06-03 09:33:53,0
 ,system-shutdown,2026-06-13 12:50:41,0
-,system-units,2026-05-30 22:19:49,1
 ,system-units,2026-05-30 22:27:18,1
 ,system-units,2026-06-01 07:12:16,1
 ,system-units,2026-06-01 21:04:22,1
@@ -1187,6 +1187,7 @@ hostname,derivation name,utc time,build seconds
 ,system-units,2026-06-03 09:46:54,1
 ,system-units,2026-06-13 12:51:54,1
 ,system-units,2026-06-13 12:56:08,1
+,system-units,2026-06-14 10:55:54,1
 ,systemd,2026-04-25 09:19:15,0
 ,systemd,2026-05-23 07:26:33,0
 ,systemd-boot,2026-04-15 10:07:13,0
@@ -1283,7 +1284,6 @@ hostname,derivation name,utc time,build seconds
 ,unit-cups.service,2026-06-13 12:50:56,0
 ,unit-cups.socket,2026-04-25 09:18:48,0
 ,unit-cups.socket,2026-05-23 07:26:04,0
-,unit-dbus-broker.service,2026-06-01 07:12:15,0
 ,unit-dbus-broker.service,2026-06-01 21:04:21,0
 ,unit-dbus-broker.service,2026-06-01 21:06:11,0
 ,unit-dbus-broker.service,2026-06-03 09:17:52,0
@@ -1292,6 +1292,7 @@ hostname,derivation name,utc time,build seconds
 ,unit-dbus-broker.service,2026-06-03 09:46:53,0
 ,unit-dbus-broker.service,2026-06-13 12:51:53,0
 ,unit-dbus-broker.service,2026-06-13 12:56:07,0
+,unit-dbus-broker.service,2026-06-14 10:55:53,0
 ,unit-dbus.service,2026-04-23 16:35:52,0
 ,unit-dbus.service,2026-04-23 16:35:53,0
 ,unit-dbus.service,2026-04-25 09:19:33,0
@@ -1585,7 +1586,6 @@ hostname,derivation name,utc time,build seconds
 ,unit-polkit-gnome-authentication-agent-1.service,2026-04-25 09:19:38,0
 ,unit-polkit-gnome-authentication-agent-1.service,2026-05-23 07:27:13,0
 ,unit-polkit-gnome-authentication-agent-1.service,2026-06-01 21:03:38,0
-,unit-polkit.service,2026-05-30 22:19:47,0
 ,unit-polkit.service,2026-05-30 22:27:16,0
 ,unit-polkit.service,2026-06-01 07:12:15,0
 ,unit-polkit.service,2026-06-01 21:04:21,0
@@ -1595,6 +1595,7 @@ hostname,derivation name,utc time,build seconds
 ,unit-polkit.service,2026-06-03 09:46:52,0
 ,unit-polkit.service,2026-06-13 12:51:52,0
 ,unit-polkit.service,2026-06-13 12:56:06,0
+,unit-polkit.service,2026-06-14 10:55:53,0
 ,unit-post-boot.service,2026-04-15 10:07:10,0
 ,unit-post-boot.service,2026-04-25 09:19:38,0
 ,unit-post-boot.service,2026-05-23 07:27:14,0
@@ -1876,7 +1877,6 @@ hostname,derivation name,utc time,build seconds
 ,user-generators,2026-06-01 21:03:51,0
 ,user-generators,2026-06-03 09:33:54,0
 ,user-generators,2026-06-13 12:50:41,0
-,user-units,2026-05-30 22:19:47,0
 ,user-units,2026-05-30 22:27:17,0
 ,user-units,2026-06-01 07:12:15,0
 ,user-units,2026-06-01 21:04:22,0
@@ -1886,6 +1886,7 @@ hostname,derivation name,utc time,build seconds
 ,user-units,2026-06-03 09:46:53,0
 ,user-units,2026-06-13 12:51:53,0
 ,user-units,2026-06-13 12:56:07,0
+,user-units,2026-06-14 10:55:54,0
 ,useradd,2026-04-25 09:18:54,0
 ,useradd,2026-05-23 07:26:09,0
 ,useradd.pam,2026-04-07 12:24:21,0
@@ -1907,7 +1908,6 @@ hostname,derivation name,utc time,build seconds
 ,vconsole.conf,2026-05-23 07:26:09,0
 ,verdan32.exe,2026-04-25 09:19:04,9
 ,verdan32.exe,2026-05-23 07:26:55,0
-,vim-full,2026-05-22 18:35:14,101
 ,vim-full,2026-05-22 20:29:35,103
 ,vim-full,2026-05-23 07:22:15,103
 ,vim-full,2026-05-23 07:29:48,134
@@ -1917,6 +1917,7 @@ hostname,derivation name,utc time,build seconds
 ,vim-full,2026-06-01 07:12:12,102
 ,vim-full,2026-06-03 09:17:48,103
 ,vim-full,2026-06-13 12:56:04,103
+,vim-full,2026-06-14 10:55:50,104
 ,vista-fonts,2026-04-25 09:19:29,2
 ,vista-fonts,2026-05-23 07:27:37,2
 ,vlock.pam,2026-04-07 12:24:21,0

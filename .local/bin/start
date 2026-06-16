@@ -22,7 +22,7 @@ while true; do
     echo "Spouštím NixOS..."
     exec niri-session -l
     ;;
-    x)
+    x|v)
     echo "Vypínání..."
     exec systemctl poweroff
     sleep 1
