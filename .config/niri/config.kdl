@@ -46,9 +46,9 @@ layout {
 }
 
 // Startup list:
-spawn-sh-at-startup "nirileft"
-spawn-sh-at-startup "brightnessctl s 80%"
+spawn-sh-at-startup "nirileft &"
 spawn-sh-at-startup "niri_tile.py &"
+spawn-sh-at-startup "brightnessctl s 80%"
 spawn-at-startup "swaybg" "-i" "/home/libor/.dotfiles/wallpapers/wallpaper4.jpg" "-m" "fill"
 spawn-sh-at-startup "/usr/libexec/xfce-polkit &"
 spawn-sh-at-startup "swayidle -w"
