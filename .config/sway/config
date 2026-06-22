@@ -126,6 +126,8 @@
     bindsym $mod+Shift_L focus next
 
     # Move window
+    bindsym $mod+h move left
+    bindsym $mod+l move right
     bindsym $ms+h move left 10px
     bindsym $ms+k move up 10px
     bindsym $ms+j move down 10px
