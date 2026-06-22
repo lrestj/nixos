@@ -123,6 +123,10 @@
   programs = {
       niri.enable = true;
       dconf.enable = true;  
+      sway = {
+          enable = true;
+          wrapperFeatures.gtk = true;
+      };
       nh = {
           enable = true;
           clean.enable = true;
