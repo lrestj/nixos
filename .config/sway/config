@@ -42,6 +42,7 @@
 
 ### Apps at startup
     exec_always waypaper --restore &
+    exec swaymsg border csd
     exec nm-applet --indicator &
     exec xfce-polkit &
     exec wl-paste --watch cliphist store
@@ -65,11 +66,11 @@
        timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
     
 ### Borders and tabline look
-    # default_border pixel 4
-    # default_floating_border pixel 4
-    # client.focused #8000FF #1f1f23 #aabbcc
+    default_border pixel 4
+    default_floating_border pixel 4
+    client.focused #8000FF #8000FF #aabbcc
     # font none 0.1
-    # titlebar_padding 3
+    titlebar_padding 3
 
 ### Keybindings
     bindsym $mod+a exec $TERMINAL
@@ -196,6 +197,7 @@
     bindsym XF86MonBrightnessDown exec brightnessdown
 
 ### Windows rules
+    for_window [class=".*"] border csd
     for_window [class=".*"] move left
     for_window [app_id="galculator"] floating enable
     for_window [app_id="org.pulseaudio.pavucontrol"] floating enable, resize set 630 400, move position 700 3
