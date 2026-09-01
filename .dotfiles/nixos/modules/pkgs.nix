@@ -56,7 +56,7 @@
             kdePackages.qtwayland
             killall
             libnotify
-            libreoffice-fresh
+            libreoffice
             libva-utils
             lshw
             mako
